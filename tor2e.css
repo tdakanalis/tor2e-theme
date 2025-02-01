@@ -1,0 +1,982 @@
+@font-face {
+    font-family: Aniron;
+    src: url(fonts/Aniron.ttf)
+}
+
+@font-face {
+    font-family: AnironBold;
+    src: url(fonts/AnironBold.ttf)
+}
+
+@font-face {
+    font-family: NewBaskerville;
+    src: url(fonts/NewBaskerville.ttf)
+}
+
+@font-face {
+    font-family: NewBaskervilleBold;
+    src: url(fonts/NewBaskervilleBold.ttf)
+}
+
+@font-face {
+    font-family: NewBaskervilleItalic;
+    src: url(fonts/NewBaskervilleItalic.ttf)
+}
+
+@font-face {
+    font-family: NewBaskervilleBoldItalic;
+    src: url(fonts/NewBaskervilleBoldItalic.ttf)
+}
+
+@font-face {
+    font-family: MinionPro;
+    src: url(fonts/MinionProRegular.ttf)
+}
+
+@font-face {
+    font-family: NiveauGroteskMedium;
+    src: url(fonts/NiveauGroteskMedium.otf);
+}
+
+
+
+/* ---------------------------------------- */
+/*  Colors                                  */
+/* ---------------------------------------- */
+body {
+    --color-warm-1: #e07060;
+    --color-warm-2: #bc483b;
+    --color-warm-3: #ac323b;
+
+    --color-cool-3: #7a5a46;
+    --color-cool-4: #543b28;
+    --color-cool-5: #1d1918;
+
+    --color-cool-5-25: rgba(29, 25, 24, 0.25);
+    --color-cool-5-50: rgba(29, 25, 24, 0.5);
+    --color-cool-5-75: rgba(29, 25, 24, 0.75);
+    --color-cool-5-90: rgba(29, 25, 24, 0.9);
+
+    --color-light-1: #fffbf3;
+    --color-light-2: #f3e9df;
+    --color-light-3: #e6d9cc;
+    --color-light-4: #d4c5b6;
+    --color-light-5: #ba9a94;
+    --color-light-6: #a99786;
+
+    --color-dark-1: #3e2a1e;
+    --color-dark-2: #4a3426;
+    --color-dark-3: #5e4230;
+    --color-dark-4: #70523c;
+    --color-dark-5: #84644a;
+    --color-dark-6: #9b7c66;
+
+    --color-level-error: #bc483b;
+    --color-level-error-bg: rgba(188, 72, 59, 0.8);
+    --color-level-error-border: #7a3a60;
+
+    --color-level-info: #7a5a46;
+    --color-level-info-bg: rgba(122, 90, 70, 0.8);
+    --color-level-info-border: #543b28;
+
+    --color-level-success: #3b7a48;
+    --color-level-success-bg: rgba(59, 122, 72, 0.8);
+    --color-level-success-border: #2e5c38;
+
+    --color-level-warning: #e07060;
+    --color-level-warning-bg: rgba(224, 112, 96, 0.8);
+    --color-level-warning-border: #bc483b;
+
+    --color-scrollbar: #bc483b;
+    --color-scrollbar-track: transparent;
+    --color-scrollbar-border: #e07060;
+
+    --color-text-selection: #ffede0;
+    --color-text-selection-bg: #7a5a46;
+}
+
+
+/* ---------------------------------------- */
+/*  Typography                              */
+/* ---------------------------------------- */
+body {
+    --font-body: NewBaskerville, "Palatino Linotype", sans-serif;
+    --font-label: NewBaskervilleBold, "Palatino Linotype", sans-serif;
+    --font-notes: NewBaskerville, "Palatino Linotype", sans-serif;
+    --font-monospace: MinionPro, "Palatino Linotype", sans-serif;
+    --font-blockquote: NewBaskerville, "Palatino Linotype", sans-serif;
+    --font-code: NiveauGroteskMedium, "Palatino Linotype", sans-serif;
+    --font-size-5: 0.4rem;
+    --font-size-6: 0.5rem;
+    --font-size-8: 0.6rem;
+    --font-size-10: 0.625rem;
+    --font-size-11: 0.6875rem;
+    --font-size-12: 0.75rem;
+    --font-size-13: 0.8125rem;
+    --font-size-14: 0.875rem;
+    --font-size-15: 0.9375rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+    --font-size-28: 1.75rem;
+    --font-size-32: 2rem;
+    --font-size-36: 2.25rem;
+    --font-size-48: 3rem;
+    --font-size-64: 4rem;
+    --font-size-80: 5rem;
+    --font-h1: Aniron, serif;
+    --font-h2: Aniron, serif;
+    --font-h3: Aniron, "Palatino Linotype", sans-serif;
+    --font-h4: Aniron, serif;
+    --font-h5: Aniron, sans-serif;
+    --font-h6: Aniron, serif;
+    --font-h1-bold: AnironBold, serif;
+    --font-h2-bold: AnironBold, serif;
+    --font-h3-bold: AnironBold, "Palatino Linotype", sans-serif;
+    --font-h4-bold: AnironBold, serif;
+    --font-h5-bold: AnironBold, sans-serif;
+    --font-h6-bold: AnironBold, serif;
+    --font-h1-size: var(--font-size-20);
+    --font-h2-size: var(--font-size-18);
+    --font-h3-size: var(--font-size-16);
+    --font-h4-size: var(--font-size-12);
+    --font-h5-size: var(--font-size-10);
+    --font-h6-size: var(--font-size-10);
+}
+
+:root {
+    --color-text-light-highlight: #fffbf3;
+    --color-text-light-heading: #e6d9cc;
+    --color-text-light-primary: #d4c5b6;
+    --color-text-dark-primary: #1d1918;
+    --color-text-dark-secondary: #1d1918;
+    --color-text-dark-blockquote: #3e2a1e;
+    --color-text-dark-code: #543b28;
+    --color-text-dark-header: #543b28;
+    --color-text-dark-inactive: #ba9a94;
+    --color-text-hyperlink: #bc483b;
+    --color-text-selection: #ffede0;
+    --color-text-selection-bg: #7a5a46;
+
+    --color-text-light-0: #fffbf3;
+    --color-text-light-1: #f3e9df;
+    --color-text-light-2: #e6d9cc;
+    --color-text-light-3: #d4c5b6;
+    --color-text-light-4: #ba9a94;
+    --color-text-light-5: #a99786;
+    --color-text-light-6: #937f71;
+    --color-text-light-7: #7c695d;
+
+    --color-text-dark-1: #3e2a1e;
+    --color-text-dark-2: #4a3426;
+    --color-text-dark-3: #5e4230;
+    --color-text-dark-4: #70523c;
+    --color-text-dark-5: #84644a;
+    --color-text-dark-6: #9b7c66;
+
+    --color-border-light-1: #e6d9cc;
+    --color-border-light-2: #ba9a94;
+    --color-border-dark-1: #3e2a1e;
+    --color-border-dark-2: #4a3426;
+    --color-border-dark-3: #5e4230;
+    --color-border-dark-4: #70523c;
+    --color-border-dark-5: #84644a;
+
+    --color-shadow-primary: #bc483b;
+    --color-shadow-highlight: #e07060;
+    --color-shadow-dark: #1d1918;
+
+    --color-underline-inactive: #ba9a94;
+    --color-underline-active: #7a5a46;
+    --color-underline-header: #bc483b;
+
+    --color-border-light-highlight: #fffbf3;
+    --color-border-light-primary: #d4c5b6;
+    --color-border-light-secondary: #e6d9cc;
+    --color-border-light-tertiary: #ba9a94;
+
+    --color-border-dark: #3e2a1e;
+    --color-border-dark-primary: #543b28;
+    --color-border-dark-secondary: #5e4230;
+    --color-border-dark-tertiary: #7a5a46;
+
+    --color-border-highlight: #bc483b;
+    --color-border-highlight-alt: #e07060;
+
+    --color-bg-light: rgba(84, 59, 40, 0.05);
+    --color-bg-btn-minor-inactive: #ba9a94;
+    --color-bg-btn-minor-active: #d4c5b6;
+    --color-select-option-bg: #f3e9df;
+    --color-checkbox-checked: #7a5a46;
+
+    --color-ownership-none: #7a3a60;
+    --color-ownership-observer: #ba9a94;
+    --color-ownership-owner: #d4c5b6;
+
+    --color-scrollbar: #AC323BFF;
+    --color-scrollbar-track: transparent;
+    --color-scrollbar-border: #e07060;
+
+    --font-primary: NewBaskerville, sans-serif;
+}
+
+/* Global CSS */
+
+h1 {
+    font-size: var(--font-h1-size);
+    font-family: var(--font-h1), "serif";
+}
+
+h2 {
+    font-size: var(--font-h2-size);
+    font-family: var(--font-h2), "serif";
+}
+
+h3 {
+    font-size: var(--font-h3-size);
+    font-family: var(--font-h3), "serif";
+}
+
+h4 {
+    font-size: var(--font-h4-size);
+    font-family: var(--font-h4), "serif";
+}
+
+h5 {
+    font-size: var(--font-h5-size);
+    font-family: var(--font-h5), "serif";
+}
+
+h6 {
+    font-size: var(--font-h6-size);
+    font-family: var(--font-h6), "serif";
+}
+
+body, textarea {
+    line-height: 1.5;
+    font-family: var(--font-body), "serif";
+}
+
+form .notes, form .hint {
+    line-height: inherit;
+}
+
+label, select, button, .category-tab, #game-details, .key {
+    font-family: var(--font-label), "serif" !important;
+}
+
+input:not(:is(.journal-header, .tor2e.sheet) input) {
+    font-family: var(--font-label), "serif" !important;
+}
+
+#support-details a {
+    font-family: var(--font-label), "serif";
+}
+
+#tooltip {
+    font-family: var(--font-h4), "serif";
+    font-size: var(--font-size-10);
+    font-weight: normal !important;
+}
+
+a.scene-name {
+    font-family: var(--font-h4), "serif";
+    font-size: var(--font-h4-size);
+}
+
+.notes, .hint {
+    font-family: var(--font-notes), "serif";
+}
+
+.window-app .window-header a {
+    font-family: var(--font-label), "serif";
+}
+
+body, textarea, input, button, select {
+    color: var(--color-text-dark-primary);
+}
+
+button {
+    background-color: var(--color-light-1);
+}
+
+textarea:focus, input:focus {
+    outline: 2px solid var(--color-warm-2);
+}
+
+form .notes, form .hint, .package-configuration aside.sidebar {
+    font-size: var(--font-size-14);
+}
+
+.tabs .item {
+    font-family: var(--font-label), "serif";
+}
+
+.tabs .item.active {
+    text-shadow: none;
+    color: var(--color-warm-2);
+    border-bottom: 2px solid var(--color-warm-2);
+    margin-bottom: -4px;
+}
+
+select:focus {
+    box-shadow: none;
+    border: 1px solid var(--color-warm-2)
+}
+
+.window-content h1, .window-content h2, .window-content h3,
+.window-content h4, .window-content h5, .window-content h6 {
+    color: var(--color-text-dark-header);
+}
+
+.window-content:not(:is(.tor2e-cb-window-horizontal .window-content, #macros-popout .window-content)) {
+    background: var(--color-light-1) url(img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.macros-sidebar h1, .macros-sidebar h2, .macros-sidebar h3,
+.macros-sidebar h4, .macros-sidebar h5, .macros-sidebar h6 {
+    color: inherit;
+}
+
+/* Sidebar */
+li.folder > .folder-header h1 {
+    font-size: var(--font-size-16);
+}
+
+li.folder > .folder-header h2 {
+    font-size: var(--font-size-14);
+}
+
+li.folder > .folder-header h3 {
+    font-size: var(--font-size-12);
+}
+
+li.folder > .folder-header h4 {
+    font-size: var(--font-size-10);
+}
+
+li.folder > .folder-header h5 {
+    font-size: var(--font-size-10);
+}
+
+li.folder > .folder-header h6 {
+    font-size: var(--font-size-10);
+}
+
+.sidebar-tab .directory-header .header-search input {
+    background: var(--color-light-1);
+}
+
+#sidebar-tabs {
+    --sidebar-tab-height: 32px;
+    --sidebar-tab-width: 24px;
+    flex: 0 0 var(--sidebar-tab-height);
+    box-sizing: border-box;
+    margin: 0 0 5px;
+    border-bottom: unset;
+    box-shadow: unset;
+}
+
+#sidebar-tabs > .item.active {
+    border: none;
+    border-bottom: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: var(--color-warm-2);
+    border-bottom: 2px solid var(--color-warm-2);
+    margin-bottom: -4px
+}
+
+/* Chat */
+
+#chat-form textarea {
+    background: var(--color-light-1) url(img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.chat-message, .chat-message.whisper {
+    background: var(--color-light-1) url(img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+#chat-controls .roll-type-select {
+    background: var(--color-light-1)
+}
+
+#chat-log .message {
+    border: 2px solid var(--color-border-dark) !important;
+}
+
+.message-sender {
+    color: var(--color-warm-2);
+}
+
+.warn-lm-message .warn-card .block-title {
+    background: var(--color-warm-2);
+}
+
+.dice-roll, .message-timestamp {
+    font-family: var(--font-label), "serif";
+}
+
+.roll-event-message .label {
+    font-family: var(--font-label), "serif";
+}
+
+.roll-event-message .roll-event-message-body .event-attribute-row .value {
+    font-weight: unset;
+}
+
+.chat-message h1, .dice-roll h2, .dice-roll h3, .dice-roll h4, .dice-roll h5, .dice-roll h6{
+    font-weight: unset;
+}
+
+.chat-message h1 {
+    font-family: var(--font-h1-bold), "serif";
+}
+
+.chat-message h2 {
+    font-family: var(--font-h2-bold), "serif";
+}
+
+.chat-message h3 {
+    font-family: var(--font-h3-bold), "serif";
+}
+
+.chat-message h4 {
+    font-family: var(--font-h4-bold), "serif";
+}
+
+.chat-message h5 {
+    font-family: var(--font-h5-bold), "serif";
+}
+
+.chat-message h6 {
+    font-family: var(--font-h6-bold), "serif";
+}
+
+.roll-message-body .roll-information-row .value {
+    background: var(--color-bg-light);
+}
+
+.dice-roll .dice-formula, .dice-roll .dice-total {
+    background: var(--color-bg-light);
+}
+
+li.roll-characteristic.active.positive {
+    font-family: var(--font-label), "serif";
+    color: var(--color-level-success-border);
+}
+
+li.roll-characteristic.active.negative {
+    font-family: var(--font-label), "serif";
+    color: var(--color-warm-2);
+}
+
+.dice-tooltip .part-header .part-formula,
+.formula p.label,
+.roll-characteristic-card p.label,
+.roll-combat-card p.label,
+.dice-tooltip .part-header .part-total {
+    font-weight: unset;
+}
+
+.dice-roll .dice-total {
+    font-size: var(--font-size-15);
+}
+
+/*
+.dice-roll, .message-timestamp, .message-delete{
+    color: var(--color-text-dark-header);
+}
+*/
+
+.roll-message-body .roll-information-row .label, .formula p.label,
+.roll-characteristic-card p.label, .roll-combat-card p.label {
+    background: var(--color-text-dark-header);
+}
+
+.dice-result .dice-formula, .dice-result .dice-total {
+    border: none;
+    cursor: pointer
+}
+
+.display-description-message .display-description-message-header .summary .block .title {
+    background: var(--color-text-dark-header);
+    font-family: var(--font-label), "serif";
+}
+
+.display-description-message .display-description-message-header .summary .block .value {
+    padding-left: 0.2em;
+    background: var(--color-bg-light);
+    font-family: var(--font-label), "serif";
+    text-align: center;
+}
+
+.tor2e-chatreports-endurance-box-endurance {
+ background-color: var(--color-border-dark-4) !important;
+}
+
+.display-description-message .display-description-message-body {
+    background: var(--color-bg-light);
+    border: unset;
+}
+
+
+/* Journal */
+
+.journal-sheet h1, .journal-sheet h2, .journal-sheet h3, .journal-sheet h4, .journal-sheet h5, .journal-sheet h6 {
+    border-bottom: none;
+}
+
+.journal-sheet .window-content {
+    background: var(--color-light-1) url(img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.journal-page-content h3 {
+    font-family: NewBaskervilleBold, "serif";
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.journal-sidebar h1 {
+    color: var(--color-warm-2);
+}
+
+.journal-page-content h1, .journal-page-content h3, .journal-page-content h5,
+.journal-page-header h1, .journal-page-header h3, .journal-page-header h5, .page-heading,
+.journal-header .title {
+    color: var(--color-text-dark-header);
+}
+
+.journal-page-content h2, .journal-page-content h4, .journal-page-content h6,
+.journal-page-header h2, .journal-page-header h4, .journal-page-header h6{
+    color: var(--color-warm-2);
+}
+
+.journal-sheet .journal-header .title {
+    background: none;
+    border: none;
+    font-family: var(--font-h1), "serif";
+    font-size: var(--font-size-24);
+}
+
+.sheet.journal-entry .journal-entry-content {
+    flex: 1;
+    height: 100%;
+    background: var(--color-light-1) url(img/tor_bg.png) no-repeat;
+    background-size: cover;
+    border: 2px solid #000;
+    border-radius: 6px 0 0 0;
+    padding: 0 5px;
+    font-size: var(--font-size-15);
+    text-align: justify;
+}
+
+.journal-sheet .pages-list > *{
+    font-size: var(--font-size-15);
+}
+
+.sheet.journal-entry .journal-sidebar {
+    background: var(--color-light-1) url(img/tor_bg.png) no-repeat;
+    background-size: cover;
+    color: var(--color-text-dark-primary);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    font-family: var(--font-label), "serif";
+    /*font-weight: unset;*/
+}
+
+.journal-entry-content .journal-entry-pages {
+    padding-left: 3px
+}
+
+.journal-entry-content .journal-entry-pages img {
+    border: none
+}
+
+.sheet.journal-entry .pages-list .directory-item {
+    border-bottom: none;
+}
+
+.sheet.journal-entry .pages-list .page-heading .page-title:hover {
+    cursor: pointer;
+    color: var(--color-warm-2);
+    text-shadow: none
+}
+
+.journal-page-content pre {
+    display: block;
+    unicode-bidi: unset;
+    white-space: unset;
+    margin: 1em 0;
+}
+
+pre {
+    font-family: var(--font-monospace), "serif";
+}
+
+.journal-page-content blockquote {
+    font-family: var(--font-blockquote), "serif";
+    font-style: unset;
+    border-left: 3px solid var(--color-border-light-tertiary);
+    border-right: 3px solid var(--color-border-light-tertiary);
+}
+
+.journal-page-content blockquote {
+    color: var(--color-text-dark-blockquote);
+}
+
+.journal-page-content blockquote {
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.journal-page-content blockquote::before,
+.journal-page-content blockquote::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.journal-page-content blockquote::before {
+    left: 0;
+    background-image: url(img/tor_border_left.png);
+}
+
+.journal-page-content blockquote::after {
+    right: 0;
+    background-image: url(img/tor_border_right.png);
+}
+
+.journal-page-content pre code {
+    font-family: var(--font-code), "serif";
+    color: var(--color-text-dark-code);
+    letter-spacing: 0.08125em;
+    font-size: var(--font-size-13);
+}
+
+.journal-page-content code {
+    position: relative;
+    display: block; /* Ensure it takes full width */
+    padding: 45px 20px;
+}
+
+.journal-page-content code::before,
+.journal-page-content code::after {
+    content: "";
+    position: absolute;
+    left: 50%;  /* Start positioning from the center */
+    transform: translateX(-50%); /* Shift the image back by half its width */
+    width: 350px;
+    height: 36px; /* Adjust based on image height */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.journal-page-content code::before {
+    top: 0;
+    background-image: url(img/tor_border_top.png); /* Top border image */
+}
+
+.journal-page-content code::after {
+    bottom: 0;
+    background-image: url(img/tor_border_bottom.png); /* Bottom border image */
+}
+
+/* TOR2e System */
+
+.tor2e.sheet .window-content {
+    background: var(--color-light-1) url(img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.tor2e.sheet .sheet-container img.background {
+    opacity: 0.04;
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper, .tor2e.sheet.actor .sheet-content .main-stat .item-value {
+    border: 4px double var(--color-warm-2);
+    background: var(--color-bg-light);
+    font-size: var(--font-size-20);
+    color: var(--color-warm-2);
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper input,
+.tor2e.sheet.actor .sheet-content .main-stat .item-value input,
+.tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .item-value .input-stat-value {
+    font-size: var(--font-size-20);
+    background: unset;
+    color: var(--color-warm-2);
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .computed > .main-stat-value {
+    background: var(--color-bg-light);
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .input-stat-wrapper input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .input-stat-wrapper input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-value input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .input-stat-wrapper .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .input-stat-wrapper .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-value .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value .input-stat-value {
+    font-size: var(--font-size-13);
+    background: unset;
+    color: var(--color-warm-2);
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .input-stat-wrapper,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .input-stat-wrapper,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value {
+    background: var(--color-bg-light);
+    border: 2px solid var(--color-warm-2);
+    font-size: var(--font-size-13);
+    color: var(--color-warm-2);
+}
+
+.tor2e.sheet.actor .skill-element-row .skill-display-element-full {
+    background-color: var(--color-warm-2);
+}
+
+.tor2e.sheet.actor .skill-element-row > * {
+    border: 1px solid var(--color-warm-2);
+}
+
+.tor2e.sheet.actor h2 {
+    color: var(--color-warm-2);
+    font-size: var(--font-size-14);
+    font-family: var(--font-h1-bold), "serif";
+}
+
+.tor2e.sheet input,  .tor2e.sheet select {
+    font-family: var(--font-label), "serif";
+    color: var(--color-warm-2);
+    background: unset;
+}
+
+.tor2e.sheet .skill-card-component .identification a.skill-name {
+    /*font-family: var(--font-label), "serif";*/
+}
+
+.tor2e.sheet .skill-card-component .identification a.skill-name.active {
+    font-family: var(--font-label), "serif";
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .main-stat-value .main-stat-label {
+    left: -2em;
+    color: var(--color-warm-2);
+}
+
+.tor2e.sheet .biography-element span, .tor2e.sheet .main-stat {
+    font-family: var(--font-label), "serif";
+}
+
+.tor2e.sheet h1 input {
+    font-family: var(--font-h1), "serif";
+    font-size: var(--font-size-18);
+    color: var(--color-text-dark-header);
+}
+
+.tor2e.sheet.actor .sheet-header img {
+    border: 5px double darkgray;
+    background: var(--color-bg-light);
+    padding: 2px 0;
+}
+
+.tor2e.sheet .table-caption-row {
+    background: var(--color-bg-light);
+}
+
+.tor2e.sheet .collapsibleList {
+    background: var(--color-bg-light);
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat {
+    padding-right: 5px;
+}
+
+.tor2e.sheet div.editor-container-toggelable.show {
+    padding-top: 10px;
+}
+
+.tor2e.sheet.actor .section.main-section .active-effect-row {
+    background: var(--color-bg-light);
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat label,
+.tor2e.sheet.actor .sheet-content .main-stat .label,
+
+.tor2e.sheet.actor .section h4 {
+    font-family: var(--font-h2-bold), "serif" !important;
+    font-weight: unset;
+    font-size: var(--font-size-14);
+    color: var(--color-text-dark-header);
+}
+
+#roll-dialog-window h4 {
+    font-family: var(--font-h4-bold), "serif" !important;
+    font-size: var(--font-size-13);
+    color: var(--color-warm-2);
+}
+
+#roll-dialog-window .hint {
+    font-family: var(--font-label), "serif" !important;
+}
+
+.tor2e.sheet .collapsibleList li .skill-item-row .identification a,
+.tor2e.sheet .connectionsList li .skill-item-row .identification a,
+.tor2e.sheet .collapsibleList li .list-actor-row .identification a,
+.tor2e.sheet .connectionsList li .list-actor-row .identification a,
+.tor2e.sheet .collapsibleList li .skill-item-row .identification p,
+.tor2e.sheet .connectionsList li .skill-item-row .identification p,
+.tor2e.sheet .collapsibleList li .list-actor-row .identification p,
+.tor2e.sheet .connectionsList li .list-actor-row .identification p {
+    font-family: var(--font-label), "serif";
+    font-weight: unset;
+}
+
+.tor2e.sheet.actor .table-caption {
+    font-family: var(--font-label), "serif";
+    font-weight: unset;
+}
+
+.tor2e.sheet .trait-item h3 {
+    font-size: var(--font-size-14);
+    padding-top: 11px;
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat label,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item label {
+    font-size: var(--font-size-5);
+    color: var(--color-warm-2);
+    left: 3.5em;
+    top: -1.5em;
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat label {
+    font-size: var(--font-size-5);
+    color: var(--color-warm-2);
+    right: -9.8em;
+    top: -1.8em;
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .item-name {
+    font-size: var(--font-size-12);
+    color: var(--color-warm-2);
+    font-family: var(--font-label), "serif";
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-name, .tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-name {
+    font-size: var(--font-size-12);
+    color: var(--color-warm-2);
+    font-family: var(--font-label), "serif";
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .item-name p {
+    margin-left: 0.1em;
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat label, .tor2e.sheet.actor .sheet-content .main-stat .label {
+    margin-bottom: 0.7em;
+}
+
+.tor2e.sheet.actor .biography-element {
+    flex: 2;
+}
+
+.tor2e.sheet h2 {
+    font-size: var(--font-size-16);
+}
+
+.tor2e.sheet.actor .hostile-friendly {
+    font-family: var(--font-label), "serif";
+}
+
+.popup .content .hope .actor-stats span.label {
+    color: var(--color-warm-2);
+}
+
+.tor2e.sheet.actor .rest-actions .rest-action p,
+.tor2e.sheet.actor .section .active-effect .label {
+    font-family: var(--font-label), "serif";
+}
+
+.tor2e.sheet.actor .actor-row {
+    background: var(--color-bg-light);
+}
+
+.tor2e.sheet.journey-log h2 {
+    color: var(--color-warm-2);
+    font-size: var(--font-size-14);
+}
+
+.tor2e.sheet.item.journey-log .table-heading {
+    font-family: var(--font-label), "serif";
+}
+
+.roll-event-message h4 {
+    font-family: var(--font-label), "serif";
+    background-color: var(--color-text-dark-header);
+    font-size: var(--font-size-14);
+}
+
+.roll-event-message .roll-event-message-body {
+    background: var(--color-bg-light);
+    border: 0;
+}
+
+.popup .form-group .label, .popup .form-group label {
+    font-family: var(--font-label), "serif";
+    color: var(--color-warm-2);
+}
+
+.failure {
+    color: var(--color-warm-2);
+}
+
+.success {
+    color: var(--color-level-success-border);
+}
+
+.slider {
+    color: var(--color-level-success-border);
+}
+
+input:checked + .slider {
+    background-color: var(--color-warm-2);
+}
+
+/* TOR2e Compendium and Macro-bar */
+
+.tor2e-cb-text {
+    font-family: var(--font-label), "serif";
+}
+
+.tor2e-chatreports-titre, .tor2e-chatreports-th {
+    font-family: var(--font-label), "serif";
+    background-color: var(--color-text-dark-header);
+    text-align: center;
+    font-size: var(--font-size-14);
+}
+
+
+
+
+
+
