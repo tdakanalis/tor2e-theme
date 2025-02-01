@@ -1,0 +1,18 @@
+---
+version: "3.8"
+
+services:
+  foundry:
+    image: felddy/foundryvtt:release
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    volumes:
+      - ../data:/data
+      - ../:/data/Data/modules/tor2e-theme
+    environment:
+      - FOUNDRY_PASSWORD=${FOUNDRY_PASSWORD:-test}
+      - FOUNDRY_USERNAME=${FOUNDRY_USERNAME:-test}
+      - FOUNDRY_ADMIN_KEY=${FOUNDRY_ADMIN_KEY:-test}
+    ports:
+      - "30000:30000"
