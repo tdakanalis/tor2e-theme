@@ -1,0 +1,25 @@
+#weather-control-container .calendar-header,
+#weather-control-container .time-controls li {
+    background: var(--color-text-dark-1) !important;
+}
+
+#weather-control-container .time-controls li {
+    color: white !important;
+}
+
+#weather-control-container {
+    background: var(--color-text-dark-primary);
+}
+
+#calendar-time {
+    font-family: var(--font-h1), "serif";
+}
+
+#weather-control-container #window-move-handle,
+#weather-control-container #date-display h2 {
+    font-size: var(--font-size-12) !important;
+}
+
+#weather-control-container .time-display .time {
+    font-size: var(--font-size-14) !important;
+}

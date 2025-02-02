@@ -1,0 +1,19 @@
+.tor2e-cb-text {
+    font-family: var(--font-label), "serif";
+}
+
+.tor2e-chatreports-titre, .tor2e-chatreports-th {
+    font-family: var(--font-label), "serif";
+    background-color: var(--color-text-dark-header);
+    text-align: center;
+    font-size: var(--font-size-14);
+}
+
+.tor2e-macrobar-macrogroup-title {
+    font-family: var(--font-label), "serif";
+}
+
+.tor2e-macrobar-window .window-header {
+    background-color: var(--color-warm-2);
+    background-image: unset;
+}

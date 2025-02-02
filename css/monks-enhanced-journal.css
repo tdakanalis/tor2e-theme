@@ -1,0 +1,43 @@
+body {
+    --mej-background: var(--color-light-1)
+}
+
+:root {
+    --mej-header-border-color: var(--color-border-dark-3);
+}
+
+.monks-enhanced-journal .enhanced-journal .journal-sheet-container .sidebar.directory,
+.monks-enhanced-journal .sheet.journal-entry .pages-list .directory-item.active,
+.monks-enhanced-journal .enhanced-journal .sheet.journal-entry .journal-entry-content {
+    background: var(--color-light-1) url(../img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.monks-enhanced-journal .enhanced-journal-header .bookmark-bar .bookmark-button > div {
+    font-family: var(--font-label), "serif";
+}
+
+.monks-enhanced-journal {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    border-bottom: inherit;
+}
+
+.monks-enhanced-journal .sheet.journal-entry .journal-entry-page header.journal-page-header h1 {
+    font-size: var(--font-h1-size);
+    font-family: var(--font-h1), "serif";
+    font-weight: unset;
+}
+
+.monks-enhanced-journal .enhanced-journal-header {
+    background: var(--color-light-1) url(../img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.monks-enhanced-journal .enhanced-journal-header .navigation {
+    background: unset
+}
+
+
+

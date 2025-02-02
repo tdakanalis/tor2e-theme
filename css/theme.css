@@ -1,0 +1,224 @@
+@font-face {
+    font-family: Aniron;
+    src: url(../fonts/Aniron.ttf)
+}
+
+@font-face {
+    font-family: AnironBold;
+    src: url(../fonts/AnironBold.ttf)
+}
+
+@font-face {
+    font-family: NewBaskerville;
+    src: url(../fonts/NewBaskerville.ttf)
+}
+
+@font-face {
+    font-family: NewBaskervilleBold;
+    src: url(../fonts/NewBaskervilleBold.ttf)
+}
+
+@font-face {
+    font-family: NewBaskervilleItalic;
+    src: url(../fonts/NewBaskervilleItalic.ttf)
+}
+
+@font-face {
+    font-family: NewBaskervilleBoldItalic;
+    src: url(../fonts/NewBaskervilleBoldItalic.ttf)
+}
+
+@font-face {
+    font-family: MinionPro;
+    src: url(../fonts/MinionProRegular.ttf)
+}
+
+@font-face {
+    font-family: NiveauGroteskMedium;
+    src: url(../fonts/NiveauGroteskMedium.otf);
+}
+
+
+
+/* ---------------------------------------- */
+/*  Colors                                  */
+/* ---------------------------------------- */
+body {
+    --color-warm-1: #e07060;
+    --color-warm-2: #bc483b;
+    --color-warm-3: #ac323b;
+
+    --color-cool-3: #7a5a46;
+    --color-cool-4: #543b28;
+    --color-cool-5: #1d1918;
+
+    --color-cool-5-25: rgba(29, 25, 24, 0.25);
+    --color-cool-5-50: rgba(29, 25, 24, 0.5);
+    --color-cool-5-75: rgba(29, 25, 24, 0.75);
+    --color-cool-5-90: rgba(29, 25, 24, 0.9);
+
+    --color-light-1: #fffbf3;
+    --color-light-2: #f3e9df;
+    --color-light-3: #e6d9cc;
+    --color-light-4: #d4c5b6;
+    --color-light-5: #ba9a94;
+    --color-light-6: #a99786;
+
+    --color-dark-1: #3e2a1e;
+    --color-dark-2: #4a3426;
+    --color-dark-3: #5e4230;
+    --color-dark-4: #70523c;
+    --color-dark-5: #84644a;
+    --color-dark-6: #9b7c66;
+
+    --color-level-error: #bc483b;
+    --color-level-error-bg: rgba(188, 72, 59, 0.8);
+    --color-level-error-border: #7a3a60;
+
+    --color-level-info: #7a5a46;
+    --color-level-info-bg: rgba(122, 90, 70, 0.8);
+    --color-level-info-border: #543b28;
+
+    --color-level-success: #3b7a48;
+    --color-level-success-bg: rgba(59, 122, 72, 0.8);
+    --color-level-success-border: #2e5c38;
+
+    --color-level-warning: #e07060;
+    --color-level-warning-bg: rgba(224, 112, 96, 0.8);
+    --color-level-warning-border: #bc483b;
+
+    --color-scrollbar: #bc483b;
+    --color-scrollbar-track: transparent;
+    --color-scrollbar-border: #e07060;
+
+    --color-text-selection: #ffede0;
+    --color-text-selection-bg: #7a5a46;
+}
+
+
+/* ---------------------------------------- */
+/*  Typography                              */
+/* ---------------------------------------- */
+body {
+    --font-body: NewBaskerville, "Palatino Linotype", sans-serif;
+    --font-label: NewBaskervilleBold, "Palatino Linotype", sans-serif;
+    --font-notes: NewBaskerville, "Palatino Linotype", sans-serif;
+    --font-monospace: MinionPro, "Palatino Linotype", sans-serif;
+    --font-blockquote: NewBaskerville, "Palatino Linotype", sans-serif;
+    --font-code: NiveauGroteskMedium, "Palatino Linotype", sans-serif;
+    --font-awesome: "Font Awesome 6 Pro";
+    --font-awesome-duotone: "Font Awesome 6 Duotone";
+    --font-size-5: 0.4rem;
+    --font-size-6: 0.5rem;
+    --font-size-8: 0.6rem;
+    --font-size-10: 0.625rem;
+    --font-size-11: 0.6875rem;
+    --font-size-12: 0.75rem;
+    --font-size-13: 0.8125rem;
+    --font-size-14: 0.875rem;
+    --font-size-15: 0.9375rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+    --font-size-28: 1.75rem;
+    --font-size-32: 2rem;
+    --font-size-36: 2.25rem;
+    --font-size-48: 3rem;
+    --font-size-64: 4rem;
+    --font-size-80: 5rem;
+    --font-h1: Aniron, serif;
+    --font-h2: Aniron, serif;
+    --font-h3: Aniron, serif;
+    --font-h4: Aniron, serif;
+    --font-h5: Aniron, sans-serif;
+    --font-h6: Aniron, serif;
+    --font-h1-bold: AnironBold, serif;
+    --font-h2-bold: AnironBold, serif;
+    --font-h3-bold: AnironBold, serif;
+    --font-h4-bold: AnironBold, serif;
+    --font-h5-bold: AnironBold, serif;
+    --font-h6-bold: AnironBold, serif;
+    --font-h1-size: var(--font-size-20);
+    --font-h2-size: var(--font-size-18);
+    --font-h3-size: var(--font-size-16);
+    --font-h4-size: var(--font-size-12);
+    --font-h5-size: var(--font-size-10);
+    --font-h6-size: var(--font-size-10);
+}
+
+:root {
+    --color-text-light-highlight: #fffbf3;
+    --color-text-light-heading: #e6d9cc;
+    --color-text-light-primary: #d4c5b6;
+    --color-text-dark-primary: #1d1918;
+    --color-text-dark-secondary: #1d1918;
+    --color-text-dark-blockquote: #3e2a1e;
+    --color-text-dark-code: #543b28;
+    --color-text-dark-header: #543b28;
+    --color-text-dark-inactive: #ba9a94;
+    --color-text-hyperlink: #bc483b;
+    --color-text-selection: #ffede0;
+    --color-text-selection-bg: #7a5a46;
+
+    --color-text-light-0: #fffbf3;
+    --color-text-light-1: #f3e9df;
+    --color-text-light-2: #e6d9cc;
+    --color-text-light-3: #d4c5b6;
+    --color-text-light-4: #ba9a94;
+    --color-text-light-5: #a99786;
+    --color-text-light-6: #937f71;
+    --color-text-light-7: #7c695d;
+
+    --color-text-dark-1: #3e2a1e;
+    --color-text-dark-2: #4a3426;
+    --color-text-dark-3: #5e4230;
+    --color-text-dark-4: #70523c;
+    --color-text-dark-5: #84644a;
+    --color-text-dark-6: #9b7c66;
+
+    --color-border-light-1: #e6d9cc;
+    --color-border-light-2: #ba9a94;
+    --color-border-dark-1: #3e2a1e;
+    --color-border-dark-2: #4a3426;
+    --color-border-dark-3: #5e4230;
+    --color-border-dark-4: #70523c;
+    --color-border-dark-5: #84644a;
+
+    --color-shadow-primary: #bc483b;
+    --color-shadow-highlight: #e07060;
+    --color-shadow-dark: #1d1918;
+
+    --color-underline-inactive: #ba9a94;
+    --color-underline-active: #7a5a46;
+    --color-underline-header: #bc483b;
+
+    --color-border-light-highlight: #fffbf3;
+    --color-border-light-primary: #d4c5b6;
+    --color-border-light-secondary: #e6d9cc;
+    --color-border-light-tertiary: #ba9a94;
+
+    --color-border-dark: #3e2a1e;
+    --color-border-dark-primary: #543b28;
+    --color-border-dark-secondary: #5e4230;
+    --color-border-dark-tertiary: #7a5a46;
+
+    --color-border-highlight: #bc483b;
+    --color-border-highlight-alt: #e07060;
+
+    --color-bg-light: rgba(84, 59, 40, 0.05);
+    --color-bg-btn-minor-inactive: #ba9a94;
+    --color-bg-btn-minor-active: #d4c5b6;
+    --color-select-option-bg: #f3e9df;
+    --color-checkbox-checked: #7a5a46;
+
+    --color-ownership-none: #7a3a60;
+    --color-ownership-observer: #ba9a94;
+    --color-ownership-owner: #d4c5b6;
+
+    --color-scrollbar: #AC323BFF;
+    --color-scrollbar-track: transparent;
+    --color-scrollbar-border: #e07060;
+
+    --font-primary: NewBaskerville, sans-serif;
+}

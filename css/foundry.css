@@ -1,0 +1,517 @@
+h1 {
+    font-size: var(--font-h1-size);
+    font-family: var(--font-h1), "serif";
+}
+
+h2 {
+    font-size: var(--font-h2-size);
+    font-family: var(--font-h2), "serif";
+}
+
+h3 {
+    font-size: var(--font-h3-size);
+    font-family: var(--font-h3), "serif";
+}
+
+h4 {
+    font-size: var(--font-h4-size);
+    font-family: var(--font-h4), "serif";
+}
+
+h5 {
+    font-size: var(--font-h5-size);
+    font-family: var(--font-h5), "serif";
+}
+
+h6 {
+    font-size: var(--font-h6-size);
+    font-family: var(--font-h6), "serif";
+}
+
+body, textarea {
+    line-height: 1.5;
+    font-family: var(--font-body), "serif";
+}
+
+form .notes, form .hint {
+    line-height: inherit;
+}
+
+label, select, button, .category-tab, #game-details, .key {
+    font-family: var(--font-label), "serif" !important;
+}
+
+input:not(:is(.journal-header, .tor2e.sheet) input) {
+    font-family: var(--font-label), "serif" !important;
+}
+
+#support-details a {
+    font-family: var(--font-label), "serif";
+}
+
+#tooltip, #pause {
+    font-family: var(--font-h4), "serif";
+    font-size: var(--font-size-11);
+    font-weight: normal !important;
+}
+
+a.scene-name {
+    font-family: var(--font-h4), "serif";
+    font-size: var(--font-h4-size);
+}
+
+.notes, .hint {
+    font-family: var(--font-notes), "serif";
+}
+
+.window-app .window-header a {
+    font-family: var(--font-label), "serif";
+}
+
+body, textarea, input, button, select {
+    color: var(--color-text-dark-primary);
+}
+
+button {
+    background-color: var(--color-light-1);
+}
+
+textarea:focus, input:focus {
+    outline: 2px solid var(--color-warm-2);
+}
+
+form .notes, form .hint, .package-configuration aside.sidebar {
+    font-size: var(--font-size-14);
+}
+
+.tabs .item {
+    font-family: var(--font-label), "serif";
+}
+
+.tabs .item.active {
+    text-shadow: none;
+    color: var(--color-warm-2);
+    border-bottom: 2px solid var(--color-warm-2);
+    margin-bottom: -4px;
+}
+
+select:focus {
+    box-shadow: none;
+    border: 1px solid var(--color-warm-2)
+}
+
+.window-content h1, .window-content h2, .window-content h3,
+.window-content h4, .window-content h5, .window-content h6 {
+    color: var(--color-text-dark-header);
+}
+
+.window-content:not(:is(.tor2e-cb-window-horizontal, #macros-popout, .journal-sheet, .tor2e-macrobar-window) .window-content) {
+    background: var(--color-light-1) url(../img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.macros-sidebar h1, .macros-sidebar h2, .macros-sidebar h3,
+.macros-sidebar h4, .macros-sidebar h5, .macros-sidebar h6 {
+    color: inherit;
+}
+
+/* Sidebar */
+li.folder > .folder-header h1 {
+    font-size: var(--font-size-16);
+}
+
+li.folder > .folder-header h2 {
+    font-size: var(--font-size-14);
+}
+
+li.folder > .folder-header h3 {
+    font-size: var(--font-size-12);
+}
+
+li.folder > .folder-header h4 {
+    font-size: var(--font-size-10);
+}
+
+li.folder > .folder-header h5 {
+    font-size: var(--font-size-10);
+}
+
+li.folder > .folder-header h6 {
+    font-size: var(--font-size-10);
+}
+
+.sidebar-tab .directory-header .header-search input {
+    background: var(--color-light-1);
+}
+
+#sidebar-tabs {
+    --sidebar-tab-height: 32px;
+    --sidebar-tab-width: 24px;
+    flex: 0 0 var(--sidebar-tab-height);
+    box-sizing: border-box;
+    margin: 0 0 5px;
+    border-bottom: unset;
+    box-shadow: unset;
+}
+
+#sidebar-tabs > .item.active {
+    border: none;
+    border-bottom: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: var(--color-warm-2);
+    border-bottom: 2px solid var(--color-warm-2);
+    margin-bottom: -4px
+}
+
+/* Chat */
+
+#chat-form textarea {
+    background: var(--color-light-1) url(../img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.chat-message, .chat-message.whisper {
+    background: var(--color-light-1) url(../img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+#chat-controls .roll-type-select {
+    background: var(--color-light-1)
+}
+
+#chat-log .message {
+    border: 2px solid var(--color-border-dark) !important;
+}
+
+.message-sender {
+    color: var(--color-warm-2);
+}
+
+.warn-lm-message .warn-card .block-title {
+    background: var(--color-warm-2);
+}
+
+.dice-roll, .message-timestamp {
+    font-family: var(--font-label), "serif";
+}
+
+.roll-event-message .label {
+    font-family: var(--font-label), "serif";
+}
+
+.roll-event-message .roll-event-message-body .event-attribute-row .value {
+    font-weight: unset;
+}
+
+.chat-message h1, .dice-roll h2, .dice-roll h3, .dice-roll h4, .dice-roll h5, .dice-roll h6{
+    font-weight: unset;
+}
+
+.chat-message h1 {
+    font-family: var(--font-h1-bold), "serif";
+}
+
+.chat-message h2 {
+    font-family: var(--font-h2-bold), "serif";
+}
+
+.chat-message h3 {
+    font-family: var(--font-h3-bold), "serif";
+}
+
+.chat-message h4 {
+    font-family: var(--font-h4-bold), "serif";
+    padding-bottom: 0.625em;
+}
+
+.chat-message h5 {
+    font-family: var(--font-h5-bold), "serif";
+}
+
+.chat-message h6 {
+    font-family: var(--font-h6-bold), "serif";
+}
+
+.roll-message-body .roll-information-row {
+    background: var(--color-bg-light);
+}
+
+.roll-message-body .roll-information-row .value {
+    background: unset;
+}
+
+.dice-roll .dice-formula, .dice-roll .dice-total {
+    background: var(--color-bg-light);
+}
+
+section.secret {
+    background: var(--color-bg-light);
+}
+
+li.roll-characteristic.active.positive {
+    font-family: var(--font-label), "serif";
+    color: var(--color-level-success-border);
+}
+
+li.roll-characteristic.active.negative {
+    font-family: var(--font-label), "serif";
+    color: var(--color-warm-2);
+}
+
+.dice-tooltip .part-header .part-formula,
+.formula p.label,
+.roll-characteristic-card p.label,
+.roll-combat-card p.label,
+.dice-tooltip .part-header .part-total {
+    font-weight: unset;
+}
+
+.dice-roll .dice-total, .treasure-header {
+    font-size: var(--font-size-15);
+    color: var(--color-text-dark-header);
+}
+
+/*
+.dice-roll, .message-timestamp, .message-delete{
+    color: var(--color-text-dark-header);
+}
+*/
+
+.roll-message-body .roll-information-row .label, .formula p.label,
+.roll-characteristic-card p.label, .roll-combat-card p.label,
+.damage-card .block-title, .warn-card .block-title {
+    background: var(--color-text-dark-header);
+}
+
+.damage-card .block-title, .warn-card .block-title, .damage-card a {
+    font-family: var(--font-label), "serif";
+}
+
+.damage-card .block-content a, .warn-card .block-content a {
+    background: var(--color-bg-light);
+}
+
+.dice-result .dice-formula, .dice-result .dice-total {
+    border: none;
+    cursor: pointer
+}
+
+.display-description-message .display-description-message-header .summary .block .title {
+    background: var(--color-text-dark-header);
+    font-family: var(--font-label), "serif";
+}
+
+.display-description-message .display-description-message-header .summary .block .value {
+    padding-left: 0.2em;
+    background: var(--color-bg-light);
+    font-family: var(--font-label), "serif";
+    text-align: center;
+}
+
+.tor2e-chatreports-endurance-box-endurance {
+    background-color: var(--color-border-dark-4) !important;
+}
+
+.display-description-message .display-description-message-body {
+    background: var(--color-bg-light);
+    border: unset;
+}
+
+
+/* Journal */
+
+.journal-sheet h1, .journal-sheet h2, .journal-sheet h3, .journal-sheet h4, .journal-sheet h5, .journal-sheet h6 {
+    border-bottom: none;
+}
+
+.journal-sheet .window-content {
+    background: var(--color-light-1) url(../img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.journal-page-content h3 {
+    font-family: NewBaskervilleBold, "serif";
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.journal-sidebar h1 {
+    color: var(--color-warm-2);
+}
+
+.journal-page-content h1, .journal-page-content h3, .journal-page-content h5,
+.journal-page-header h1, .journal-page-header h3, .journal-page-header h5, .page-heading,
+.journal-header .title {
+    color: var(--color-text-dark-header);
+}
+
+.journal-page-content h2, .journal-page-content h4, .journal-page-content h6,
+.journal-page-header h2, .journal-page-header h4, .journal-page-header h6{
+    color: var(--color-warm-2);
+}
+
+.journal-sheet .journal-header .title {
+    background: none;
+    border: none;
+    font-family: var(--font-h1), "serif";
+    font-size: var(--font-size-24);
+}
+
+.sheet.journal-entry .journal-entry-content {
+    flex: 1;
+    height: 100%;
+    background: var(--color-light-1) url(../img/tor_bg.png) no-repeat;
+    background-size: cover;
+    border: 2px solid var(--color-border-dark);
+    border-radius: 6px 0 0 0;
+    padding: 0 5px;
+    font-size: var(--font-size-15);
+    text-align: justify;
+}
+
+.journal-sheet .pages-list > *{
+    font-size: var(--font-size-15);
+}
+
+.sheet.journal-entry .journal-sidebar {
+    background: var(--color-light-1) url(../img/tor_bg.png) no-repeat;
+    background-size: cover;
+    color: var(--color-text-dark-primary);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    font-family: var(--font-label), "serif";
+    /*font-weight: unset;*/
+}
+
+.journal-entry-content .journal-entry-pages {
+    padding-left: 3px
+}
+
+.journal-entry-content .journal-entry-pages img {
+    border: none
+}
+
+.sheet.journal-entry .pages-list .directory-item {
+    border-bottom: none;
+}
+
+.sheet.journal-entry .pages-list .page-heading .page-title:hover {
+    cursor: pointer;
+    color: var(--color-warm-2);
+    text-shadow: none
+}
+
+.journal-page-content pre {
+    display: block;
+    unicode-bidi: unset;
+    white-space: unset;
+    margin: 1em 0;
+}
+
+pre {
+    font-family: var(--font-monospace), "serif";
+}
+
+.editor-content * {
+    text-align: justify;
+}
+
+.editor-container .editor-content blockquote,
+.journal-sheet blockquote {
+    position: relative;
+    font-family: var(--font-blockquote), "serif";
+    font-style: unset;
+    color: var(--color-text-dark-blockquote);
+    margin: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 20px;
+}
+
+.editor-container .editor-content blockquote::before,
+.journal-sheet blockquote::before,
+.editor-container .editor-content blockquote::after,
+.journal-sheet blockquote::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 40%;
+    transform: translateY(-50%);
+    background-position: center;
+}
+
+.community .editor-container .editor-content blockquote::before,
+.community .editor-container .editor-content blockquote::after {
+    top: 60%;
+}
+
+.editor-edit {
+    z-index: 1;
+}
+
+.editor-container .editor-content blockquote::before,
+.journal-sheet blockquote::before {
+    left: 0;
+    background-image: url(../img/tor_border_left.png);
+}
+
+.editor-container .editor-content blockquote::after,
+.journal-sheet blockquote::after {
+    right: 0;
+    background-image: url(../img/tor_border_right.png);
+}
+
+.journal-page-content code,
+.editor-container .editor-content code {
+    font-family: var(--font-code), "serif";
+    color: var(--color-text-dark-code);
+    letter-spacing: 0.08125em;
+    font-size: var(--font-size-13);
+}
+
+.journal-page-content code,
+.editor-container .editor-content code {
+    position: relative;
+    display: block; /* Ensure it takes full width */
+    padding: 45px 20px;
+}
+
+.journal-page-content code::before,
+.journal-page-content code::after,
+.editor-container .editor-content code::before,
+.editor-container .editor-content code::after {
+    content: "";
+    position: absolute;
+    left: 50%;  /* Start positioning from the center */
+    transform: translateX(-50%); /* Shift the image back by half its width */
+    width: 350px;
+    height: 36px; /* Adjust based on image height */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.journal-page-content code::before,
+.editor-container .editor-content code:before {
+    top: 0;
+    background-image: url(../img/tor_border_top.png); /* Top border image */
+}
+
+.journal-page-content code::after,
+.editor-container .editor-content code:after {
+    bottom: 0;
+    background-image: url(../img/tor_border_bottom.png); /* Bottom border image */
+}
+
+.application .window-header .window-title {
+    font-family: var(--font-label), "serif";
+}
+
+#players h3 {
+    font-size: var(--font-size-14);
+}
