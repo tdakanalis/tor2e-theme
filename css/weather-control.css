@@ -1,6 +1,6 @@
 #weather-control-container .calendar-header,
 #weather-control-container .time-controls li {
-    background: var(--color-text-dark-1) !important;
+    background: var(--color-text-dark-header) !important;
 }
 
 #weather-control-container .time-controls li {
