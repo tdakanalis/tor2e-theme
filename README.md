@@ -25,6 +25,10 @@ A Foundry VTT theme for The One Ring 2nd Edition. It applies the typography and 
 
 
 # Changelog
-0.1.0 (2025-02-02)
 
-Alpha version with support for the TOR2E system, TOR2E macros, as well as the Monk’s Enhanced Journal and Weather Control plugins.  
+## 0.2.0 (2025-02-03)
+* Optimize the theme for a more compact design, maximizing space efficiency
+* Respect global Foundry UI/UX consistency
+
+## 0.1.0 (2025-02-02)
+Alpha 1 version with support for the TOR2E system, TOR2E macros, as well as the Monk’s Enhanced Journal and Weather Control plugins.  
