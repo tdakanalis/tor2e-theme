@@ -139,12 +139,12 @@ body {
     --font-h4-bold: AnironBold, serif;
     --font-h5-bold: AnironBold, serif;
     --font-h6-bold: AnironBold, serif;
-    --font-h1-size: var(--font-size-20);
-    --font-h2-size: var(--font-size-18);
-    --font-h3-size: var(--font-size-16);
-    --font-h4-size: var(--font-size-12);
+    --font-h1-size: var(--font-size-18);
+    --font-h2-size: var(--font-size-16);
+    --font-h3-size: var(--font-size-15);
+    --font-h4-size: var(--font-size-13);
     --font-h5-size: var(--font-size-10);
-    --font-h6-size: var(--font-size-10);
+    --font-h6-size: var(--font-size-8);
 }
 
 :root {
@@ -206,7 +206,7 @@ body {
     --color-border-highlight: #bc483b;
     --color-border-highlight-alt: #e07060;
 
-    --color-bg-light: rgba(84, 59, 40, 0.05);
+    --color-bg-light: rgba(84, 59, 40, 0.1);
     --color-bg-btn-minor-inactive: #ba9a94;
     --color-bg-btn-minor-active: #d4c5b6;
     --color-select-option-bg: #f3e9df;

@@ -17,9 +17,9 @@
 
 #weather-control-container #window-move-handle,
 #weather-control-container #date-display h2 {
-    font-size: var(--font-size-12) !important;
+    font-size: var(--font-size-11) !important;
 }
 
 #weather-control-container .time-display .time {
-    font-size: var(--font-size-14) !important;
+    font-size: var(--font-size-13) !important;
 }
