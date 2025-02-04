@@ -12,7 +12,7 @@
 }
 
 #calendar-time {
-    font-family: var(--font-h1), "serif";
+    font-family: var(--font-h1), sans-serif;
 }
 
 #weather-control-container #window-move-handle,

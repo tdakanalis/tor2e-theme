@@ -61,21 +61,21 @@
 .tor2e.sheet.actor h2 {
     color: var(--color-warm-2);
     font-size: var(--font-size-14);
-    font-family: var(--font-h1-bold), "serif";
+    font-family: var(--font-h1-bold), sans-serif;
 }
 
 .tor2e.sheet input,  .tor2e.sheet select {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
     color: var(--color-warm-2);
     background: unset;
 }
 
 .tor2e.sheet .skill-card-component .identification a.skill-name {
-    /*font-family: var(--font-label), "serif";*/
+    /*font-family: var(--font-label), sans-serif;*/
 }
 
 .tor2e.sheet .skill-card-component .identification a.skill-name.active {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .tor2e.sheet.actor .sheet-content .main-stat .main-stat-value .main-stat-label {
@@ -84,11 +84,11 @@
 }
 
 .tor2e.sheet .biography-element span, .tor2e.sheet .main-stat {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .tor2e.sheet h1 input {
-    font-family: var(--font-h1), "serif";
+    font-family: var(--font-h1), sans-serif;
     font-size: var(--font-size-18);
     color: var(--color-text-dark-header);
 }
@@ -123,19 +123,19 @@
 .tor2e.sheet.actor .sheet-content .main-stat .label,
 
 .tor2e.sheet.actor .section h4 {
-    font-family: var(--font-h2-bold), "serif" !important;
+    font-family: var(--font-h2-bold), sans-serif !important;
     font-weight: unset;
     font-size: var(--font-size-14);
     color: var(--color-text-dark-header);
 }
 
 #roll-dialog-window h4 {
-    font-family: var(--font-h4-bold), "serif" !important;
+    font-family: var(--font-h4-bold), sans-serif !important;
     color: var(--color-warm-2);
 }
 
 #roll-dialog-window .hint {
-    font-family: var(--font-label), "serif" !important;
+    font-family: var(--font-label), sans-serif !important;
 }
 
 .tor2e.sheet .collapsibleList li .skill-item-row .identification a,
@@ -146,12 +146,12 @@
 .tor2e.sheet .connectionsList li .skill-item-row .identification p,
 .tor2e.sheet .collapsibleList li .list-actor-row .identification p,
 .tor2e.sheet .connectionsList li .list-actor-row .identification p {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
     font-weight: unset;
 }
 
 .tor2e.sheet.actor .table-caption {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
     font-weight: unset;
 }
 
@@ -178,13 +178,13 @@
 .tor2e.sheet.actor .sheet-content .main-stat .item-name {
     font-size: var(--font-size-12);
     color: var(--color-warm-2);
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-name, .tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-name {
     font-size: var(--font-size-12);
     color: var(--color-warm-2);
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .tor2e.sheet.actor .sheet-content .main-stat .item-name p {
@@ -200,7 +200,7 @@
 }
 
 .tor2e.sheet.actor .hostile-friendly {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .popup .content .hope .actor-stats span.label {
@@ -209,7 +209,7 @@
 
 .tor2e.sheet.actor .rest-actions .rest-action p,
 .tor2e.sheet.actor .section .active-effect .label {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .tor2e.sheet.actor .actor-row {
@@ -222,11 +222,11 @@
 }
 
 .tor2e.sheet.item.journey-log .table-heading {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .roll-event-message h4 {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
     background-color: var(--color-text-dark-header);
     font-size: var(--font-size-14);
 }
@@ -237,7 +237,7 @@
 }
 
 .popup .form-group .label, .popup .form-group label {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
     color: var(--color-warm-2);
 }
 

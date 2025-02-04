@@ -1,31 +1,31 @@
 h1 {
     font-size: var(--font-h1-size);
-    font-family: var(--font-h1), "serif";
+    font-family: var(--font-h1), sans-serif;
 }
 
 h2 {
     font-size: var(--font-h2-size);
-    font-family: var(--font-h2), "serif";
+    font-family: var(--font-h2), sans-serif;
 }
 
 h3 {
     font-size: var(--font-h3-size);
-    font-family: var(--font-h3), "serif";
+    font-family: var(--font-h3), sans-serif;
 }
 
 h4 {
     font-size: var(--font-h4-size);
-    font-family: var(--font-h4), "serif";
+    font-family: var(--font-h4), sans-serif;
 }
 
 h5 {
     font-size: var(--font-h5-size);
-    font-family: var(--font-h5), "serif";
+    font-family: var(--font-h5), sans-serif;
 }
 
 h6 {
     font-size: var(--font-h6-size);
-    font-family: var(--font-h6), "serif";
+    font-family: var(--font-h6), sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -33,11 +33,17 @@ h1, h2, h3, h4 {
 }
 
 .sheet.journal-entry .journal-entry-page :is(h1, h2, h3, h4, h5, h6):not(:first-child) {
-    margin-top: 0.2rem;
+    margin-top: 0.7rem;
+}
+
+.sheet.journal-entry .journal-entry-page :is(h5, h6),
+.journal-page-content :is(h5, h6){
+    margin-bottom: 0;
+    margin-top: 0.5rem;
 }
 
 body, textarea {
-    font-family: var(--font-body), "serif";
+    font-family: var(--font-body), sans-serif;
     font-size: var(--font-body-size);
 }
 
@@ -50,18 +56,18 @@ form .notes, form .hint {
 }
 
 label, .category-tab, .key {
-    font-family: var(--font-label), "serif" !important;
+    font-family: var(--font-label), sans-serif !important;
     font-size: var(--font-body-size);
 }
 
 #tooltip, #pause {
-    font-family: var(--font-h4), "serif";
+    font-family: var(--font-h4), sans-serif;
     font-size: var(--font-size-10);
     font-weight: normal !important;
 }
 
 a.scene-name {
-    font-family: var(--font-h6), "serif";
+    font-family: var(--font-h6), sans-serif;
     font-size: var(--font-size-6);
 }
 
@@ -70,7 +76,7 @@ a.scene-name {
 }
 
 .notes, .hint {
-    font-family: var(--font-notes), "serif";
+    font-family: var(--font-notes), sans-serif;
 }
 
 body, textarea, input, button, select {
@@ -90,7 +96,7 @@ form .notes, form .hint, .package-configuration aside.sidebar {
 }
 
 .tabs .item {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .tabs .item.active {
@@ -140,23 +146,23 @@ li.folder > .folder-header h6 {
     font-size: var(--font-size-10);
 }
 
-#sidebar h1, .window-content h1 {
+#sidebar h1, .window-content h1:not(:is(.journal-sheet h1)) {
     font-size: var(--font-size-14);
 }
 
-#sidebar h2, .window-content h2 {
+#sidebar h2, .window-content h2:not(:is(.journal-sheet h2)) {
     font-size: var(--font-size-13);
 }
 
-#sidebar h3, .window-content h3 {
+#sidebar h3, .window-content h3:not(:is(.journal-sheet h3)) {
     font-size: var(--font-size-10);
 }
 
-#sidebar h4, .window-content h4 {
+#sidebar h4, .window-content h4:not(:is(.journal-sheet h4)) {
     font-size: var(--font-size-8);
 }
 
-  .sidebar-tab .directory-header .header-search input {
+.sidebar-tab .directory-header .header-search input {
     background: var(--color-light-1);
 }
 
@@ -213,7 +219,7 @@ li.folder > .folder-header h6 {
 }
 
 .roll-event-message .label {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .roll-event-message .roll-event-message-body .event-attribute-row .value {
@@ -225,30 +231,30 @@ li.folder > .folder-header h6 {
 }
 
 .chat-message h1 {
-    font-family: var(--font-h1-bold), "serif";
+    font-family: var(--font-h1-bold), sans-serif;
 }
 
 .chat-message h2 {
-    font-family: var(--font-h2-bold), "serif";
+    font-family: var(--font-h2-bold), sans-serif;
 }
 
 .chat-message h3 {
-    font-family: var(--font-h3-bold), "serif";
+    font-family: var(--font-h3-bold), sans-serif;
     font-size: var(--font-size-10);
 }
 
 .chat-message h4 {
-    font-family: var(--font-h4-bold), "serif";
+    font-family: var(--font-h4-bold), sans-serif;
     font-size: var(--font-size-8);
     #color: var(--color-text-dark-header);
 }
 
 .chat-message h5 {
-    font-family: var(--font-h5-bold), "serif";
+    font-family: var(--font-h5-bold), sans-serif;
 }
 
 .chat-message h6 {
-    font-family: var(--font-h6-bold), "serif";
+    font-family: var(--font-h6-bold), sans-serif;
 }
 
 .roll-message-body .roll-information-row {
@@ -268,12 +274,12 @@ section.secret {
 }
 
 li.roll-characteristic.active.positive {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
     color: var(--color-level-success-border);
 }
 
 li.roll-characteristic.active.negative {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
     color: var(--color-warm-2);
 }
 
@@ -295,11 +301,11 @@ li.roll-characteristic.active.negative {
 .damage-card .block-title, .warn-card .block-title,
 .message-content .song-result-message .song-result-message-body .song-attribute-row .label {
     background: var(--color-text-dark-header);
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .damage-card .block-title, .warn-card .block-title, .damage-card a {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .damage-card .block-content a, .warn-card .block-content a {
@@ -313,13 +319,13 @@ li.roll-characteristic.active.negative {
 
 .display-description-message .display-description-message-header .summary .block .title {
     background: var(--color-text-dark-header);
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .display-description-message .display-description-message-header .summary .block .value {
     padding-left: 0.2em;
     background: var(--color-bg-light);
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
     text-align: center;
 }
 
@@ -344,7 +350,7 @@ li.roll-characteristic.active.negative {
     min-height: 0.5rem;
 }
 
-.journal-sheet h1, .journal-sheet h2, .journal-sheet h3, .journal-sheet h4, .journal-sheet h5, .journal-sheet h6 {
+.journal-sheet :is(h1, h2, h3, h4, h5, h6) {
     border-bottom: none;
 }
 
@@ -353,8 +359,12 @@ li.roll-characteristic.active.negative {
     background-size: cover;
 }
 
+.journal-sheet h1 {
+    font-size: var(--font-h1-size);
+}
+
 .journal-page-content h3 {
-    font-family: NewBaskervilleBold, "serif";
+    font-family: NewBaskervilleBold, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -382,8 +392,8 @@ li.roll-characteristic.active.negative {
 .journal-sheet .journal-header .title {
     background: none;
     border: none;
-    font-family: var(--font-h1), "serif";
-    font-size: var(--font-size-24);
+    font-family: var(--font-h1), sans-serif;
+    font-size: var(--font-size-18);
 }
 
 .sheet.journal-entry .journal-entry-content {
@@ -408,7 +418,7 @@ li.roll-characteristic.active.negative {
     border-radius: 5px;
     padding: 5px;
     margin: 2px;
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
     /*font-weight: unset;*/
 }
 
@@ -435,7 +445,7 @@ li.roll-characteristic.active.negative {
 }
 
 pre {
-    font-family: var(--font-monospace), "serif";
+    font-family: var(--font-monospace), sans-serif;
 }
 
 .editor-content * {
@@ -446,7 +456,7 @@ pre {
 .editor-container .editor-content blockquote,
 .journal-sheet blockquote {
     position: relative;
-    font-family: var(--font-blockquote), "serif";
+    font-family: var(--font-blockquote), sans-serif;
     font-style: unset;
     color: var(--color-text-dark-blockquote);
     margin: 0;
@@ -499,7 +509,7 @@ pre {
 .journal-page-content code,
 .sheet-container .editor-content code,
 .editor-container .editor-content code {
-    font-family: var(--font-code), "serif";
+    font-family: var(--font-code), sans-serif;
     color: var(--color-text-dark-code);
     letter-spacing: 0.08125em;
     font-size: var(--font-size-13);
@@ -540,7 +550,7 @@ pre {
 }
 
 .application .window-header .window-title {
-    font-family: var(--font-label), "serif";
+    font-family: var(--font-label), sans-serif;
 }
 
 .window-title, .window-app .window-header a {
@@ -548,7 +558,7 @@ pre {
 }
 
 .window-app .window-header a {
-    font-family: var(--font-h1), "serif";
+    font-family: var(--font-h1), sans-serif;
 }
 
 #players h3 {
@@ -556,7 +566,7 @@ pre {
 }
 
 #players .player-name {
-    font-family: var(--font-h3), "serif";
+    font-family: var(--font-h3), sans-serif;
     font-size: var(--font-size-6);
 }
 
