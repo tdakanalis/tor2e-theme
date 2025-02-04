@@ -131,7 +131,6 @@
 
 #roll-dialog-window h4 {
     font-family: var(--font-h4-bold), "serif" !important;
-    font-size: var(--font-size-13);
     color: var(--color-warm-2);
 }
 
@@ -200,10 +199,6 @@
     flex: 2;
 }
 
-.tor2e.sheet h2 {
-    font-size: var(--font-size-16);
-}
-
 .tor2e.sheet.actor .hostile-friendly {
     font-family: var(--font-label), "serif";
 }
@@ -223,7 +218,7 @@
 
 .tor2e.sheet.journey-log h2 {
     color: var(--color-warm-2);
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-10);
 }
 
 .tor2e.sheet.item.journey-log .table-heading {

@@ -145,6 +145,7 @@ body {
     --font-h4-size: var(--font-size-13);
     --font-h5-size: var(--font-size-10);
     --font-h6-size: var(--font-size-8);
+    --font-body-size: var(--font-size-13);
 }
 
 :root {

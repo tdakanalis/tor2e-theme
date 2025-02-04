@@ -38,27 +38,25 @@ h1, h2, h3, h4 {
 
 body, textarea {
     font-family: var(--font-body), "serif";
+    font-size: var(--font-body-size);
+}
+
+button {
+    font-size: var(--font-body-size);
 }
 
 form .notes, form .hint {
     line-height: inherit;
 }
 
-label, select, button, .category-tab, #game-details, .key {
+label, .category-tab, .key {
     font-family: var(--font-label), "serif" !important;
-}
-
-input:not(:is(.journal-header, .tor2e.sheet) input) {
-    font-family: var(--font-label), "serif" !important;
-}
-
-#support-details a {
-    font-family: var(--font-label), "serif";
+    font-size: var(--font-body-size);
 }
 
 #tooltip, #pause {
     font-family: var(--font-h4), "serif";
-    font-size: var(--font-size-11);
+    font-size: var(--font-size-10);
     font-weight: normal !important;
 }
 
@@ -75,10 +73,6 @@ a.scene-name {
     font-family: var(--font-notes), "serif";
 }
 
-.window-app .window-header a {
-    font-family: var(--font-label), "serif";
-}
-
 body, textarea, input, button, select {
     color: var(--color-text-dark-primary);
 }
@@ -92,7 +86,7 @@ textarea:focus, input:focus {
 }
 
 form .notes, form .hint, .package-configuration aside.sidebar {
-    font-size: var(--font-size-14);
+    font-size: var(--font-body-size);
 }
 
 .tabs .item {
@@ -146,16 +140,23 @@ li.folder > .folder-header h6 {
     font-size: var(--font-size-10);
 }
 
-.scenes-sidebar .scene h3,
-.compendium-sidebar .directory-item.compendium .compendium-name {
-    font-size: var(--font-size-12);
+#sidebar h1, .window-content h1 {
+    font-size: var(--font-size-14);
 }
 
-.playlists-sidebar h4 {
-    font-size: var(--font-size-12);
+#sidebar h2, .window-content h2 {
+    font-size: var(--font-size-13);
 }
 
-.sidebar-tab .directory-header .header-search input {
+#sidebar h3, .window-content h3 {
+    font-size: var(--font-size-10);
+}
+
+#sidebar h4, .window-content h4 {
+    font-size: var(--font-size-8);
+}
+
+  .sidebar-tab .directory-header .header-search input {
     background: var(--color-light-1);
 }
 
@@ -180,6 +181,10 @@ li.folder > .folder-header h6 {
 }
 
 /* Chat */
+
+.chat-message {
+    font-size: var(--font-body-size);
+}
 
 #chat-form textarea {
     background: var(--color-light-1) url(../img/tor_bg.png) no-repeat;
@@ -290,6 +295,7 @@ li.roll-characteristic.active.negative {
 .damage-card .block-title, .warn-card .block-title,
 .message-content .song-result-message .song-result-message-body .song-attribute-row .label {
     background: var(--color-text-dark-header);
+    font-family: var(--font-label), "serif";
 }
 
 .damage-card .block-title, .warn-card .block-title, .damage-card a {
@@ -357,6 +363,11 @@ li.roll-characteristic.active.negative {
     color: var(--color-warm-2);
 }
 
+.sheet.journal-entry .pages-list .page-heading,
+.sheet.journal-entry .pages-list .heading-link{
+    font-size: var(--font-body-size);
+}
+
 .journal-page-content h1, .journal-page-content h3, .journal-page-content h5,
 .journal-page-header h1, .journal-page-header h3, .journal-page-header h5, .page-heading,
 .journal-header .title {
@@ -382,11 +393,11 @@ li.roll-characteristic.active.negative {
     background-size: cover;
     border: 2px solid var(--color-border-dark);
     border-radius: 6px 0 0 0;
-    font-size: var(--font-size-15);
+    font-size: var(--font-body-size);
     text-align: justify;
 }
 
-.journal-sheet .pages-list > *{
+.journal-sheet .pages-list > * {
     font-size: var(--font-size-15);
 }
 
@@ -532,13 +543,21 @@ pre {
     font-family: var(--font-label), "serif";
 }
 
+.window-title, .window-app .window-header a {
+    font-size: var(--font-size-8);
+}
+
+.window-app .window-header a {
+    font-family: var(--font-h1), "serif";
+}
+
 #players h3 {
     font-size: var(--font-size-10);
 }
 
 #players .player-name {
     font-family: var(--font-h3), "serif";
-    font-size: var(--font-size-8);
+    font-size: var(--font-size-6);
 }
 
 a.content-link, a.inline-roll {
