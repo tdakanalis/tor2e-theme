@@ -29,6 +29,7 @@ A Foundry VTT theme for The One Ring 2nd Edition. It applies the typography and 
 ## 0.4.0 (2025-02-05)
 * Improved headings spacing and letter size
 * Add compatibility with tor2e-macros module
+* Add support for latin-1 charset
 
 ## 0.3.0 (2025-02-04)
 * Tweaked font sized for better readability
