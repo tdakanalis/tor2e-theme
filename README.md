@@ -26,7 +26,10 @@ A Foundry VTT theme for The One Ring 2nd Edition. It applies the typography and 
 
 # Changelog
 
-## 0.5.0 (2025-02-06)
+## 0.6.0 (2025-02-05)
+* Fixes h4 fonts in actor screens
+
+## 0.5.0 (2025-02-05)
 * Fixes font size for heading 1
 
 ## 0.4.0 (2025-02-05)
