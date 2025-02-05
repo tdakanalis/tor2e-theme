@@ -76,6 +76,7 @@
 
 .tor2e.sheet .skill-card-component .identification a.skill-name.active {
     font-family: var(--font-label), sans-serif;
+    font-weight: unset;
 }
 
 .tor2e.sheet.actor .sheet-content .main-stat .main-stat-value .main-stat-label {
@@ -125,7 +126,7 @@
 .tor2e.sheet.actor .section h4 {
     font-family: var(--font-h2-bold), sans-serif !important;
     font-weight: unset;
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-12);
     color: var(--color-text-dark-header);
 }
 
@@ -237,8 +238,10 @@
 }
 
 .popup .form-group .label, .popup .form-group label {
-    font-family: var(--font-label), sans-serif;
+    font-family: var(--font-h1-bold), sans-serif;
     color: var(--color-warm-2);
+    font-size: var(--font-size-8);
+    font-weight: unset;
 }
 
 .failure {
@@ -246,11 +249,11 @@
 }
 
 .success {
-    color: var(--color-level-success-border);
+    color: var(--color-level-success);
 }
 
 .slider {
-    color: var(--color-level-success-border);
+    color: var(--color-level-success);
 }
 
 input:checked + .slider {
@@ -285,10 +288,21 @@ input:checked + .slider {
 }
 
 .tor2e.sheet.actor .hostile-friendly .hf-slider {
-    width: 12.8em;
+    min-width: 13em;
 }
 
 .tor2e.sheet.actor .hostile-friendly .hf-slider span {
     padding-left: 0.3125em;
     padding-right: 0.3125em;
+    align-content: center;
+}
+
+#modify-roll .slider {
+    min-height: 2em;
+    min-width: 4.7em;
+    align-content: center;
+}
+
+#modify-roll .best-worst span.left-align {
+    padding-left: 1.3em;
 }

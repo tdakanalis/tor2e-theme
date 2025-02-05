@@ -56,7 +56,7 @@ form .notes, form .hint {
 }
 
 label, .category-tab, .key {
-    font-family: var(--font-label), sans-serif !important;
+    font-family: var(--font-label), sans-serif;
     font-size: var(--font-body-size);
 }
 
