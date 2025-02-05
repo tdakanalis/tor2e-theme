@@ -158,7 +158,8 @@ li.folder > .folder-header h6 {
     font-size: var(--font-size-10);
 }
 
-#sidebar h4, .window-content h4:not(:is(.journal-sheet h4)) {
+#sidebar h4:not(:is(.journal-sheet h4, .roll-event-message h4)),
+.window-content h4:not(:is(.journal-sheet h4, .roll-event-message h4)) {
     font-size: var(--font-size-8);
 }
 
@@ -190,6 +191,24 @@ li.folder > .folder-header h6 {
 
 .chat-message {
     font-size: var(--font-body-size);
+}
+
+.chat-message .roll-event-message h4 {
+    font-size: var(--font-size-13);
+    text-align: center;
+    padding: 0.3em;
+}
+
+.damage-card .block-title, .warn-card .block-title {
+    font-size: var(--font-size-13);
+}
+
+.damage-card .block-title, .warn-card .block-title {
+    padding: 0.2em;
+}
+
+.formula p.label {
+    font-size: var(--font-size-13);
 }
 
 #chat-form textarea {
@@ -422,6 +441,10 @@ li.roll-characteristic.active.negative {
     /*font-weight: unset;*/
 }
 
+.sheet.journal-entry .journal-sidebar input {
+    font-family: var(--font-body), sans-serif;
+}
+
 .journal-entry-content .journal-entry-pages {
     padding-left: 3px
 }
@@ -572,4 +595,5 @@ pre {
 
 a.content-link, a.inline-roll {
     background: var(--color-bg-light);
+    font-family: var(--font-label), sans-serif;
 }
