@@ -248,6 +248,16 @@
     font-weight: unset;
 }
 
+.popup input {
+    width: 1.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+}
+
+.popup .label {
+    align-content: center;
+}
+
 .failure {
     color: var(--color-warm-2);
 }

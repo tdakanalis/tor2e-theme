@@ -344,7 +344,6 @@ li.roll-characteristic.active.negative {
 .display-description-message .display-description-message-header .summary .block .value {
     padding-left: 0.2em;
     background: var(--color-bg-light);
-    font-family: var(--font-label), sans-serif;
     text-align: center;
 }
 
