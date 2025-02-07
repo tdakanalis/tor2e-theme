@@ -26,6 +26,10 @@ A Foundry VTT theme for The One Ring 2nd Edition. It applies the typography and 
 
 # Changelog
 
+## 0.7.0 (2025-02-07)
+* Fixes font color in compendiums
+* Adds support for simple calendar plugin (dark and light theme)
+
 ## 0.6.0 (2025-02-05)
 * Fixes h4 fonts in actor screens
 
