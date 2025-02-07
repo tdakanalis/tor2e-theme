@@ -184,7 +184,7 @@ body .simple-calendar.light {
     --input-bg-color: var(--color-light-1); /* #fffbf3 */
     --input-border-color: var(--color-dark-6); /* #9b7c66 */
     --input-color: var(--color-dark-1); /* #3e2a1e */
-    --link-color: var(--color-dark-3); /* #5e4230 */
+    --link-color: var(--color-dark-5); /* #5e4230 */
     --link-hover-color: var(--color-warm-2); /* #bc483b */
     --entity-link-bg-color: var(--color-light-4); /* #d4c5b6 */
     --entity-link-border-color: var(--color-light-6); /* #a99786 */
@@ -361,6 +361,182 @@ body .simple-calendar.light {
 body .simple-calendar.classic {
     --font-family: var(--font-family), sans-serif;
     --heading-font-family: var(--font-h1), sans-serif;
+    --input-bg-color: var(--color-light-1); /* #fffbf3 */
+    --input-border-color: var(--color-light-6); /* #a99786 */
+    --input-color: var(--color-dark-1); /* #3e2a1e */
+    --link-color: var(--color-dark-5); /* #5e4230 */
+    --link-hover-color: var(--color-warm-2); /* #bc483b */
+    --entity-link-bg-color: var(--color-light-4); /* #d4c5b6 */
+    --entity-link-border-color: var(--color-light-6); /* #a99786 */
+    --entity-link-icon-color: var(--color-dark-3); /* #5e4230 */
+    --entity-link-icon-hover-color: var(--color-warm-2); /* #bc483b */
+    --heading-border-color: var(--color-dark-3); /* #5e4230 */
+    --about-heading-border-color: var(--color-dark-4); /* #70523c */
+    --app-header-bg-color: var(--color-light-1); /* #fffbf3 */
+    --app-header-bg-image: unset;
+    --app-header-color: var(--color-light-1); /* #3e2a1e */
+    --app-header-border: 0;
+    --app-header-border-image: unset;
+    --app-header-height: 1.875rem;
+    --app-bg-color: var(--color-light-2); /* #f3e9df */
+    --app-bg-image: unset;
+    --app-border: 0;
+    --app-border-image: unset;
+    --app-color: var(--color-dark-1); /* #3e2a1e */
+    --comapct-header-control-grey: var(--color-dark-6); /* #9b7c66 */
+    --comapct-header-control-secondary: var(--color-dark-3); /* #5e4230 */
+    --comapct-header-control-tertiary: var(--color-dark-3); /* #5e4230 */
+    --comapct-header-control-save: var(--color-level-success); /* #3b7a48 */
+    --section-bg-color: var(--color-light-3); /* #e6d9cc */
+    --section-border-color: var(--color-dark-6); /* #9b7c66 */
+    --section-color: var(--color-dark-1); /* #3e2a1e */
+    --side-drawer-color: var(--color-light-1); /* #3e2a1e */
+    --side-drawer-bg-color: var(--color-light-1); /* #fffbf3 */
+    --side-drawer-bg-image: unset;
+    --side-drawer-border-color: var(--color-light-2); /* #f3e9df */
+    --side-drawer-border-image: unset;
+    --scrollbar-background-color: var(--color-light-4); /* #d4c5b6 */
+    --scrollbar-border-color: var(--color-light-6); /* #a99786 */
+    --scrollbar-track-bg-color: transparent;
+    --scrollbar-track-border: 1px solid var(--color-dark-6); /* #9b7c66 */
+    --scrollbar-button-height: 0;
+    --scrollbar-button-bg-color: unset;
+    --scrollbar-button-border: unset;
+    --cal-weekend-bg-color: var(--color-cool-5-25); /* rgba(29, 25, 24, 0.1) */
+    --cal-day-border-color: var(--color-light-4); /* #d4c5b6 */
+    --cal-day-hover-color: var(--color-light-1); /* #fffbf3 */
+    --cal-day-current-bg-color: var(--color-light-6); /* #a99786 */
+    --cal-day-current-box-shadow-color: var(--color-dark-6); /* #9b7c66 */
+    --cal-day-current-hover-bg-color: var(--color-light-4); /* #d4c5b6 */
+    --cal-day-selected-bg-color: var(--color-level-success); /* #3b7a48 */
+    --cal-day-selected-box-shadow-color: var(--color-dark-3); /* #5e4230 */
+    --cal-day-selected-hover-bg-color: var(--color-level-success-bg); /* rgba(59, 122, 72, 0.8) */
+    --cal-note-indicator-bg-color: var(--color-dark-3); /* #5e4230 */
+    --cal-note-reminder-indicator-bg-color: var(--color-dark-3); /* #5e4230 */
+    --cal-note-indicator-color: var(--color-light-1); /* #fffbf3 */
+    --cal-moon-group-bg-color: var(--color-light-1); /* #fffbf3 */
+    --cal-moon-group-border-color: var(--color-light-6); /* #a99786 */
+    --cal-moon-group-box-shadow-color: var(--color-cool-5-25); /* rgba(29, 25, 24, 0.25) */
+    --cal-moon-text-shadow: var(--color-cool-5-25); /* rgba(29, 25, 24, 0.1) */
+    --cal-list-color: var(--color-light-1); /* #3e2a1e */
+    --cal-list-active-border-color: var(--color-light-2); /* #5e4230 */
+    --cal-list-active-bg-color: var(--color-dark-3); /* #a99786 */
+    --cal-list-visible-bg-color: var(--color-dark-3); /* #5e4230 */
+    --cal-list-bg-hover-color: var(--color-dark-6); /* #9b7c66 */
+    --clock-started-color: var(--color-level-success); /* #3b7a48 */
+    --clock-stopped-color: var(--color-level-error); /* #bc483b */
+    --clock-paused-color: var(--color-dark-3); /* #5e4230 */
+    --context-menu-color: var(--color-dark-1); /* #3e2a1e */
+    --context-menu-border-color: var(--color-dark-3); /* #5e4230 */
+    --context-menu-bg-color: var(--color-light-1); /* #fffbf3 */
+    --context-menu-action-hover-color: var(--color-dark-3); /* #5e4230 */
+    --context-menu-divider-color: var(--color-dark-6); /* #9b7c66 */
+    --config-menu-heading-color: var(--color-dark-3); /* #5e4230 */
+    --config-menu-item-border-color: var(--color-light-1); /* #fffbf3 */
+    --config-menu-item-color: var(--color-dark-3); /* #5e4230 */
+    --config-menu-item-hover-color: var(--color-light-1); /* #fffbf3 */
+    --config-menu-item-hover-bg-color: var(--color-dark-3); /* #5e4230 */
+    --config-menu-cal-settings-bg-color: var(--color-light-1); /* #fffbf3 */
+    --config-menu-cal-selector-bg-color: var(--color-light-2); /* #f3e9df */
+    --config-menu-cal-selector-hover-bg-color: var(--color-light-3); /* #e6d9cc */
+    --config-menu-cal-selector-color: var(--color-dark-1); /* #3e2a1e */
+    --config-menu-cal-selector-hover-color: var(--color-dark-1); /* #3e2a1e */
+    --btn-bg-image: unset;
+    --btn-border: 1px solid;
+    --btn-border-image: unset;
+    --btn-grey-border-color: var(--color-dark-6); /* #9b7c66 */
+    --btn-grey-bg-color: var(--color-dark-6); /* #9b7c66 */
+    --btn-grey-color: var(--color-light-1); /* #fffbf3 */
+    --btn-grey-bg-hover-color: var(--color-dark-5); /* #84644a */
+    --btn-grey-disabled-bg-color: var(--color-dark-4); /* #70523c */
+    --btn-primary-border-color: var(--color-light-6); /* #a99786 */
+    --btn-primary-bg-color: var(--color-light-6); /* #a99786 */
+    --btn-primary-color: var(--color-dark-1); /* #3e2a1e */
+    --btn-primary-bg-hover-color: var(--color-light-4); /* #d4c5b6 */
+    --btn-primary-disabled-bg-color: var(--color-light-3); /* #e6d9cc */
+    --btn-secondary-border-color: var(--color-dark-3); /* #5e4230 */
+    --btn-secondary-bg-color: var(--color-dark-3); /* #5e4230 */
+    --btn-secondary-color: var(--color-light-1); /* #fffbf3 */
+    --btn-secondary-bg-hover-color: var(--color-warm-2); /* #bc483b */
+    --btn-secondary-disabled-bg-color: var(--color-warm-3); /* #ac323b */
+    --btn-tertiary-border-color: var(--color-dark-3); /* #5e4230 */
+    --btn-tertiary-bg-color: var(--color-dark-3); /* #5e4230 */
+    --btn-tertiary-color: var(--color-light-1); /* #fffbf3 */
+    --btn-tertiary-bg-hover-color: var(--color-dark-6); /* #9b7c66 */
+    --btn-tertiary-disabled-bg-color: var(--color-dark-5); /* #84644a */
+    --btn-delete-border-color: var(--color-level-error); /* #bc483b */
+    --btn-delete-bg-color: var(--color-level-error); /* #bc483b */
+    --btn-delete-color: var(--color-light-1); /* #fffbf3 */
+    --btn-delete-bg-hover-color: var(--color-warm-2); /* #bc483b */
+    --btn-delete-disabled-bg-color: var(--color-warm-3); /* #ac323b */
+    --btn-save-border-color: var(--color-level-success); /* #3b7a48 */
+    --btn-save-bg-color: var(--color-level-success); /* #3b7a48 */
+    --btn-save-color: var(--color-light-1); /* #fffbf3 */
+    --btn-save-bg-hover-color: var(--color-level-success-bg); /* rgba(59, 122, 72, 0.8) */
+    --btn-save-disabled-bg-color: var(--color-light-3); /* #e6d9cc */
+    --form-group-bg-color: var(--color-light-1); /* #fffbf3 */
+    --form-group-bg-hover-color: var(--color-light-2); /* #f3e9df */
+    --form-group-border-color: var(--color-dark-6); /* #9b7c66 */
+    --form-group-label-color: var(--color-dark-3); /* #5e4230 */
+    --form-group-help-color: var(--color-dark-2); /* #4a3426 */
+    --form-group-input-bg-color: var(--color-light-1); /* #fffbf3 */
+    --form-group-input-border-color: var(--color-dark-6); /* #9b7c66 */
+    --form-group-input-color: var(--color-dark-1); /* #3e2a1e */
+    --form-group-help-icon-color: var(--color-dark-3); /* #5e4230 */
+    --message-color: var(--color-dark-1); /* #3e2a1e */
+    --message-warn-bg-color: var(--color-warm-2); /* #bc483b */
+    --message-warn-border-color: var(--color-warm-1); /* #e07060 */
+    --message-success-bg-color: var(--color-level-success); /* #3b7a48 */
+    --message-success-border-color: var(--color-level-success-border); /* #2e5c38 */
+    --message-info-bg-color: var(--color-light-3); /* #e6d9cc */
+    --message-info-border-color: var(--color-light-4); /* #d4c5b6 */
+    --message-danger-bg-color: var(--color-level-error); /* #bc483b */
+    --message-danger-border-color: var(--color-level-error-border); /* #7a3a60 */
+    --multi-select-option-bg-color: var(--color-light-4); /* #d4c5b6 */
+    --multi-select-option-bg-hover-color: var(--color-light-6); /* #a99786 */
+    --multi-select-option-border-color: var(--color-dark-6); /* #9b7c66 */
+    --multi-select-option-color: var(--color-dark-1); /* #3e2a1e */
+    --multi-select-disabled-bg-color: var(--color-light-1); /* #fffbf3 */
+    --multi-select-disabled-color: var(--color-dark-4); /* #70523c */
+    --note-cat-color: var(--color-dark-1); /* #3e2a1e */
+    --note-cat-bg-color: var(--color-light-6); /* #a99786 */
+    --note-cat-box-shadow-color: var(--color-light-1); /* #fffbf3 */
+    --note-cat-secondary-bg-color: var(--color-dark-3); /* #5e4230 */
+    --note-cat-secondary-color: var(--color-light-1); /* #fffbf3 */
+    --note-cat-success-bg-color: var(--color-level-success); /* #3b7a48 */
+    --note-cat-success-color: var(--color-light-1); /* #fffbf3 */
+    --note-cat-danger-bg-color: var(--color-level-error); /* #bc483b */
+    --note-cat-danger-color: var(--color-light-1); /* #fffbf3 */
+    --note-cat-reminder-bg-color: var(--color-dark-3); /* #5e4230 */
+    --note-cat-reminder-color: var(--color-light-1); /* #fffbf3 */
+    --note-list-note-border-color: var(--color-dark-6); /* #9b7c66 */
+    --note-list-note-bg-hover-color: var(--color-light-6); /* #a99786 */
+    --note-list-note-hover-color: var(--color-dark-1); /* #3e2a1e */
+    --note-list-note-dragger-bg-color: var(--color-dark-6); /* #9b7c66 */
+    --note-list-note-dragger-box-shadow-color: var(--color-light-1); /* #fffbf3 */
+    --note-sheet-page-list-border-color: var(--color-dark-3); /* #5e4230 */
+    --note-sheet-page-list-page-hover-bg-color: var(--color-light-6); /* #a99786 */
+    --pre-cal-color: var(--color-dark-3); /* #5e4230 */
+    --pre-cal-border-color: var(--color-dark-6); /* #9b7c66 */
+    --pre-cal-border-hover-color: var(--color-dark-5); /* #84644a */
+    --precal-hover-color: var(--color-dark-1); /* #3e2a1e */
+    --progress-bar-bg-color: var(--color-light-1); /* #fffbf3 */
+    --progress-bar-border-color: var(--color-dark-6); /* #9b7c66 */
+    --progress-bar-fill-color: var(--color-dark-3); /* #5e4230 */
+    --editor-menu-bg-color: var(--color-light-3); /* #3e2a1e */
+    --editor-menu-control-bg-color: var(--color-light-4); /* #4a3426 */
+    --editor-menu-control-bg-hover-color: var(--color-light-4); /* #5e4230 */
+    --search-box-placeholder-color: var(--color-dark-4); /* #70523c */
+    --search-box-color: var(--color-light-4); /* #3e2a1e */
+    --editor-color: var(--color-dark-1); /* #3e2a1e */
+    --time-selector-color: var(--color-dark-1); /* #3e2a1e */
+    --time-selector-input-bg-color: var(--color-light-1); /* #fffbf3 */
+    --time-selector-input-border-color: var(--color-dark-6); /* #9b7c66 */
+    --time-selector-option-bg-even-color: var(--color-dark-6); /* #9b7c66 */
+    --time-selector-option-hover-bg-color: var(--color-light-6); /* #a99786 */
+    --toggle-border-color: var(--color-dark-1); /* #3e2a1e */
+    --toggle-checked-bg-color: var(--color-dark-3); /* #5e4230 */
+    --color-text-dark-primary: var(--color-dark-1); /* #3e2a1e */
 }
 
 body.game .fsc-oc.simple-calendar.window-app .window-content .fsc-ph .fsc-pc h2,
