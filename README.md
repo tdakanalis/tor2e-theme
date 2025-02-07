@@ -1,7 +1,13 @@
 # TOR2E - Theme
 A Foundry VTT theme for *The One Ring 2nd Edition*. It applies the typography and color scheme from the core rulebook.
 
----
+## Supported Modules
+Although the theme works out of the box with various modules, extra work has been done to ensure compatibility and enhanced visuals for the following:
+- [TOR2E - System](https://foundryvtt.com/packages/tor2e)
+- [TOR2E - Macros, Macrobar & Communitybar](https://foundryvtt.com/packages/tor-2e-macros)
+- [Monk's Enhanced Journal](https://foundryvtt.com/packages/monks-enhanced-journal)
+- [Simple Calendar](https://foundryvtt.com/packages/foundryvtt-simple-calendar)
+- [Weather Control](https://gitlab.com/jstebenne/foundryvtt-weather-control)
 
 ## Screenshots
 
