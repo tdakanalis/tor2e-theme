@@ -236,6 +236,7 @@ li.folder > .folder-header h6 {
 
 .roll-event-message .roll-event-message-body .event-attribute-row .value {
     font-weight: unset;
+    text-align: center;
 }
 
 .chat-message h1, .dice-roll h2, .dice-roll h3, .dice-roll h4, .dice-roll h5, .dice-roll h6{
@@ -338,6 +339,10 @@ li.roll-characteristic.active.negative {
     padding-left: 0.2em;
     background: var(--color-bg-light);
     text-align: center;
+}
+
+.message-content .song-result-message .song-result-message-body .song-attribute-row .value {
+    align-content: center;
 }
 
 .display-description-message .display-description-message-body {
@@ -527,7 +532,7 @@ pre {
     font-family: var(--font-code), sans-serif;
     color: var(--color-text-dark-code);
     letter-spacing: 0.08125em;
-    font-size: var(--font-size-13);
+    font-size: var(--font-size-12);
     position: relative;
     display: block; /* Ensure it takes full width */
     padding: 30px 20px;
