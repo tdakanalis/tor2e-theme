@@ -32,8 +32,6 @@ A Foundry VTT theme for *The One Ring 2nd Edition*. It applies the typography an
 |:--:|:--:|:--:|  
 | **Simple Calendar - Classic** | **Simple Calendar - Light** | **Simple Calendar - Dark** |  
 
---- 
-
 # Changelog
 
 ### 0.7.0 (2025-02-07)
