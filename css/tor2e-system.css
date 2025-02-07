@@ -320,3 +320,8 @@ input:checked + .slider {
 #modify-roll .best-worst span.left-align {
     padding-left: 1.3em;
 }
+
+.tor2e.sheet .window-content h1, .tor2e.sheet .window-content h2, .tor2e.sheet .window-content h3,
+.tor2e.sheet .window-content h4, .tor2e.sheet .window-content h5, .tor2e.sheet .window-content h6 {
+    color: var(--color-text-dark-header);
+}

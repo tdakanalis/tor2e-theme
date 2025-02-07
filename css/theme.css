@@ -56,7 +56,7 @@ body {
 
     --color-dark-1: #3e2a1e;
     --color-dark-2: #4a3426;
-    --color-dark-3: #5e4230;
+    --color-dark-3: #543b28;
     --color-dark-4: #70523c;
     --color-dark-5: #84644a;
     --color-dark-6: #9b7c66;
@@ -204,7 +204,7 @@ body {
     --color-select-option-bg: #f3e9df;
     --color-checkbox-checked: #7a5a46;
 
-    --color-ownership-none: #7a3a60;
+    --color-ownership-none: #ba9a94;
     --color-ownership-observer: #ba9a94;
     --color-ownership-owner: #d4c5b6;
 

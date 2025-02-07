@@ -39,5 +39,12 @@ body {
     background: unset
 }
 
+.monks-enhanced-journal .directory-sidebar,
+.monks-enhanced-journal .directory-sidebar > section .directory-header {
+    background: var(--color-light-1) url(../img/tor_bg.png) no-repeat;
+    background-size: cover;
+}
+
+
 
 

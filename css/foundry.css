@@ -102,18 +102,11 @@ form .notes, form .hint, .package-configuration aside.sidebar {
 .tabs .item.active {
     text-shadow: none;
     color: var(--color-warm-2);
-    border-bottom: 2px solid var(--color-warm-2);
-    margin-bottom: -4px;
 }
 
 select:focus {
     box-shadow: none;
     border: 1px solid var(--color-warm-2)
-}
-
-.window-content h1, .window-content h2, .window-content h3,
-.window-content h4, .window-content h5, .window-content h6 {
-    color: var(--color-text-dark-header);
 }
 
 .macros-sidebar h1, .macros-sidebar h2, .macros-sidebar h3,
@@ -595,4 +588,8 @@ pre {
 a.content-link, a.inline-roll {
     background: var(--color-bg-light);
     font-family: var(--font-label), sans-serif;
+}
+
+.compendium h4 {
+    color: var(--color-light-1);
 }
