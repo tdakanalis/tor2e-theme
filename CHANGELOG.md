@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.0 (2025-02-08)
+- First stable version
+
 ### 0.7.0 (2025-02-07)
 - Fixes font color in compendiums
 - Adds support for Simple Calendar plugin (classic, dark, and light themes)
