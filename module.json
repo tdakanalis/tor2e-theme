@@ -25,6 +25,7 @@
     "css/simple-calendar.css"
   ],
   "esmodules": [],
+  "changelog": "https://raw.githubusercontent.com/tdakanalis/tor2e-theme/refs/heads/main/CHANGELOG.md",
   "url": "https://github.com/tdakanalis/tor2e-theme",
   "manifest": "https://raw.githubusercontent.com/tdakanalis/tor2e-theme/refs/heads/main/module.json",
   "download": "https://github.com/tdakanalis/tor2e-theme/archive/refs/tags/v0.7.0.zip"
