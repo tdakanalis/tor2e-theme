@@ -6,8 +6,8 @@
   "version": "1.0.0",
   "compatibility": {
     "minimum": "11",
-    "verified": "12.331",
-    "maximum": "12"
+    "verified": "13.335",
+    "maximum": "13"
   },
   "authors": [
     {
@@ -16,8 +16,7 @@
     }
   ],
   "styles": [
-    "css/theme.css",
-    "css/foundry.css",
+    "css/tor2e-theme.css",
     "css/tor2e-system.css",
     "css/tor2e-macros.css",
     "css/monks-enhanced-journal.css",

@@ -1,0 +1,737 @@
+/* Tolkien‐Inspired Earthy Theme */
+:root {
+    --earth-red: #ba4f42;  /* Warm brick red */
+    --earth-brown:  #543b28;  /* Deep, rich brown */
+    --earth-gold:   #cbb28d;  /* Muted golden beige */
+    --earth-ivory:  #fffbf3;  /* Soft, gentle ivory */
+    --earth-dark:   #1d1918;  /* Charcoal-like near–black */
+    --earth-taupe:  #99857b;  /* Subdued taupe */
+    --earth-beige:  #e9ded1;  /* Light beige */
+    --earth-cream:  #faf4ea;  /* Warm cream */
+    --forest-green:   #407d64;  /* A fresh forest green */
+    --moss-green:     #587a5e;  /* A vibrant, organic moss green */
+    --stone-gray:     #7b7160;  /* Weathered stone gray */
+    --deep-brown:     #3a2e24;  /* Intense deep brown */
+    --midnight-brown: #2b241f;  /* Almost black brown */
+}
+
+@layer variables, elements, applications, compatibility;
+
+@layer variables.base {
+    /* ----------------------------------------- */
+    /*  Root                                     */
+    /* ----------------------------------------- */
+    body.game :is(.app, .sidebar-tab) {
+
+        --color-text-light-highlight: var(--earth-cream);
+        --color-text-light-heading:   var(--earth-gold);
+        --color-text-light-primary:   var(--earth-beige);
+
+        --color-text-dark-primary:    var(--earth-dark);
+        --color-text-dark-secondary:  var(--deep-brown);
+        --color-text-dark-header:     var(--midnight-brown);
+        --color-text-dark-inactive:   var(--deep-brown);
+
+        /* Hyperlink & Selection */
+        --color-text-hyperlink:       var(--moss-green);
+        --color-text-selection:       var(--earth-ivory);
+        --color-text-selection-bg:    var(--moss-green);
+
+        /* Grayscale Text Scale (Light Theme) */
+        --color-text-light-0: var(--earth-ivory);
+        --color-text-light-1: var(--earth-cream);
+        --color-text-light-2: var(--earth-beige);
+        --color-text-light-3: var(--earth-gold);
+        --color-text-light-4: var(--earth-taupe);
+        --color-text-light-5: var(--earth-brown);
+        --color-text-light-6: var(--deep-brown);
+        --color-text-light-7: var(--earth-dark);
+
+        /* Grayscale Text Scale (Dark Theme) */
+        --color-text-dark-1: var(--earth-ivory);
+        --color-text-dark-2: var(--earth-cream);
+        --color-text-dark-3: var(--earth-beige);
+        --color-text-dark-4: var(--earth-gold);
+        --color-text-dark-5: var(--earth-taupe);
+        --color-text-dark-6: var(--earth-brown);
+
+        /* Light Theme Borders */
+        --color-border-light-1: var(--earth-beige);
+        --color-border-light-2: var(--earth-taupe);
+
+        /* Dark Theme Borders */
+        --color-border-dark-1: var(--earth-dark);
+        --color-border-dark-2: var(--earth-brown);
+        --color-border-dark-3: var(--deep-brown);
+        --color-border-dark-4: var(--midnight-brown);
+        --color-border-dark-5: var(--earth-dark);
+
+        /* Border Highlights */
+        --color-border-light-highlight: var(--earth-ivory);
+        --color-border-light-primary:     var(--earth-gold);
+        --color-border-light-secondary:   var(--earth-beige);
+        --color-border-light-tertiary:    var(--earth-taupe);
+
+        --color-border-dark:            var(--earth-dark);
+        --color-border-dark-primary:    var(--earth-dark);
+        --color-border-dark-secondary:  var(--midnight-brown);
+        --color-border-dark-tertiary:   var(--deep-brown);
+        --color-border-highlight:       var(--earth-red);
+        --color-border-highlight-alt:   #8a3c36;  /* Deep terracotta */
+
+        --color-shadow-primary:      var(--earth-brown);
+        --color-shadow-highlight:    var(--earth-red);
+        --color-shadow-dark:         var(--earth-dark);
+
+        --color-underline-inactive:  var(--earth-taupe);
+        --color-underline-active:    #8a3c36;  /* Deep terracotta */
+        --color-underline-header:    #a24f43;  /* Warm inviting tone */
+
+        /* Button Backgrounds */
+        --color-bg-btn-minor-inactive: var(--earth-taupe);
+        --color-bg-btn-minor-active:   var(--earth-gold);
+
+        /* Select Option Background */
+        --color-select-option-bg: var(--earth-beige);
+
+        /* Checkbox */
+        --color-checkbox-checked: var(--earth-brown);
+
+        /* Ownership */
+        --color-ownership-none:     var(--stone-gray);
+        --color-ownership-observer: var(--earth-taupe);
+        --color-ownership-owner:    var(--earth-red);
+
+        /* Blind Mode */
+        --color-blind-bg:     var(--earth-beige);
+        --color-blind-border: var(--earth-brown);
+
+        /* Emote */
+        --color-emote-bg:     var(--earth-ivory);
+        --color-emote-border: var(--earth-taupe);
+
+        /* Whisper */
+        --color-whisper-bg:     var(--earth-cream);
+        --color-whisper-border: var(--earth-brown);
+
+        /* Scrollbar Colors */
+        --color-scrollbar: var(--color-warm-3);  /* Deep, robust red */
+        --color-scrollbar-border: #a24f43;
+
+        --font-primary: "NewBaskerville", "Signika", sans-serif;
+    }
+
+    /* ---------------------------------------- */
+    /*  Colors                                  */
+    /* ---------------------------------------- */
+    body {
+        /* Warm Tones – these add a rustic amber to terracotta warmth */
+        --color-warm-1: #dd7263;  /* Soft amber */
+        --color-warm-2: var(--earth-red);  /* Muted terracotta */
+        --color-warm-3: #8e2f2a;  /* Deep, robust red */
+
+        /* Cool Tones – shifting away from purples toward slate and steel accents */
+        --color-cool-3: #66544b;
+        --color-cool-4: #503d33;
+        --color-cool-5: var(--midnight-brown);
+        --color-cool-5-25: rgba(43, 36, 31, 0.25);
+        --color-cool-5-50: rgba(43, 36, 31, 0.5);
+        --color-cool-5-75: rgba(43, 36, 31, 0.75);
+        --color-cool-5-90: rgba(43, 36, 31, 0.9);
+
+        /* Light Neutrals – subtle backgrounds & accents */
+        --color-light-1: var(--earth-cream);
+        --color-light-2: #f2eee5;  /* Subtle off-white */
+        --color-light-3: #e6dccf;  /* Sandy beige */
+        --color-light-4: var(--earth-gold);
+        --color-light-5: var(--earth-taupe);
+        --color-light-6: #7f6a60;  /* Muted dark taupe */
+
+        /* Dark Neutrals – rich, grounded dark shades */
+        --color-dark-1: var(--earth-dark);
+        --color-dark-2: var(--midnight-brown);  /* Midnight brown */
+        --color-dark-3: var(--deep-brown);  /* Deep brown */
+        --color-dark-4: #503d33;  /* Rich dark bark */
+        --color-dark-5: #66544b;  /* Mellow dark brown */
+        --color-dark-6: #7a695f;  /* Lighter dark brown */
+
+        /* Error – an earthy, muted red */
+        --color-level-error: #a14040;
+        --color-level-error-bg: rgba(161, 64, 64, 0.8);
+        --color-level-error-border: #7a2e2e;
+
+        /* Info – a dusty slate blue */
+        --color-level-info: #503d33;
+        --color-level-info-bg: rgba(102,84,75, 0.8); /* #66544b with opacity */
+        --color-level-info-border: #7a695f;
+
+        /* Success – a natural forest green */
+        --color-level-success: #4f6d4a;
+        --color-level-success-bg: rgba(79, 109, 74, 0.8);
+        --color-level-success-border: #3e5a3a;
+
+        /* Warning – warm amber/terracotta (using our warm tones) */
+        --color-level-warning: var(--color-warm-1);
+        --color-level-warning-bg: rgba(217,156,90, 0.8);
+        --color-level-warning-border: var(--color-warm-2);
+
+        /* ========================
+           Scrollbar Colors
+           ======================== */
+        --color-scrollbar: var(--color-warm-3);  /* Deep, robust red */
+        --color-scrollbar-border: #a24f43;
+    }
+
+    /* ---------------------------------------- */
+    /*  Font Declarations                       */
+    /* ---------------------------------------- */
+    @font-face {
+        font-family: Aniron;
+        src: url(../fonts/Aniron.ttf);
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: Aniron;
+        src: url(../fonts/AnironBold.ttf);
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: NewBaskerville;
+        src: url(../fonts/NewBaskerville.ttf);
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: NewBaskerville;
+        src: url(../fonts/NewBaskervilleBold.ttf);
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: MinionPro;
+        src: url(../fonts/MinionProRegular.ttf);
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: NiveauGroteskMedium;
+        src: url(../fonts/NiveauGroteskMedium.otf);
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    /* ---------------------------------------- */
+    /*  Typography                              */
+    /* ---------------------------------------- */
+    body {
+        --font-awesome: "Font Awesome 6 Pro";
+        --font-awesome-duotone: "Font Awesome 6 Duotone";
+        --font-sans: "NewBaskerville", "Signika", "Palatino Linotype", sans-serif;
+        --font-serif: "NewBaskerville", "Amiri", serif;
+        --font-body: "NewBaskerville", "Signika", "Palatino Linotype", sans-serif;
+        --font-monospace: "MinionPro", monospace;
+        --font-code: "NiveauGroteskMedium", "Signika", "Palatino Linotype", sans-serif;
+        --font-h1: "Aniron", "Modesto Condensed", serif;
+        --font-h2: "Aniron", "Amiri", serif;
+        --font-h3: "Aniron", "Signika", "Palatino Linotype", sans-serif;
+        --font-h4: "Aniron", "Modesto Condensed", serif;
+        --font-h5: "Aniron", "Amiri", serif;
+        --font-h6: "Aniron", "Signika", "Palatino Linotype", sans-serif;
+        --font-size-8: 0.5rem;
+        --font-size-9: 0.5625rem;
+        --font-size-10: 0.625rem;
+        --font-size-11: 0.6875rem;
+        --font-size-12: 0.75rem;
+        --font-size-13: 0.8125rem;
+        --font-size-14: 0.875rem;
+        --font-size-15: 0.9375rem;
+        --font-size-16: 1rem;
+        --font-size-18: 1.125rem;
+        --font-size-20: 1.25rem;
+        --font-size-24: 1.5rem;
+        --font-size-28: 1.75rem;
+        --font-size-32: 2rem;
+        --font-size-36: 2.25rem;
+        --font-size-48: 3rem;
+        --font-size-64: 4rem;
+        --font-size-80: 5rem;
+        --font-h1-size: var(--font-size-24);
+        --font-h2-size: var(--font-size-16);
+        --font-h3-size: var(--font-size-14);
+        --font-h4-size: var(--font-size-12);/*var(--font-size-24);*/
+        --font-h5-size: var(--font-size-10);
+        --font-h6-size: var(--font-size-8);
+    }
+
+    /* ---------------------------------------- */
+    /*  Chat Cards                              */
+    /* ---------------------------------------- */
+    .chat-message {
+        /*--color-blind-background: #f5eaf5;
+        --color-blind-border: #6b476b;
+        --color-emote-background: #f3edde;
+        --color-emote-border: #887c5d;
+        --color-whisper-background: #e8e8ef;
+        --color-whisper-border: #545469;
+        --chat-message-border-color: #6f6c66;*/
+    }
+
+    .ui-control {
+        /*--toggle-bg-color: rgba(34, 34, 72, 0.75);
+        --toggle-border-color: #5252d7;
+        --toggle-active-bg-color: #5252d7;
+        --toggle-active-border-color: #8484ff;*/
+    }
+
+    /* ---------------------------------------- */
+    /*  CodeMirror                              */
+    /* ---------------------------------------- */
+    code-mirror {
+        /*--active-line-color: #2f393c44;
+        --syntax-keyword-color: #c678dd;
+        --syntax-operator-color: #56b6c2;
+        --syntax-var-name-color: #e06c75;
+        --syntax-func-name-color: #61afef;
+        --syntax-local-var-color: #fff;
+        --syntax-class-name-color: #e5c07b;
+        --syntax-prop-def-color: #e06c75;
+        --syntax-boolean-color: #d19a66;
+        --syntax-number-color: #e5c07b;
+        --syntax-string-color: #98c379;
+        --syntax-regexp-color: #56b6c2;*/
+    }
+}
+
+@layer variables.themes {
+    /* ---------------------------------------- */
+    /*  Theme Layers                            */
+    /* ---------------------------------------- */
+
+    /* Dark Theme */
+    @layer general {
+        body.theme-dark .sheet.journal-entry .toc li.page {
+            border-top: 1px solid var(--color-dark-3);
+        }
+        body.theme-dark .journal-entry-page :is(h2, h4, h6){
+            color: var(--earth-red);
+        }
+        body.theme-dark .journal-entry-page :is(h1, h3, h5),
+        body.theme-dark .journal-header .title {
+            color: var(--earth-gold);
+        }
+        /*body.theme-dark .sheet.journal-entry .journal-entry-content {
+            background: url("../img/tor_bg.webp") repeat;
+            background-size: cover;
+            color: var(--earth-dark);
+        }
+        body.theme-dark .journal-sheet .journal-header .title {
+            color: var(--earth-brown);
+        }
+        body.theme-dark .journal-entry-page :is(h1, h3, h5),
+        body.theme-dark .journal-header .title {
+            color: var(--earth-brown);
+        }
+        body.theme-dark .journal-entry-page :is(h2, h4, h6){
+            color: var(--earth-red);
+        }
+        body.theme-dark .sheet.journal-entry .toc .page-heading {
+            color: var(--color-light-3);
+        }
+        body.theme-dark .sheet.journal-entry .toc li.page {
+            border-top: 1px solid var(--color-light-6);
+        }
+        body.theme-dark .sheet.journal-entry .toc .page-heading .page-number,
+        body.theme-dark .sheet.journal-entry .toc .page-heading .page-index {
+            color: var(--color-light-6);
+        }
+        body.theme-dark .sheet.journal-entry .toc li.page.active {
+            border-top: 2px solid var(--color-light-3);
+            border-bottom: 2px solid var(--color-light-3);
+            border-left: 1px solid var(--color-light-3);
+            border-right: 1px solid var(--color-light-3);
+        }
+        body.theme-dark .sheet.journal-entry .journal-sidebar input {
+            --input-text-color: var(--color-light-3);
+            --input-placeholder-color: var(--color-light-3);
+        }
+        body.theme-dark .sheet.journal-entry .journal-sidebar {
+            color: var(--color-light-3);
+        }
+        body.theme-dark .sheet.journal-entry .journal-sidebar button {
+            --button-text-color: var(--color-light-6);
+            --button-hover-border-color: var(--color-light-6);
+        }
+        body.theme-dark .sheet.journal-entry .toc .page-heading {
+            font-weight: 400;
+        }*/
+    }
+    @layer specific {
+    }
+
+    /* Light Theme */
+    @layer general {
+        body.theme-light .application {
+            --background: url("../modules/tor2e-theme/img/tor_bg.webp") repeat;
+            background-size: cover;
+        }
+        body.theme-light .sheet.journal-entry .journal-sidebar {
+            background: url("../img/tor_bg.webp") repeat;
+            background-size: cover;
+            color: var(--color-text-primary);
+        }
+        body.theme-light .sheet.journal-entry .journal-sidebar search .inline-control {
+            --button-border-color: revert;
+            --button-hover-border-color: var(--color-text-primary);
+            color: var(--color-text-primary);
+        }
+        body.theme-light .sheet.journal-entry .journal-sidebar search input {
+            --input-background-color: transparent;
+            --input-border-color: var(--earth-taupe);
+            --input-focus-outline-color: var(--earth-red);
+            --input-text-color: var(--midnight-brown);
+        }
+        body.theme-light .sheet.journal-entry .journal-sidebar button {
+             --button-text-color: revert;
+        }
+        body.theme-light .journal-entry-page :is(h1, h3, h5),
+        body.theme-light .journal-header .title {
+            color: var(--earth-brown);
+        }
+        body.theme-light .journal-entry-page :is(h2, h4, h6){
+            color: var(--earth-red);
+        }
+        body.theme-light .sheet.journal-entry .toc .page-heading {
+            color: var(--earth-brown);
+        }
+        body.theme-light .sheet.journal-entry .toc li.page {
+            border-top: 1px solid var(--earth-taupe);
+        }
+        body.theme-light .sheet.journal-entry .toc .page-heading .page-number,
+        body.theme-light .sheet.journal-entry .toc .page-heading .page-index {
+             color: var(--earth-brown);
+        }
+        body.theme-light .sheet.journal-entry .journal-sidebar input {
+            --input-text-color: var(--earth-brown);
+            --input-placeholder-color: var(--earth-brown);
+        }
+        body.theme-light .sheet.journal-entry .toc .page-heading {
+            font-weight: 700;
+        }
+        body.theme-light .sheet.journal-sheet blockquote,
+        body.theme-light .sheet.journal-sheet code {
+            color: var(--earth-brown);
+        }
+    }
+    @layer specific {
+        .application.theme-light,
+        .themed.theme-light {
+            --background: url("../img/tor_bg.webp") repeat;
+            background-size: cover;
+        }
+        .app.theme-light .standard-form {
+            --background: url("../img/tor_bg.webp") repeat;
+            background-size: cover;
+        }
+    }
+}
+
+@layer elements.typography {
+
+}
+
+@layer applications {
+    /* ----------------------------------------- */
+    /*  Settings                                 */
+    /* ----------------------------------------- */
+    .settings-sidebar .info {
+        font-size: var(--font-size-13);
+    }
+    .settings-sidebar .info .title {
+        font-size: var(--font-size-14);
+    }
+    .settings-sidebar .info .subtitle {
+        margin: 0.2rem 0 0;
+        color: revert;
+    }
+
+    /* ----------------------------------------- */
+    /*  Journal Entry Pages                      */
+    /* ----------------------------------------- */
+    .journal-entry-page {
+        --font-h1: "Aniron", "Modesto Condensed", serif;
+        --font-h2: "Aniron", "Amiri", serif;
+        --font-h3: "Aniron", "Signika", "Palatino Linotype", sans-serif;
+        --font-h4: "Aniron", "Modesto Condensed", serif;
+        --font-h5: "Aniron", "Amiri", serif;
+        --font-h6: "Aniron", "Signika", "Palatino Linotype", sans-serif;
+        --font-h1-size: var(--font-size-16); /*2em;*/
+        --font-h2-size: var(--font-size-14); /*1.5em;*/
+        --font-h3-size: var(--font-size-13); /*1.25em;*/
+        --font-h4-size: var(--font-size-11); /*1em;*/
+        --font-h5-size: var(--font-size-10); /*0.83em;*/
+        --font-h6-size: var(--font-size-9); /*0.67em;*/
+        /* Headings */
+        /* Tables */
+    }
+    .journal-entry-page h3 {
+        font-family: "NewBaskerville", "Signika", "Palatino Linotype", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    .journal-entry-page h1,
+    .journal-entry-page h2 {
+        border-bottom: none;
+    }
+    .journal-entry-page h1,
+    .journal-entry-page h2,
+    .journal-entry-page h3,
+    .journal-entry-page h4,
+    .journal-entry-page h5,
+    .journal-entry-page h6 {
+        line-height: 2;
+        margin-bottom: 0;
+    }
+    .journal-entry-page :is(h1, h2, h3, h4, h5, h6):not(:first-child) {
+        margin-top: 0;
+    }
+    .journal-sheet .journal-header {
+        margin: 5px;
+    }
+    .journal-sheet .journal-header input{
+        height: 40px;
+    }
+    .journal-sheet p {
+        line-height: 1.2;
+        margin: 0.3rem 0;
+        text-align: justify;
+    }
+    .journal-sheet p:empty {
+        min-height: 0.5rem;
+    }
+    .journal-sheet :is(h1, h2, h3, h4, h5, h6) {
+        border-bottom: none;
+    }
+    .journal-sheet .journal-header .title {
+        background: none;
+        border: none;
+        font-family: var(--font-h1), sans-serif;
+        font-size: var(--font-size-18);
+    }
+    .sheet.journal-entry .journal-entry-content {
+        background-size: cover;
+    }
+    .sheet.journal-entry .journal-entry-content {
+        flex: 1;
+        height: 100%;
+        border-radius: 6px 0 0 0;
+    }
+    .sheet.journal-entry .journal-sidebar {
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .sheet.journal-entry {
+        --level-indent: 6px;
+    }
+    .sheet.journal-entry .toc li.page {
+        border-bottom: 0;
+    }
+    .sheet.journal-entry .toc {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .sheet.journal-entry .toc li.page.active {
+        border-top: 2px solid var(--color-warm-2);
+        border-bottom: 2px solid var(--color-warm-2);
+        border-left: 1px solid var(--color-warm-2);
+        border-right: 1px solid var(--color-warm-2);
+    }
+    .sheet.journal-entry .toc li.page.active + li.page {
+        border-top: 0;
+    }
+    .sheet.journal-entry .toc .heading-link {
+        font-size: var(--font-size-13);
+    }
+    .sheet.journal-entry .toc .headings li {
+        --line-height: 24px;
+    }
+    .sheet.journal-sheet blockquote {
+        position: relative;
+        font-family: var(--font-body), sans-serif;
+        font-style: unset;
+        margin: 0;
+        border-left: 0;
+        border-right: 0;
+        padding: 0 20px;
+    }
+    .sheet.journal-sheet blockquote:before,
+    .sheet.journal-sheet blockquote:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        background-position: center;
+    }
+    .sheet.journal-sheet blockquote:before {
+        left: 0;
+        background-image: url(../img/tor_border_left.webp);
+    }
+    .sheet.journal-sheet blockquote:after {
+        right: 0;
+        background-image: url(../img/tor_border_right.webp);
+    }
+    .sheet.journal-sheet code {
+        font-family: var(--font-code), sans-serif;
+        letter-spacing: 0.08125em;
+        position: relative;
+        display: block;
+        padding: 30px 20px;
+        background: revert;
+        border: none;
+        font-size: var(--font-size-12);
+        white-space: revert;
+    }
+    .sheet.journal-sheet code:before,
+    .sheet.journal-sheet code:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .sheet.journal-sheet code:before {
+        top: 0;
+        background-image: url(../img/tor_border_top.webp);
+    }
+    .sheet.journal-sheet code:after {
+        bottom: 0;
+        background-image: url(../img/tor_border_bottom.webp);
+    }
+
+    .journal-page-content code,
+    .sheet-container .editor-content code,
+    .editor-container .editor-content code {
+
+
+    }
+
+    .journal-page-content code::before,
+    .journal-page-content code::after,
+    .editor-container .editor-content code::before,
+    .editor-container .editor-content code::after,
+    .sheet-container .editor-content code::before,
+    .sheet-container .editor-content code::after{
+
+    }
+
+    .journal-page-content code::before,
+    .sheet-container .editor-content code:before,
+    .editor-container .editor-content code:before {
+        /* Top border image */
+    }
+
+    .journal-page-content code::after,
+    .sheet-container .editor-content code:after,
+    .editor-container .editor-content code:after {
+         /* Bottom border image */
+    }
+}
+
+@layer compatibility {
+    .package-configuration aside.sidebar nav.tabs .category-tab.active {
+        color: var(--earth-red);
+        border-bottom: 1px solid var(--color-border-light-primary);
+    }
+    body.game .app .tabs > [data-tab].active {
+        text-shadow: revert;
+    }
+    body.game .sheet.app .editor-content blockquote {
+        position: relative;
+        font-family: var(--font-body), sans-serif;
+        font-style: unset;
+        margin: 0;
+        border-left: 0;
+        border-right: 0;
+        padding: 0 20px;
+        color: var(--earth-brown);
+    }
+    body.game .sheet.app .editor-content blockquote:before,
+    body.game .sheet.app .editor-content blockquote:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        background-position: center;
+    }
+    body.game .sheet.app .editor-content blockquote:before {
+        left: 0;
+        background-image: url(../img/tor_border_left.webp);
+    }
+    body.game .sheet.app .editor-content blockquote:after{
+        right: 0;
+        background-image: url(../img/tor_border_right.webp);
+    }
+    body.game .sheet.app .editor-content code {
+        font-family: var(--font-code), sans-serif;
+        letter-spacing: 0.08125em;
+        position: relative;
+        display: block;
+        padding: 30px 20px;
+        background: revert;
+        border: none;
+        font-size: var(--font-size-12);
+        white-space: revert;
+        color: var(--earth-brown);
+    }
+    body.game .sheet.app .editor-content code:before,
+    body.game .sheet.app .editor-content code:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    body.game .sheet.app .editor-content code:before {
+        top: 0;
+        background-image: url(../img/tor_border_top.webp);
+    }
+    body.game .sheet.app .editor-content code:after {
+        bottom: 0;
+        background-image: url(../img/tor_border_bottom.webp);
+    }
+
+    body.game .sheet.app .editor-edit {
+        z-index: 1;
+    }
+
+    @layer base {
+        body.game .app.window-app .window-content {
+            background: url("../img/tor_bg.webp") repeat;
+            background-size: cover;
+        }
+    }
+}
