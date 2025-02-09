@@ -1,9 +1,7 @@
 ---
-version: "3.8"
-
 services:
   foundry:
-    image: felddy/foundryvtt:release
+    image: felddy/foundryvtt:13
     dns:
       - 8.8.8.8
       - 8.8.4.4
