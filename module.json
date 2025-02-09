@@ -6,8 +6,8 @@
     "version": "1.2.3",
     "compatibility": {
         "minimum": "11",
-        "verified": "12.331",
-        "maximum": "12"
+        "verified": "13.335",
+        "maximum": "13"
     },
     "authors": [
         {
@@ -16,14 +16,13 @@
         }
     ],
     "styles": [
-        "css/theme.css",
-        "css/foundry.css",
-        "css/tor2e-system.css",
-        "css/dnd5e-system.css",
-        "css/tor2e-macros.css",
-        "css/monks-enhanced-journal.css",
-        "css/weather-control.css",
-        "css/simple-calendar.css"
+      "css/tor2e-theme.css",
+      "css/tor2e-system.css",
+      "css/dnd5e-system.css",
+      "css/tor2e-macros.css",
+      "css/monks-enhanced-journal.css",
+      "css/weather-control.css",
+      "css/simple-calendar.css"
     ],
     "esmodules": [],
     "changelog": "https://raw.githubusercontent.com/tdakanalis/tor2e-theme/refs/heads/main/CHANGELOG.md",
