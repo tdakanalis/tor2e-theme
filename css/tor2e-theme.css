@@ -33,9 +33,9 @@
         --color-text-dark-inactive:   var(--deep-brown);
 
         /* Hyperlink & Selection */
-        --color-text-hyperlink:       var(--moss-green);
+        --color-text-hyperlink:       var(--earth-red);
         --color-text-selection:       var(--earth-ivory);
-        --color-text-selection-bg:    var(--moss-green);
+        --color-text-selection-bg:    var(--earth-red);
 
         /* Grayscale Text Scale (Light Theme) */
         --color-text-light-0: var(--earth-ivory);
@@ -131,8 +131,8 @@
         --color-warm-3: #8e2f2a;  /* Deep, robust red */
 
         /* Cool Tones – shifting away from purples toward slate and steel accents */
-        --color-cool-3: #66544b;
-        --color-cool-4: #503d33;
+        --color-cool-3: var(--color-dark-4);
+        --color-cool-4: var(--color-dark-3);
         --color-cool-5: var(--midnight-brown);
         --color-cool-5-25: rgba(43, 36, 31, 0.25);
         --color-cool-5-50: rgba(43, 36, 31, 0.5);
@@ -162,7 +162,7 @@
 
         /* Info – a dusty slate blue */
         --color-level-info: #503d33;
-        --color-level-info-bg: rgba(102,84,75, 0.8); /* #66544b with opacity */
+        --color-level-info-bg: rgba(102,84,75, 0.8);
         --color-level-info-border: #7a695f;
 
         /* Success – a natural forest green */
@@ -244,6 +244,7 @@
         --font-h4: "Aniron", "Modesto Condensed", serif;
         --font-h5: "Aniron", "Amiri", serif;
         --font-h6: "Aniron", "Signika", "Palatino Linotype", sans-serif;
+        --font-size-7: 0.464rem;
         --font-size-8: 0.5rem;
         --font-size-9: 0.5625rem;
         --font-size-10: 0.625rem;
@@ -326,57 +327,141 @@
         body.theme-dark .journal-header .title {
             color: var(--earth-gold);
         }
+        body.theme-dark code-mirror {
+            --input-background-color: var(--color-cool-5-25);
+            --active-line-color: rgba(43, 36, 31, 0.27);
+            --syntax-keyword-color: var(--earth-red);         /* Keywords: Warm brick red */
+            --syntax-comment-color: var(--earth-taupe);        /* Comments: Subdued taupe */
+            --syntax-operator-color: var(--stone-gray);        /* Operators: Weathered stone gray */
+            --syntax-var-name-color: var(--earth-gold);       /* Variable names: Deep, rich brown */
+            --syntax-func-name-color: var(--moss-green);        /* Function names: Vibrant moss green */
+            --syntax-local-var-color: var(--earth-ivory);       /* Local variables: Soft, gentle ivory */
+            --syntax-class-name-color: var(--earth-gold);       /* Class names: Muted golden beige */
+            --syntax-prop-def-color: var(--earth-gold);         /* Property definitions: Intense deep brown */
+            --syntax-boolean-color: var(--earth-beige);         /* Booleans: Light beige */
+            --syntax-number-color: var(--earth-gold);           /* Numbers: Muted golden beige (mirroring class names) */
+            --syntax-string-color: var(--forest-green);         /* Strings: Fresh forest green */
+            --syntax-regexp-color: var(--midnight-brown);       /* RegExp: Almost black brown */
+        }
+
+
+
+
+
+
+
         /*body.theme-dark .sheet.journal-entry .journal-entry-content {
-            background: url("../img/tor_bg.webp") repeat;
-            background-size: cover;
-            color: var(--earth-dark);
-        }
-        body.theme-dark .journal-sheet .journal-header .title {
-            color: var(--earth-brown);
-        }
-        body.theme-dark .journal-entry-page :is(h1, h3, h5),
-        body.theme-dark .journal-header .title {
-            color: var(--earth-brown);
-        }
-        body.theme-dark .journal-entry-page :is(h2, h4, h6){
-            color: var(--earth-red);
-        }
-        body.theme-dark .sheet.journal-entry .toc .page-heading {
-            color: var(--color-light-3);
-        }
-        body.theme-dark .sheet.journal-entry .toc li.page {
-            border-top: 1px solid var(--color-light-6);
-        }
-        body.theme-dark .sheet.journal-entry .toc .page-heading .page-number,
-        body.theme-dark .sheet.journal-entry .toc .page-heading .page-index {
-            color: var(--color-light-6);
-        }
-        body.theme-dark .sheet.journal-entry .toc li.page.active {
-            border-top: 2px solid var(--color-light-3);
-            border-bottom: 2px solid var(--color-light-3);
-            border-left: 1px solid var(--color-light-3);
-            border-right: 1px solid var(--color-light-3);
-        }
-        body.theme-dark .sheet.journal-entry .journal-sidebar input {
-            --input-text-color: var(--color-light-3);
-            --input-placeholder-color: var(--color-light-3);
-        }
-        body.theme-dark .sheet.journal-entry .journal-sidebar {
-            color: var(--color-light-3);
-        }
-        body.theme-dark .sheet.journal-entry .journal-sidebar button {
-            --button-text-color: var(--color-light-6);
-            --button-hover-border-color: var(--color-light-6);
-        }
-        body.theme-dark .sheet.journal-entry .toc .page-heading {
-            font-weight: 400;
-        }*/
+                background: url("../img/tor_bg.webp") repeat;
+                background-size: cover;
+                color: var(--earth-dark);
+            }
+            body.theme-dark .journal-sheet .journal-header .title {
+                color: var(--earth-brown);
+            }
+            body.theme-dark .journal-entry-page :is(h1, h3, h5),
+            body.theme-dark .journal-header .title {
+                color: var(--earth-brown);
+            }
+            body.theme-dark .journal-entry-page :is(h2, h4, h6){
+                color: var(--earth-red);
+            }
+            body.theme-dark .sheet.journal-entry .toc .page-heading {
+                color: var(--color-light-3);
+            }
+            body.theme-dark .sheet.journal-entry .toc li.page {
+                border-top: 1px solid var(--color-light-6);
+            }
+            body.theme-dark .sheet.journal-entry .toc .page-heading .page-number,
+            body.theme-dark .sheet.journal-entry .toc .page-heading .page-index {
+                color: var(--color-light-6);
+            }
+            body.theme-dark .sheet.journal-entry .toc li.page.active {
+                border-top: 2px solid var(--color-light-3);
+                border-bottom: 2px solid var(--color-light-3);
+                border-left: 1px solid var(--color-light-3);
+                border-right: 1px solid var(--color-light-3);
+            }
+            body.theme-dark .sheet.journal-entry .journal-sidebar input {
+                --input-text-color: var(--color-light-3);
+                --input-placeholder-color: var(--color-light-3);
+            }
+            body.theme-dark .sheet.journal-entry .journal-sidebar {
+                color: var(--color-light-3);
+            }
+            body.theme-dark .sheet.journal-entry .journal-sidebar button {
+                --button-text-color: var(--color-light-6);
+                --button-hover-border-color: var(--color-light-6);
+            }
+            body.theme-dark .sheet.journal-entry .toc .page-heading {
+                font-weight: 400;
+            }*/
     }
     @layer specific {
     }
 
     /* Light Theme */
     @layer general {
+        body.theme-light {
+            --content-link-background: rgb(84 59 40 / 15%);
+        }
+        body.theme-light input:disabled,
+        body.theme-light select:disabled,
+        body.theme-light textarea:disabled,
+        body.theme-light code-mirror:disabled {
+            --input-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light input,
+        body.theme-light select {
+            --input-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light code-mirror {
+            /* Gutter */
+            --gutter-background-color: var(--color-light-1);        /* originally #f5f5f5 */
+            --gutter-border-color: var(--color-border-light-1);       /* originally #ddd */
+
+            /* Active line (using a semi‐transparent version of var(--color-warm-1) which is #dd7263) */
+            --active-line-color: rgba(221, 114, 99, 0.1);            /* originally #cceeff44 */
+
+            /* Syntax Highlighting */
+            --syntax-keyword-color: var(--earth-red);                 /* replaces #708 with an earthy red */
+            --syntax-var-name-color: var(--forest-green);             /* replaces #00f with forest green */
+            --syntax-local-var-color: var(--moss-green);              /* replaces #30a with moss green */
+            --syntax-class-name-color: var(--earth-gold);             /* replaces #167 with warm gold */
+            --syntax-prop-def-color: var(--stone-gray);               /* replaces #00c with stone gray */
+            --syntax-boolean-color: var(--earth-taupe);               /* replaces #219 with earth taupe */
+            --syntax-number-color: var(--color-level-success);        /* replaces #164 with a natural forest green */
+            --syntax-string-color: var(--color-level-error);          /* replaces #a11 with our error red */
+            --syntax-regexp-color: var(--color-level-warning);        /* replaces #e40 with a warm amber tone */
+            --syntax-invalid-color: var(--color-level-error-border);  /* replaces #f00 with a darker error red */
+            --syntax-tag-color: var(--color-cool-4);                  /* replaces #085 with a cool, dark accent */
+            --syntax-separator-color: var(--color-cool-3);            /* replaces #00f with a cool neutral */
+        }
+        body.theme-light code-mirror:disabled {
+            --gutter-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light label.icon {
+            --input-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light label.icon:has(> input:disabled) {
+            --input-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light input[readonly] {
+            --input-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light .form-footer button {
+            --button-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light .prosemirror,
+        body.theme-light prose-mirror,
+        body.theme-light #prosemirror-dropdown,
+        body.theme-light .menu-dialog.prosemirror,
+        body.theme-light#prosemirror-dropdown,
+        body.theme-light.menu-dialog.prosemirror {
+            --color-control-hover: var(--color-light-2);
+            --menu-background: rgb(84 59 40 / 15%);
+            --dropdown-background: rgb(84 59 40 / 15%);
+            --dropdown-border: var(--color-border-light-2);
+        }
         body.theme-light .application {
             --background: url("../modules/tor2e-theme/img/tor_bg.webp") repeat;
             background-size: cover;
@@ -411,7 +496,7 @@
             color: var(--earth-brown);
         }
         body.theme-light .sheet.journal-entry .toc li.page {
-            border-top: 1px solid var(--earth-taupe);
+            border-top: 1px solid var(--earth-beige);
         }
         body.theme-light .sheet.journal-entry .toc .page-heading .page-number,
         body.theme-light .sheet.journal-entry .toc .page-heading .page-index {
@@ -439,6 +524,116 @@
             --background: url("../img/tor_bg.webp") repeat;
             background-size: cover;
         }
+        .application.theme-light,
+        .themed.theme-light {
+            /* #ddd → a soft, light beige */
+            --content-link-background: var(--earth-beige);
+        }
+        .application.theme-light #context-menu,
+        .themed.theme-light #context-menu,
+        .application.theme-light#context-menu,
+        .themed.theme-light#context-menu {
+            /* #d9d8c8 → a warm light neutral */
+            --background-color: var(--color-light-3);
+            /* #999 → using a light border tone from the palette */
+            --border-color: var(--color-border-light-2);
+            --group-separator: var(--color-border-light-2);
+            --hover-entry-border: var(--color-border-light-2);
+            /* #f0f0e0 → a subtle off-white */
+            --hover-entry-background: var(--color-light-2);
+        }
+        .application.theme-light code-mirror,
+        .themed.theme-light code-mirror {
+            /* #f5f5f5 → a very light tone */
+            --gutter-background-color: var(--earth-cream);
+            /* #ddd → a soft, neutral tone */
+            --gutter-border-color: var(--earth-beige);
+            /* Active line highlight: using forest-green (converted to rgb) at ~27% opacity */
+            --active-line-color: rgba(64, 125, 100, 0.27);
+            /* Syntax colors */
+            --syntax-keyword-color: var(--earth-red);         /* replaces #708 */
+            --syntax-var-name-color: var(--moss-green);       /* replaces #00f */
+            --syntax-local-var-color: var(--forest-green);     /* replaces #30a */
+            --syntax-class-name-color: var(--earth-gold);      /* replaces #167 */
+            --syntax-prop-def-color: var(--earth-taupe);       /* replaces #00c */
+            --syntax-boolean-color: var(--deep-brown);         /* replaces #219 */
+            --syntax-number-color: var(--earth-brown);         /* replaces #164 */
+            --syntax-string-color: var(--earth-ivory);         /* replaces #a11 */
+            --syntax-regexp-color: var(--midnight-brown);      /* replaces #e40 */
+            --syntax-invalid-color: var(--color-level-error);  /* replaces #f00 */
+            --syntax-tag-color: var(--stone-gray);             /* replaces #085 */
+            --syntax-separator-color: var(--earth-dark);       /* replaces #00f */
+        }
+
+        .application.theme-light .prosemirror,
+        .themed.theme-light .prosemirror,
+        .application.theme-light prose-mirror,
+        .themed.theme-light prose-mirror,
+        .application.theme-light #prosemirror-dropdown,
+        .themed.theme-light #prosemirror-dropdown,
+        .application.theme-light .menu-dialog.prosemirror,
+        .themed.theme-light .menu-dialog.prosemirror,
+        .application.theme-light#prosemirror-dropdown,
+        .themed.theme-light#prosemirror-dropdown,
+        .application.theme-light.menu-dialog.prosemirror,
+        .themed.theme-light.menu-dialog.prosemirror {
+            --menu-background: rgb(84 59 40 / 15%);
+            /* Originally #f0f0e0 */
+            --color-control-hover: var(--color-light-2);
+            /* Originally #d9d8c8 */
+            --dropdown-background: var(--color-light-3);
+            /* Originally #999 */
+            --dropdown-border: var(--color-border-light-2);
+        }
+
+        .app.theme-light .standard-form {
+            /* Originally #ddd */
+            --content-link-background: var(--earth-beige);
+        }
+
+        .app.theme-light .standard-form #context-menu,
+        .app.theme-light .standard-form#context-menu {
+            /* Originally #d9d8c8 */
+            --background-color: var(--color-light-3);
+            /* Originally #999 */
+            --border-color: var(--color-border-light-2);
+            --group-separator: var(--color-border-light-2);
+            --hover-entry-border: var(--color-border-light-2);
+            /* Originally #f0f0e0 */
+            --hover-entry-background: var(--color-light-2);
+        }
+        .app.theme-light .standard-form code-mirror {
+            /* Originally #f5f5f5 – a very light background */
+            --gutter-background-color: var(--earth-cream);
+            /* Originally #ddd – a light neutral border */
+            --gutter-border-color: var(--earth-beige);
+            /* Active line: using forest-green (#407d64 → rgb(64,125,100)) at 27% opacity */
+            --active-line-color: rgba(64, 125, 100, 0.27);
+
+            /* Syntax Colors */
+            --syntax-keyword-color: var(--earth-red);         /* replaces #708 */
+            --syntax-var-name-color: var(--moss-green);         /* replaces #00f */
+            --syntax-local-var-color: var(--forest-green);       /* replaces #30a */
+            --syntax-class-name-color: var(--earth-gold);        /* replaces #167 */
+            --syntax-prop-def-color: var(--earth-taupe);         /* replaces #00c */
+            --syntax-boolean-color: var(--deep-brown);           /* replaces #219 */
+            --syntax-number-color: var(--earth-brown);           /* replaces #164 */
+            --syntax-string-color: var(--earth-ivory);           /* replaces #a11 */
+            --syntax-regexp-color: var(--midnight-brown);        /* replaces #e40 */
+            --syntax-invalid-color: var(--color-level-error);    /* replaces #f00 */
+            --syntax-tag-color: var(--stone-gray);               /* replaces #085 */
+            --syntax-separator-color: var(--earth-dark);         /* replaces #00f */
+        }
+        .app.theme-light .standard-form .prosemirror,
+        .app.theme-light .standard-form prose-mirror,
+        .app.theme-light .standard-form #prosemirror-dropdown,
+        .app.theme-light .standard-form .menu-dialog.prosemirror,
+        .app.theme-light .standard-form#prosemirror-dropdown,
+        .app.theme-light .standard-form.menu-dialog.prosemirror {
+            --color-control-hover: var(--color-light-2);   /* Originally #f0f0e0 */
+            --dropdown-background: var(--color-light-3);     /* Originally #d9d8c8 */
+            --dropdown-border: var(--color-border-light-2);    /* Originally #999 */
+        }
     }
 }
 
@@ -447,6 +642,14 @@
 }
 
 @layer applications {
+    /* ---------------------------------------- */
+    /* Support Details Report                   */
+    /* ---------------------------------------- */
+    #support-details pre {
+        font-family: var(--font-monospace), sans-serif;
+        letter-spacing: 0.05em;
+    }
+
     /* ----------------------------------------- */
     /*  Settings                                 */
     /* ----------------------------------------- */
@@ -505,7 +708,7 @@
     .journal-sheet .journal-header {
         margin: 5px;
     }
-    .journal-sheet .journal-header input{
+    .journal-sheet .journal-header .title {
         height: 40px;
     }
     .journal-sheet p {
@@ -623,33 +826,113 @@
         bottom: 0;
         background-image: url(../img/tor_border_bottom.webp);
     }
-
-    .journal-page-content code,
-    .sheet-container .editor-content code,
-    .editor-container .editor-content code {
-
-
+    /* ---------------------------------------- */
+    /* RollTable Sheet                          */
+    /* ---------------------------------------- */
+    .roll-table-sheet.view-mode header.sheet-header h1 {
+        font-size: var(--font-h2-size);
     }
-
-    .journal-page-content code::before,
-    .journal-page-content code::after,
-    .editor-container .editor-content code::before,
-    .editor-container .editor-content code::after,
-    .sheet-container .editor-content code::before,
-    .sheet-container .editor-content code::after{
-
+    .roll-table-sheet.view-mode table td > details > p {
+        margin-left: 0;
     }
-
-    .journal-page-content code::before,
-    .sheet-container .editor-content code:before,
-    .editor-container .editor-content code:before {
-        /* Top border image */
+    /* --------------------------------------- */
+    /*  Shared DocumentSheet Styling           */
+    /* --------------------------------------- */
+    .sheet .standard-form header.img-name input {
+        font-family: var(--font-h1), sans-serif;
+        font-size: var(--font-h2-size);
     }
-
-    .journal-page-content code::after,
-    .sheet-container .editor-content code:after,
-    .editor-container .editor-content code:after {
-         /* Bottom border image */
+    /* ---------------------------------- */
+    /*  Scenes                            */
+    /* ---------------------------------- */
+    .scenes-sidebar .scene .entry-name {
+        font-size: var(--font-size-12);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Actors                       */
+    /* ---------------------------------- */
+    .actors-sidebar .directory-item .entry-name {
+        font-size: var(--font-size-8);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Items
+    /* ---------------------------------- */
+    .items-sidebar .directory-item .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Folders                           */
+    /* ---------------------------------- */
+    li.folder > .folder-header .folder-name {
+        font-size: var(--font-size-10);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Journal                           */
+    /* ---------------------------------- */
+    .journal-sidebar .directory-item.entry .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Combat Tracker                    */
+    /* ---------------------------------- */
+    .combat-sidebar .combat-tracker .combatant {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Combat Tracker                    */
+    /* ---------------------------------- */
+    .compendium-sidebar .compendium .entry-name strong {
+        font-size: var(--font-size-12);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Macros                    */
+    /* ---------------------------------- */
+    .macros-sidebar .directory-item.entry .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Macros                    */
+    /* ---------------------------------- */
+    .macros-sidebar .directory-item.entry .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Cards                    */
+    /* ---------------------------------- */
+    .cards-sidebar .directory-item.entry .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Tables                    */
+    /* ---------------------------------- */
+    .tables-sidebar .directory-item.entry .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ------------------------------------------ */
+    /*  Players                                   */
+    /* ------------------------------------------ */
+    #players {
+        font-size: var(--font-size-7);
+        font-family: var(--font-h1), sans-serif;
+    }
+    #players #performance-stats {
+        font-family: var(--font-monospace), sans-serif;
+        letter-spacing: 0.05em;
+        font-size: var(--font-size-9);
+    }
+    #players .player.self .player-name {
+        --player-name-color: var(--color-level-success);
     }
 }
 
@@ -661,7 +944,8 @@
     body.game .app .tabs > [data-tab].active {
         text-shadow: revert;
     }
-    body.game .sheet.app .editor-content blockquote {
+    body.game .sheet.app .editor-content blockquote,
+    body.game .sheet.app .editor-container-toggelable blockquote {
         position: relative;
         font-family: var(--font-body), sans-serif;
         font-style: unset;
@@ -672,7 +956,9 @@
         color: var(--earth-brown);
     }
     body.game .sheet.app .editor-content blockquote:before,
-    body.game .sheet.app .editor-content blockquote:after {
+    body.game .sheet.app .editor-content blockquote:after,
+    body.game .sheet.app .editor-container-toggelable blockquote:before,
+    body.game .sheet.app .editor-container-toggelable blockquote:after {
         content: "";
         position: absolute;
         width: 10px;
@@ -683,20 +969,23 @@
         transform: translateY(-50%);
         background-position: center;
     }
-    body.game .sheet.app .editor-content blockquote:before {
+    body.game .sheet.app .editor-content blockquote:before,
+    body.game .sheet.app .editor-container-toggelable blockquote:before {
         left: 0;
         background-image: url(../img/tor_border_left.webp);
     }
-    body.game .sheet.app .editor-content blockquote:after{
+    body.game .sheet.app .editor-content blockquote:after,
+    body.game .sheet.app .editor-container-toggelable blockquote:after {
         right: 0;
         background-image: url(../img/tor_border_right.webp);
     }
-    body.game .sheet.app .editor-content code {
+    body.game .sheet.app .editor-content code,
+    body.game .sheet.app .editor-container-toggelable code {
         font-family: var(--font-code), sans-serif;
         letter-spacing: 0.08125em;
         position: relative;
         display: block;
-        padding: 30px 20px;
+        padding: 30px 0;
         background: revert;
         border: none;
         font-size: var(--font-size-12);
@@ -704,7 +993,9 @@
         color: var(--earth-brown);
     }
     body.game .sheet.app .editor-content code:before,
-    body.game .sheet.app .editor-content code:after {
+    body.game .sheet.app .editor-content code:after,
+    body.game .sheet.app .editor-container-toggelable code:before,
+    body.game .sheet.app .editor-container-toggelable code:after {
         content: "";
         position: absolute;
         left: 50%;
@@ -715,23 +1006,60 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    body.game .sheet.app .editor-content code:before {
+    body.game .sheet.app .editor-content code:before,
+    body.game .sheet.app .editor-container-toggelable code:before {
         top: 0;
         background-image: url(../img/tor_border_top.webp);
     }
-    body.game .sheet.app .editor-content code:after {
+    body.game .sheet.app .editor-content code:after,
+    body.game .sheet.app .editor-container-toggelable code:after {
         bottom: 0;
         background-image: url(../img/tor_border_bottom.webp);
     }
-
     body.game .sheet.app .editor-edit {
         z-index: 1;
+    }
+    #tours-management .tour .status {
+        color: var(--color-text-dark-6);
     }
 
     @layer base {
         body.game .app.window-app .window-content {
             background: url("../img/tor_bg.webp") repeat;
             background-size: cover;
+        }
+        body.game .app form button {
+            background: rgb(84 59 40 / 15%);
+        }
+        body.game .app input[type="text"],
+        body.game .app input[type="number"],
+        body.game .app input[type="password"],
+        body.game .app input[type="date"],
+        body.game .app input[type="time"],
+        body.game .app input[type="search"] {
+            background: rgb(84 59 40 / 15%);
+        }
+        body.game .app input[type="text"]:focus,
+        body.game .app input[type="number"]:focus,
+        body.game .app input[type="password"]:focus,
+        body.game .app input[type="date"]:focus,
+        body.game .app input[type="time"]:focus,
+        body.game .app input[type="search"]:focus {
+            border: 2px solid var(--earth-red);
+            box-shadow: 0 0 0;
+        }
+        body.game .app select {
+            background: rgb(84 59 40 / 15%);
+        }
+        body.game .app select:focus {
+            border: 2px solid var(--earth-red);
+            box-shadow: 0 0 0;
+        }
+        body.game .app.dialog .dialog-buttons button {
+            background: rgb(84 59 40 / 15%);
+        }
+        #keybindings .binding .key.uneditable {
+            background: rgb(84 59 40 / 15%);
         }
     }
 }
