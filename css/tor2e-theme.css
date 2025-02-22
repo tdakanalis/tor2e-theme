@@ -140,20 +140,20 @@
         --color-cool-5-90: rgba(43, 36, 31, 0.9);
 
         /* Light Neutrals – subtle backgrounds & accents */
-        --color-light-1: var(--earth-cream);
-        --color-light-2: #f2eee5;  /* Subtle off-white */
-        --color-light-3: #e6dccf;  /* Sandy beige */
-        --color-light-4: var(--earth-gold);
-        --color-light-5: var(--earth-taupe);
-        --color-light-6: #7f6a60;  /* Muted dark taupe */
+        --color-light-1: #f8f8f8;  /* Soft, neutral off-white with a cool tone */
+        --color-light-2: #eae7e3;  /* Light gray-beige with a subtle cool undertone */
+        --color-light-3: #dbd4ce;  /* Muted taupe with a cool balance */
+        --color-light-4: #c7beb6;  /* Soft greige with a cooler tint */
+        --color-light-5: #a99b94;  /* Desaturated taupe with a grayish tone */
+        --color-light-6: #95897f;  /* Muted, earthy gray-brown */
 
         /* Dark Neutrals – rich, grounded dark shades */
         --color-dark-1: var(--earth-dark);
         --color-dark-2: var(--midnight-brown);  /* Midnight brown */
         --color-dark-3: var(--deep-brown);  /* Deep brown */
-        --color-dark-4: #503d33;  /* Rich dark bark */
-        --color-dark-5: #66544b;  /* Mellow dark brown */
-        --color-dark-6: #7a695f;  /* Lighter dark brown */
+        --color-dark-4: #55453B;  /* Muted brown with subtle taupe influence */
+        --color-dark-5: #625349;  /* Cool, earthy brown */
+        --color-dark-6: #736459;  /* Dark taupe with a gray-brown balance */
 
         /* Error – an earthy, muted red */
         --color-level-error: #a14040;
@@ -161,9 +161,9 @@
         --color-level-error-border: #7a2e2e;
 
         /* Info – a dusty slate blue */
-        --color-level-info: #503d33;
-        --color-level-info-bg: rgba(102,84,75, 0.8);
-        --color-level-info-border: #7a695f;
+        --color-level-info: #55453B;
+        --color-level-info-bg: #625349;
+        --color-level-info-border: #736459;
 
         /* Success – a natural forest green */
         --color-level-success: #4f6d4a;
@@ -638,7 +638,12 @@
 }
 
 @layer elements.typography {
-
+    span.reference {
+        font-size: var(--font-size-9);
+        background: var(--color-dark-2); /* Originally #282e33 */
+        color: var(--earth-cream);        /* Originally #c5dbe3 */
+        border: 1px solid var(--earth-beige); /* Originally #def7ff */
+    }
 }
 
 @layer applications {
@@ -800,11 +805,12 @@
         letter-spacing: 0.08125em;
         position: relative;
         display: block;
-        padding: 30px 20px;
+        padding: 30px 0;
         background: revert;
         border: none;
         font-size: var(--font-size-12);
-        white-space: revert;
+        white-space: break-spaces;
+        text-align: justify;
     }
     .sheet.journal-sheet code:before,
     .sheet.journal-sheet code:after {
@@ -932,7 +938,15 @@
         font-size: var(--font-size-9);
     }
     #players .player.self .player-name {
-        --player-name-color: var(--color-level-success);
+        --player-name-color: var(--earth-gold);
+    }
+    /* ------------------------------------------ */
+    /*  Tooltip                                   */
+    /* ------------------------------------------ */
+    #tooltip,
+    .locked-tooltip {
+        font-family: var(--font-h1), sans-serif;
+        font-size: var(--font-size-9);
     }
 }
 
@@ -989,7 +1003,7 @@
         background: revert;
         border: none;
         font-size: var(--font-size-12);
-        white-space: revert;
+        white-space: break-spaces;
         color: var(--earth-brown);
     }
     body.game .sheet.app .editor-content code:before,
