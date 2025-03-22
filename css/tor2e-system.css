@@ -241,11 +241,28 @@
     border: 0;
 }
 
-.popup .form-group .label, .popup .form-group label {
+.popup .form-group p.label,
+section#difficulty-block .form-group label,
+section#modifier-block .form-group label,
+section#advanced-block .form-group label,
+section#hope .form-group .input.principal p.warn.label {
     font-family: var(--font-h1-bold), sans-serif;
     color: var(--color-warm-2);
-    font-size: var(--font-size-8);
+    font-size: var(--font-size-10);
     font-weight: unset;
+}
+
+section#hope .form-group .input.secondary p.label {
+    font-size: var(--font-size-8);
+}
+
+.tor2e.sheet .skill-card-component .identification p.skill-label.magical-skill:before,
+.tor2e.sheet .skill-card-component .identification p.skill-label.magical-skill:after {
+    margin-bottom: 0.2em;
+}
+
+#chat-log .dice-result .message.dice-total {
+    border: unset !important;
 }
 
 .popup input {
