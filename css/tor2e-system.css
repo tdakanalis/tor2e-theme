@@ -318,24 +318,8 @@ input:checked + .slider {
     background: unset;
 }
 
-.tor2e.sheet.actor .hostile-friendly .hf-slider {
-    min-width: 13em;
-}
-
 .tor2e.sheet.actor .hostile-friendly .hf-slider span {
-    padding-left: 0.3125em;
-    padding-right: 0.3125em;
     align-content: center;
-}
-
-#modify-roll .slider {
-    min-height: 2em;
-    min-width: 4.7em;
-    align-content: center;
-}
-
-#modify-roll .best-worst span.left-align {
-    padding-left: 1.3em;
 }
 
 .tor2e.sheet .window-content h1, .tor2e.sheet .window-content h2, .tor2e.sheet .window-content h3,
