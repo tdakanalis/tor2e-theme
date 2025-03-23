@@ -1,7 +1,10 @@
 # Changelog
 
+### 1.1.1 (2025-03-23)
+- Fixes the css for sliders in the dice roll dialogue 
+
 ### 1.1.0 (2025-03-22)
-- Fix the css for hope bonus and automatic success sections
+- Fixes the css for hope bonus and automatic success sections
 
 ### 1.0.0 (2025-02-08)
 - First stable version
