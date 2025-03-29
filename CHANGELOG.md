@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.2.2 (2025-03-29)
+- Fixes font sizes in groups for d&d 5e system
+
 ### 1.2.1 (2025-03-29)
 - Fixes font sizes in items for d&d 5e system
 - 

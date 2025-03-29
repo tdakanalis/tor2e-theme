@@ -220,3 +220,11 @@
     margin: -20px 0 0;
 }
 
+.dnd5e.sheet.group .members .directory-header > * {
+    font-size: var(--font-size-10);
+}
+
+.dnd5e .items-list .items-header h3 {
+    font-size: var(--font-size-10);
+}
+
