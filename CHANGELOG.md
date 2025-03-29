@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.2.0 (2025-03-29)
+- Adds support for d&d 5e system
+
 ### 1.1.1 (2025-03-23)
 - Fixes the css for sliders in the dice roll dialogue 
 

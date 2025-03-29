@@ -1,0 +1,184 @@
+:root {
+    /* Text Colors */
+    --color-text-dark-primary: #1d1918;
+    --color-text-dark-inactive: #ba9a94;
+    --color-text-dark-5: #84644a;
+    --color-text-light-6: #937f71;
+
+    /* Border Colors */
+    --color-border-light-1: #e6d9cc;
+    --color-border-dark-5: #84644a;
+    --color-border-light-tertiary: #ba9a94;
+
+    /* Form Fields */
+    --form-field-height: 26px;
+
+    /* Shadows */
+    --color-shadow-primary: #bc483b;
+
+    /* Additional Borders */
+    --color-border-light-2: #ba9a94;
+
+    /* D&D 5e Color Scheme */
+    --dnd5e-color-dark: #3e2a1e;
+    --dnd5e-color-black: #1d1918;
+    --dnd5e-color-faint: #f3e9df;
+    --dnd5e-color-beige: #d4c5b6;
+    --dnd5e-color-tan: #7a5a46;
+    --dnd5e-color-olive: #543b28;
+    --dnd5e-color-crimson: #ac323b;
+    --dnd5e-color-groove: #e6d9cc;
+    /*--dnd5e-color-gold: #b39e8f;*/
+    --dnd5e-color-red: #bc483b;
+    --dnd5e-color-blue: #543b28;
+    --dnd5e-color-green: #3b7a48;
+    --dnd5e-color-maroon: #bc483b;
+    --dnd5e-color-parchment: #fffbf3;
+    --dnd5e-color-purple: #e07060;
+    --dnd5e-color-scrollbar: #AC323BFF;
+    --dnd5e-color-card: #fffbf3;
+
+    /* HP/HD Colors */
+    --dnd5e-color-hp-1: #2e5c38;
+    --dnd5e-color-hp-2: #3b7a48;
+    --dnd5e-color-hp-3: rgba(59, 122, 72, 0.8);
+    --dnd5e-color-hd-1: #7a3a60;
+    --dnd5e-color-hd-2: #bc483b;
+    --dnd5e-color-hd-3: rgba(188, 72, 59, 0.8);
+
+    /* Spellcasting Colors */
+    --dnd5e-color-sc-1: #70523c;
+    --dnd5e-color-sc-2: #84644a;
+
+    /* Status Colors */
+    --dnd5e-color-success: #3b7a48;
+    --dnd5e-color-success-background: rgba(59, 122, 72, 0.8);
+    --dnd5e-color-success-critical: #3b7a48;
+    --dnd5e-color-failure: #bc483b;
+    --dnd5e-color-failure-background: rgba(188, 72, 59, 0.8);
+    --dnd5e-color-failure-critical: #bc483b;
+
+    /* Note Colors */
+    --dnd5e-color-note-info: #7a5a46;
+    --dnd5e-color-note-warn: #e07060;
+
+    /* Application Colors */
+    --dnd5e-color-application-damage: #e07060;
+    --dnd5e-color-application-healing: #3b7a48;
+    --dnd5e-color-application-temp: #543b28;
+
+    /* Table Colors */
+    --dnd5e-color-table-row-even: #fffbf3;
+    --dnd5e-color-table-row-odd: #f3e9df;
+
+    /* Backgrounds */
+    --dnd5e-background-25: rgba(29, 25, 24, 0.25);
+    --dnd5e-background-10: rgba(29, 25, 24, 0.1);
+    --dnd5e-background-5: rgba(29, 25, 24, 0.05);
+    --dnd5e-background-card: #fffbf3;
+    --dnd5e-background-parchment: #fffbf3;
+
+    /* Borders */
+    --dnd5e-border-dark: 1px solid #4a3426;
+    --dnd5e-border-light: 1px solid #e6d9cc;
+    --dnd5e-border-groove: 2px groove #e6d9cc;
+    --dnd5e-border-dotted: 1px dotted #ba9a94;
+    /*--dnd5e-border-gold: 1px solid #84644a;*/
+
+    /* Typography */
+    --dnd5e-font-modesto: "Aniron", serif;
+    --dnd5e-font-roboto: "NewBaskerville", sans-serif;
+
+    /* Font Sizes */
+    --font-size-9: 0.6875rem;
+    --font-size-10: 0.8125rem;
+    --font-size-23: 1.5rem;
+    --font-size-30: 2rem;
+    --font-size-36: 2.25rem;
+    --font-size-42: 3rem;
+    --font-size-46: 3rem;
+
+    /* Typography */
+    --dnd5e-font-roboto-condensed: "NewBaskerville", sans-serif;
+    --dnd5e-font-roboto-slab: "NewBaskerville", serif;
+
+    /* Shadows */
+    --dnd5e-shadow-45: rgba(29, 25, 24, 0.45);  /* Based on --color-cool-5-90 */
+    --dnd5e-shadow-15: rgba(29, 25, 24, 0.15);  /* Based on --color-cool-5-25 */
+
+    /* Highlights */
+    --dnd5e-highlight-10: rgba(255, 255, 255, 0.1);
+    --dnd5e-highlight-45: rgba(255, 255, 255, 0.45);
+
+    /* Capacity Colors */
+    --dnd5e-capacity-container-background-color: #f3e9df;  /* --color-light-2 */
+    --dnd5e-capacity-container-border-color: #4a3426;      /* --color-dark-2 */
+    --dnd5e-capacity-background-color: #e6d9cc;           /* --color-light-3 */
+    --dnd5e-capacity-border-color: #d4c5b6;               /* --color-light-4 */
+    --dnd5e-capacity-text-color: #1d1918;                 /* --color-cool-5 */
+}
+
+.dnd5e2.sheet.actor.character .sheet-body .skills .name,
+.dnd5e2.sheet.actor.character .sheet-body .tools .name,
+.dnd5e2.sheet.actor.character .sheet-body .saves .name {
+    flex: 1;
+    font-size: unset;
+}
+
+.dnd5e2.sheet.actor.character .sheet-header .document-name {
+    font-size: var(--font-size-24);
+}
+
+.system-dnd5e :is(.chat-popout, #chat-log, .chat-log) .message .message-header .subtitle {
+     font-size: var(--font-size-6);
+     color: var(--dnd5e-color-red);
+}
+
+.system-dnd5e  .dice-total {
+    font-size: var(--font-size-24) !important;
+}
+
+.system-dnd5e  .flavor-text {
+    font-size: var(--font-size-13) !important;
+}
+
+.sheet.dnd5e2-journal.journal-entry .journal-entry-content h3 {
+    font-family: NewBaskervilleBold, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.sheet.dnd5e2-journal.journal-entry .journal-header .title,
+.sheet.dnd5e2-journal.journal-entry .journal-entry-content h1,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h1,
+.sheet.dnd5e2-journal.journal-entry .journal-entry-content h2,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h2,
+.sheet.dnd5e2-journal.journal-entry .journal-entry-content h3,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h3,
+.sheet.dnd5e2-journal.journal-entry .journal-entry-content h4,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h4,
+.sheet.dnd5e2-journal.journal-entry .journal-entry-content h5,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h5,
+.sheet.dnd5e2-journal.journal-entry .journal-entry-content h6,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h6 {
+    font-size: unset;
+    font-weight: normal;
+}
+
+.sheet.dnd5e2-journal.journal-entry .journal-entry-content, .sheet.dnd5e2-journal.journal-entry-page .window-content {
+    background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+}
+
+.sheet.dnd5e2-journal.journal-entry .journal-entry-content h1,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h1,
+.sheet.dnd5e2-journal.journal-entry .journal-header .title{
+    font-size: var(--font-h1-size);
+}
+
+.dnd5e2#pause figcaption {
+    font-size: var(--font-size-24);
+}
+
+.dnd5e2-journal.app .editable .journal-header .title {
+    font-size: var(--font-size-18);
+}
