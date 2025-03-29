@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.2.3 (2025-03-29)
+- Fixes font sizes for chat log and item titles
+
 ### 1.2.2 (2025-03-29)
 - Fixes font sizes in groups for d&d 5e system
 

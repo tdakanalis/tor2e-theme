@@ -135,7 +135,7 @@
 }
 
 .system-dnd5e  .dice-total {
-    font-size: var(--font-size-24) !important;
+    font-size: var(--font-size-20) !important;
 }
 
 .system-dnd5e  .flavor-text {
@@ -185,7 +185,7 @@
 
 .dnd5e2.sheet.item .sheet-header .document-name,
 .dnd5e2.sheet.actor.npc .sheet-header .document-name {
-    font-size: var(--font-size-12);
+    font-size: var(--font-size-16);
 }
 
 .dnd5e.sheet .sheet-header h1 input {
