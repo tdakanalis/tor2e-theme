@@ -454,6 +454,24 @@ li.roll-characteristic.active.negative {
     border-bottom: none;
 }
 
+.sheet.journal-entry .pages-list .directory-item.active {
+    border-top: 1px solid var(--color-border-highlight);
+    border-bottom: 1px solid var(--color-border-highlight);
+    margin-bottom: -1px;
+}
+
+.sheet.journal-entry .pages-list .directory-item.active + .directory-item.active {
+    border-top: none;
+}
+
+.sheet.journal-entry .pages-list .directory-item.active:has(+ .directory-item.active) {
+    border-bottom: none;
+}
+
+.sheet.journal-entry .pages-list .directory-item.active + .directory-item:not(.active) {
+    border-top: 1px solid var(--color-border-highlight);
+}
+
 .sheet.journal-entry .pages-list .page-heading .page-title:hover {
     cursor: pointer;
     color: var(--color-warm-2);
