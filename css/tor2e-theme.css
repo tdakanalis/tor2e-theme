@@ -15,7 +15,7 @@
     --midnight-brown: #2b241f;  /* Almost black brown */
 }
 
-@layer variables, elements, applications, compatibility;
+@layer variables, elements, blocks, applications, compatibility;
 
 @layer variables.base {
     /* ----------------------------------------- */
@@ -180,6 +180,8 @@
            ======================== */
         --color-scrollbar: var(--color-warm-3);  /* Deep, robust red */
         --color-scrollbar-border: #a24f43;
+
+        --color-bg-light: rgba(84, 59, 40, 0.1);
     }
 
     /* ---------------------------------------- */
@@ -274,7 +276,11 @@
     /* ---------------------------------------- */
     /*  Chat Cards                              */
     /* ---------------------------------------- */
-    .chat-message {
+    .chat-message,.chat-message.whisper {
+        font-size: var(--font-size-13);
+        background: url("../img/tor_bg.webp") repeat;
+        background-size: cover;
+
         /*--color-blind-background: #f5eaf5;
         --color-blind-border: #6b476b;
         --color-emote-background: #f3edde;
@@ -344,57 +350,13 @@
             --syntax-regexp-color: var(--midnight-brown);       /* RegExp: Almost black brown */
         }
 
+        body.theme-dark .sheet.journal-entry .toc li.page.active + li.page.active {
+            border-top: 1px solid var(--color-dark-3) !important;
+        }
 
-
-
-
-
-
-        /*body.theme-dark .sheet.journal-entry .journal-entry-content {
-                background: url("../img/tor_bg.webp") repeat;
-                background-size: cover;
-                color: var(--earth-dark);
-            }
-            body.theme-dark .journal-sheet .journal-header .title {
-                color: var(--earth-brown);
-            }
-            body.theme-dark .journal-entry-page :is(h1, h3, h5),
-            body.theme-dark .journal-header .title {
-                color: var(--earth-brown);
-            }
-            body.theme-dark .journal-entry-page :is(h2, h4, h6){
-                color: var(--earth-red);
-            }
-            body.theme-dark .sheet.journal-entry .toc .page-heading {
-                color: var(--color-light-3);
-            }
-            body.theme-dark .sheet.journal-entry .toc li.page {
-                border-top: 1px solid var(--color-light-6);
-            }
-            body.theme-dark .sheet.journal-entry .toc .page-heading .page-number,
-            body.theme-dark .sheet.journal-entry .toc .page-heading .page-index {
-                color: var(--color-light-6);
-            }
-            body.theme-dark .sheet.journal-entry .toc li.page.active {
-                border-top: 2px solid var(--color-light-3);
-                border-bottom: 2px solid var(--color-light-3);
-                border-left: 1px solid var(--color-light-3);
-                border-right: 1px solid var(--color-light-3);
-            }
-            body.theme-dark .sheet.journal-entry .journal-sidebar input {
-                --input-text-color: var(--color-light-3);
-                --input-placeholder-color: var(--color-light-3);
-            }
-            body.theme-dark .sheet.journal-entry .journal-sidebar {
-                color: var(--color-light-3);
-            }
-            body.theme-dark .sheet.journal-entry .journal-sidebar button {
-                --button-text-color: var(--color-light-6);
-                --button-hover-border-color: var(--color-light-6);
-            }
-            body.theme-dark .sheet.journal-entry .toc .page-heading {
-                font-weight: 400;
-            }*/
+        body.theme-dark .sheet.journal-entry .toc li.page.active + li.page {
+            border-top: 1px solid var(--color-dark-3) !important;
+        }
     }
     @layer specific {
     }
@@ -512,6 +474,14 @@
         body.theme-light .sheet.journal-sheet blockquote,
         body.theme-light .sheet.journal-sheet code {
             color: var(--earth-brown);
+        }
+
+        body.theme-light .sheet.journal-entry .toc li.page.active + li.page.active {
+            border-top: 1px solid var(--earth-beige) !important;
+        }
+
+        body.theme-light .sheet.journal-entry .toc li.page.active + li.page {
+            border-top: 1px solid var(--earth-beige) !important;
         }
     }
     @layer specific {
@@ -646,6 +616,28 @@
     }
 }
 
+@layer blocks.base {
+    /* ----------------------------------------- */
+    /*  Roll Message                             */
+    /* ----------------------------------------- */
+    .dice-roll .dice-total {
+        border: unset !important;
+        font-size: var(--font-size-12);
+        color: var(--earth-brown);
+    }
+
+    .dice-roll .dice-total .failure {
+        color: var(--earth-red);
+    }
+
+    .dice-roll .dice-total .success {
+        color: var(--color-level-success);
+    }
+    .dice-roll .dice-formula, .dice-roll .dice-total {
+        background: var(--color-bg-light);
+    }
+}
+
 @layer applications {
     /* ---------------------------------------- */
     /* Support Details Report                   */
@@ -756,14 +748,16 @@
         padding-right: 5px;
         padding-left: 5px;
     }
+
+    .sheet.journal-entry .toc li.page.active:has(+ li.page.active) {
+        border-bottom: none;
+    }
+
     .sheet.journal-entry .toc li.page.active {
         border-top: 2px solid var(--color-warm-2);
         border-bottom: 2px solid var(--color-warm-2);
         border-left: 1px solid var(--color-warm-2);
         border-right: 1px solid var(--color-warm-2);
-    }
-    .sheet.journal-entry .toc li.page.active + li.page {
-        border-top: 0;
     }
     .sheet.journal-entry .toc .heading-link {
         font-size: var(--font-size-13);
@@ -948,6 +942,20 @@
         font-family: var(--font-h1), sans-serif;
         font-size: var(--font-size-9);
     }
+
+    /* ---------------------------------- */
+    /*  Single Chat Message               */
+    /* ---------------------------------- */
+    .chat-message .message-header .message-sender {
+        color: var(--earth-red);
+        font-weight: bold;
+        font-family: var(--font-h4), sans-serif;
+        font-size: var(--font-size-10);
+    }
+    .chat-message .message-header .message-metadata {
+        font-size: var(--font-size-12);
+    }
+
 }
 
 @layer compatibility {
