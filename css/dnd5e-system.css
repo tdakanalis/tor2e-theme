@@ -52,10 +52,10 @@
 
     /* Status Colors */
     --dnd5e-color-success: #3b7a48;
-    --dnd5e-color-success-background: rgba(59, 122, 72, 0.8);
+    --dnd5e-color-success-background: rgba(59, 122, 72, 0.1);
     --dnd5e-color-success-critical: #3b7a48;
     --dnd5e-color-failure: #bc483b;
-    --dnd5e-color-failure-background: rgba(188, 72, 59, 0.8);
+    --dnd5e-color-failure-background: rgba(188, 72, 59, 0.1);
     --dnd5e-color-failure-critical: #bc483b;
 
     /* Note Colors */
@@ -70,13 +70,6 @@
     /* Table Colors */
     --dnd5e-color-table-row-even: #fffbf3;
     --dnd5e-color-table-row-odd: #f3e9df;
-
-    /* Backgrounds */
-    --dnd5e-background-25: rgba(29, 25, 24, 0.25);
-    --dnd5e-background-10: rgba(29, 25, 24, 0.1);
-    --dnd5e-background-5: rgba(29, 25, 24, 0.05);
-    --dnd5e-background-card: #fffbf3;
-    --dnd5e-background-parchment: #fffbf3;
 
     /* Borders */
     --dnd5e-border-dark: 1px solid #4a3426;
@@ -111,11 +104,7 @@
     --dnd5e-highlight-45: rgba(255, 255, 255, 0.45);
 
     /* Capacity Colors */
-    --dnd5e-capacity-container-background-color: #f3e9df;  /* --color-light-2 */
     --dnd5e-capacity-container-border-color: #4a3426;      /* --color-dark-2 */
-    --dnd5e-capacity-background-color: #e6d9cc;           /* --color-light-3 */
-    --dnd5e-capacity-border-color: #d4c5b6;               /* --color-light-4 */
-    --dnd5e-capacity-text-color: #1d1918;                 /* --color-cool-5 */
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .skills .name,
@@ -167,6 +156,7 @@
 
 .sheet.dnd5e2-journal.journal-entry .journal-entry-content, .sheet.dnd5e2-journal.journal-entry-page .window-content {
     background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+    background-size: cover;
 }
 
 .sheet.dnd5e2-journal.journal-entry .journal-entry-content h1,
