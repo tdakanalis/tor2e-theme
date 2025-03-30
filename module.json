@@ -18,10 +18,6 @@
     "styles": [
       "css/tor2e-theme.css",
       "css/tor2e-system.css",
-      "css/dnd5e-system.css",
-      "css/tor2e-macros.css",
-      "css/monks-enhanced-journal.css",
-      "css/weather-control.css",
       { "src": "css/simple-calendar.css", "layer": null }
     ],
     "esmodules": [],
