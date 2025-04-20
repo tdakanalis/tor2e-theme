@@ -115,7 +115,7 @@
 }
 
 .dnd5e2.sheet.actor.character .sheet-header .document-name {
-    font-size: var(--font-size-24);
+    font-size: var(--font-size-20);
 }
 
 .system-dnd5e :is(.chat-popout, #chat-log, .chat-log) .message .message-header .subtitle {
@@ -125,6 +125,11 @@
 
 .system-dnd5e  .dice-total {
     font-size: var(--font-size-20) !important;
+}
+
+.system-dnd5e .dice-result .dice-tooltip .dice .total .label {
+    font-size: var(--font-size-6);
+    font-weight: 700;
 }
 
 .system-dnd5e  .flavor-text {
