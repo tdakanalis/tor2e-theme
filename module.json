@@ -23,7 +23,8 @@
         "css/tor2e-macros.css",
         "css/monks-enhanced-journal.css",
         "css/weather-control.css",
-        "css/simple-calendar.css"
+        "css/simple-calendar.css",
+        "css/token-action-hud.css"
     ],
     "esmodules": [],
     "changelog": "https://raw.githubusercontent.com/tdakanalis/tor2e-theme/refs/heads/main/CHANGELOG.md",

@@ -1,0 +1,61 @@
+.tah-style-foundry-vtt-dark {
+    --tah-button-background: #2d231c;
+    --tah-button-background-color: #2d231c;
+    --tah-button-hover-background-color: #2d231c;
+    --tah-button-image-background-color: #2d231c;
+    --color-border-dark: #2d231c;
+    --tah-button-box-shadow: 0 2px 0 -1px #30251e, 0 0 0 1px #251c17, 0 0 5px #1a140f;
+    --tah-text-primary-color: white;
+    --tah-button-active-background-color: #551a1f;
+    --tah-button-active-box-shadow: 0 0 0 1px #bc483b, inset 0 0 10px #bc483b;
+    --tah-button-text-shadow: 1px 1px 1px #2d231c, 1px 1px 1px #2d231c, 1px 1px 3px #2d231c, 1px 1px 5px #2d231c;
+}
+
+.tah-style-foundry-vtt-dark .tah-info1 { color: #FFD700 !important; } /* Golden Lore */
+.tah-style-foundry-vtt-dark .tah-info2 { color: #39FF14 !important; } /* Sylvan Glimmer */
+.tah-style-foundry-vtt-dark .tah-info3 { color: #FF7F50 !important; } /* Mystic Sky */
+
+.tah-style-foundry-vtt-light {
+    --tah-button-background: #f3e9df;
+    --tah-button-background-color: #f3e9df;
+    --tah-button-hover-background-color: #e6d9cc;
+    --tah-button-image-background-color: #fffbf3;
+    --color-border-dark: #d4c5b6;
+    --tah-button-box-shadow: 0 2px 0 -1px #e6d9cc, 0 0 0 1px #d4c5b6, 0 0 5px rgba(29, 25, 24, 0.1);
+    --tah-text-primary-color: #1d1918;
+    --tah-button-active-background-color: #e6d9cc;
+    --tah-button-active-box-shadow: 0 0 0 1px #bc483b, inset 0 0 8px rgba(188, 72, 59, 0.2);
+    --tah-button-text-shadow: 1px 1px 1px rgba(255, 251, 243, 0.5),
+    -1px -1px 1px rgba(227, 217, 206, 0.5);
+}
+
+.tah-style-foundry-vtt-light .tah-info1 { color: #bc483b !important; } /* Warm Clay */
+.tah-style-foundry-vtt-light .tah-info2 { color: #2e5c38 !important; } /* Forest Depth */
+.tah-style-foundry-vtt-light .tah-info3 { color: #0371e1 !important; } /* Terracotta Glow */
+
+#token-action-hud-app #token-action-hud .tah-button-box {
+    font-family: var(--font-h1), sans-serif;
+    font-size: var(--font-size-6);
+}
+
+#token-action-hud-app #token-action-hud .tah-button-box .tah-info-container .tah-info {
+    font-family: var(--font-body), sans-serif;
+}
+
+#token-action-hud-app #token-action-hud .tah-list-subgroup-title-text {
+    font-family: var(--font-h1), sans-serif;
+    font-size: var(--font-size-6);
+    text-transform: none;
+}
+
+#token-action-hud-app #token-action-hud #tah-character-name {
+    font-family: var(--font-h1), sans-serif;
+    font-size: var(--font-size-6);
+}
+
+
+
+.tah-tooltip {
+    font-family: var(--font-body), sans-serif !important;
+}
+
