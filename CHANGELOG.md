@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/tdakanalis/tor2e-theme/compare/1.2.3...1.3.0) (2025-04-27)
+
+
+### Bug Fixes
+
+* **dnd5e:** Fix success & failure backgrounds in dice rolls ([fe732a0](https://github.com/tdakanalis/tor2e-theme/commit/fe732a0d1475629e7ad447666ebd193b70505f44))
+* **dnd5:** Fix minor css issues ([0dd4f84](https://github.com/tdakanalis/tor2e-theme/commit/0dd4f84f0e04add767ed4384483b51beca6e09d8))
+* **journal:** Fix active page border styling in journal navigation ([badbea3](https://github.com/tdakanalis/tor2e-theme/commit/badbea343388d7677518d1e51f35dfa943ddcbbc))
+
+
+### Features
+
+* **token-action-hud:** Add support for the "Token Action Hud TOR2e" module ([f357068](https://github.com/tdakanalis/tor2e-theme/commit/f357068b6621de3f42098647cf3056aac7d5fb53))
+
 # Changelog
 
 ### 1.2.3 (2025-03-29)
@@ -44,4 +58,4 @@
 - Ensured global Foundry UI/UX consistency
 
 ### 0.1.0 (2025-02-02)
-- Alpha 1 version with support for the TOR2E system, TOR2E Macros, Monk’s Enhanced Journal, and Weather Control plugins 
+- Alpha 1 version with support for the TOR2E system, TOR2E Macros, Monk’s Enhanced Journal, and Weather Control plugins
