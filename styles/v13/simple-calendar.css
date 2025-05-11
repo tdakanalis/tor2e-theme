@@ -1,0 +1,784 @@
+body .simple-calendar.dark {
+    --font-family: var(--font-family), sans-serif;
+    --heading-font-family: var(--font-h1), sans-serif;
+
+    /* Inputs */
+    --input-bg-color: var(--earth-dark);              /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --input-border-color: var(--color-light-6);         /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --input-color: var(--earth-cream);                  /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+
+    /* Links */
+    --link-color: var(--earth-beige);                  /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+    --link-hover-color: var(--earth-red);               /* new: #ba4f42 (was var(--color-warm-2) – #bc483b) */
+
+    /* Entity links */
+    --entity-link-bg-color: var(--color-dark-4);         /* new: #503d33 (was var(--color-dark-4) – #70523c) */
+    --entity-link-border-color: var(--color-dark-5);     /* new: #66544b (was var(--color-dark-5) – #84644a) */
+    --entity-link-icon-color: var(--color-warm-1);       /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+    --entity-link-icon-hover-color: var(--earth-red);    /* new: #ba4f42 (was var(--color-warm-2) – #bc483b) */
+
+    /* Headings & App Header */
+    --heading-border-color: var(--color-warm-1);         /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+    --about-heading-border-color: var(--color-dark-4);   /* new: #503d33 (was var(--color-dark-4) – #70523c) */
+    --app-header-bg-color: var(--earth-dark);            /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --app-header-bg-image: unset;
+    --app-header-color: var(--earth-cream);             /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --app-header-border: 0;
+    --app-header-border-image: unset;
+    --app-header-height: 1.875rem;
+
+    /* App container */
+    --app-bg-color: var(--color-cool-5-90);                 /* new: #3a2e24 (was var(--color-dark-2) – #4a3426) */
+    --app-bg-image: unset;
+    --app-border: 0;
+    --app-border-image: unset;
+    --app-color: var(--earth-cream);                   /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+
+    /* Compact Header Controls */
+    --comapct-header-control-grey: var(--color-light-6); /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --comapct-header-control-secondary: var(--color-warm-1); /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+    --comapct-header-control-tertiary: var(--earth-taupe); /* new: #99857b (was var(--color-light-3) – #ba9a94) */
+    --comapct-header-control-save: var(--color-level-success); /* new: #4f6d4a (was #3b7a48) */
+
+    /* Sections */
+    --section-bg-color: var(--color-cool-5-90);            /* new: #3a2e24 (was var(--color-dark-3) – #5e4230) */
+    --section-border-color: var(--color-light-4);       /* new: #cbb28d (was var(--color-light-4) – #d4c5b6) */
+    --section-color: var(--earth-cream);                /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+
+    /* Side Drawer */
+    --side-drawer-color: var(--earth-cream);            /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --side-drawer-bg-color: var(--app-bg-color);          /* new: #1d1918 (was var(--color-dark-3) – #3e2a1e) */
+    --side-drawer-bg-image: var(--app-bg-image);
+    --side-drawer-border-color: var(--deep-brown);       /* new: #3a2e24 (was var(--color-dark-2) – #4a3426) */
+    --side-drawer-border-image: unset;
+
+    /* Scrollbar */
+    --scrollbar-background-color: var(--color-dark-4);   /* new: #503d33 (was var(--color-dark-4) – #70523c) */
+    --scrollbar-border-color: var(--color-dark-5);       /* new: #66544b (was var(--color-dark-5) – #84644a) */
+    --scrollbar-track-bg-color: transparent;
+    --scrollbar-track-border: unset;
+    --scrollbar-button-height: 0;
+    --scrollbar-button-bg-color: unset;
+    --scrollbar-button-border: unset;
+
+    /* Calendar */
+    --cal-weekend-bg-color: rgba(43, 36, 31, 0.25);    /* new: rgba(43,36,31,0.25) (was var(--color-cool-5-25) – rgba(29,25,24,0.25)) */
+    --cal-day-border-color: var(--color-dark-4);        /* new: #503d33 (was var(--color-dark-4) – #70523c) */
+    --cal-day-hover-color: var(--earth-dark);           /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --cal-day-current-bg-color: var(--color-light-6);    /* new: #7f6a60 (was var(--color-light-6) – #84644a) */
+    --cal-day-current-box-shadow-color: var(--earth-gold); /* new: #cbb28d (was var(--color-light-4) – #d4c5b6) */
+    --cal-day-current-hover-bg-color: var(--color-dark-4); /* new: #503d33 (was var(--color-dark-4) – #70523c) */
+    --cal-day-selected-bg-color: var(--color-level-success); /* new: #4f6d4a (was var(--color-light-6) – #3b7a48) */
+    --cal-day-selected-box-shadow-color: var(--earth-taupe); /* new: #99857b (was var(--color-light-3) – #ba9a94) */
+    --cal-day-selected-hover-bg-color: var(--color-level-success-bg); /* new: rgba(59,122,72,0.8) (was var(--color-light-6)) */
+    --cal-note-indicator-bg-color: var(--earth-beige);  /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+    --cal-note-reminder-indicator-bg-color: var(--earth-taupe); /* new: #99857b (was var(--color-light-3) – #ba9a94) */
+    --cal-note-indicator-color: var(--earth-dark);      /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --cal-moon-group-bg-color: var(--earth-dark);       /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --cal-moon-group-border-color: var(--color-dark-5);  /* new: #66544b (was var(--color-dark-5) – #84644a) */
+    --cal-moon-group-box-shadow-color: rgba(43, 36, 31, 0.75); /* new: rgba(43,36,31,0.75) (was var(--color-cool-5-75) – rgba(29,25,24,0.75)) */
+    --cal-moon-text-shadow: rgba(43, 36, 31, 0.5);     /* new: rgba(43,36,31,0.5) (was var(--color-cool-5-50) – rgba(29,25,24,0.5)) */
+    --cal-list-color: var(--earth-cream);               /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --cal-list-active-border-color: var(--stone-gray);   /* new: ~#7b7160 (was var(--color-light-3) – #7a5a46) */
+    --cal-list-active-bg-color: var(--color-dark-5);      /* new: #66544b (was var(--color-dark-5) – #84644a) */
+    --cal-list-visible-bg-color: var(--earth-taupe);     /* new: #99857b (was var(--color-light-3) – #ba9a94) */
+    --cal-list-bg-hover-color: var(--color-light-6);      /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+
+    /* Clock */
+    --clock-started-color: var(--color-level-success);  /* new: #4f6d4a (was #3b7a48) */
+    --clock-stopped-color: var(--color-level-error);      /* new: #a14040 (was #bc483b) */
+    --clock-paused-color: var(--color-warm-1);           /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+
+    /* Context Menu */
+    --context-menu-color: var(--earth-cream);           /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --context-menu-border-color: var(--earth-cream);     /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+    --context-menu-bg-color: rgba(43, 36, 31, 0.9);      /* new: rgba(43,36,31,0.9) (was var(--color-cool-5-90) – rgba(29,25,24,0.9)) */
+    --context-menu-action-hover-color: var(--stone-gray); /* new: ~#7b7160 (was var(--color-light-3) – #7a5a46) */
+    --context-menu-divider-color: var(--color-light-6);   /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+
+    /* Config Menu */
+    --config-menu-heading-color: var(--stone-gray);      /* new: ~#7b7160 (was var(--color-light-3) – #7a5a46) */
+    --config-menu-item-border-color: var(--earth-dark);   /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --config-menu-item-color: var(--earth-beige);         /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+    --config-menu-item-hover-color: var(--earth-beige);    /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --config-menu-item-hover-bg-color: var(--form-group-bg-hover-color); /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+    --config-menu-cal-settings-bg-color: var(--earth-dark); /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --config-menu-cal-selector-bg-color: var(--deep-brown); /* new: #3a2e24 (was var(--color-dark-2) – #4a3426) */
+    --config-menu-cal-selector-hover-bg-color: var(--deep-brown); /* new: #3a2e24 (was var(--color-dark-3) – #5e4230) */
+    --config-menu-cal-selector-color: var(--earth-cream);  /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --config-menu-cal-selector-hover-color: var(--earth-cream); /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+
+    /* Buttons */
+    --btn-bg-image: unset;
+    --btn-border: 1px solid;
+    --btn-border-image: unset;
+    --btn-grey-border-color: var(--color-light-6);      /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --btn-grey-bg-color: var(--color-light-6);          /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --btn-grey-color: var(--earth-cream);               /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --btn-grey-bg-hover-color: var(--earth-gold);         /* new: #cbb28d (was var(--color-light-4) – #d4c5b6) */
+    --btn-grey-disabled-bg-color: var(--color-light-3);   /* new: #e6dccf (was var(--color-light-3) – #e6d9cc) */
+
+    --btn-primary-border-color: var(--color-dark-5);     /* new: #66544b (was var(--color-dark-5) – #84644a) */
+    --btn-primary-bg-color: var(--color-dark-5);         /* new: #66544b (was var(--color-dark-5) – #84644a) */
+    --btn-primary-color: var(--earth-cream);            /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --btn-primary-bg-hover-color: var(--color-dark-4);    /* new: #503d33 (was var(--color-dark-4) – #70523c) */
+    --btn-primary-disabled-bg-color: var(--color-dark-6); /* new: #7a695f (was var(--color-dark-6) – #9b7c66) */
+
+    --btn-secondary-border-color: var(--earth-beige);   /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+    --btn-secondary-bg-color: var(--earth-beige);       /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+    --btn-secondary-color: var(--earth-dark);           /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --btn-secondary-bg-hover-color: var(--earth-red);     /* new: #ba4f42 (was var(--color-warm-2) – #bc483b) */
+    --btn-secondary-disabled-bg-color: var(--color-warm-3);/* new: #8e2f2a (was var(--color-warm-3) – #ac323b) */
+
+    --btn-tertiary-border-color: var(--earth-taupe);     /* new: #99857b (was var(--color-light-3) – #ba9a94) */
+    --btn-tertiary-bg-color: var(--earth-taupe);         /* new: #99857b (was var(--color-light-3) – #ba9a94) */
+    --btn-tertiary-color: var(--earth-dark);             /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --btn-tertiary-bg-hover-color: var(--color-light-6);  /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --btn-tertiary-disabled-bg-color: var(--earth-gold);  /* new: #cbb28d (was var(--color-light-4) – #d4c5b6) */
+
+    --btn-delete-border-color: var(--color-level-error); /* new: #a14040 (was #bc483b) */
+    --btn-delete-bg-color: var(--color-level-error);     /* new: #a14040 (was #bc483b) */
+    --btn-delete-color: var(--earth-cream);             /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --btn-delete-bg-hover-color: var(--earth-red);       /* new: #ba4f42 (was var(--color-warm-2) – #bc483b) */
+    --btn-delete-disabled-bg-color: var(--color-warm-3);  /* new: #8e2f2a (was var(--color-warm-3) – #ac323b) */
+
+    --btn-save-border-color: var(--color-level-success); /* new: #4f6d4a (was #3b7a48) */
+    --btn-save-bg-color: var(--color-level-success);     /* new: #4f6d4a (was #3b7a48) */
+    --btn-save-color: var(--earth-cream);                /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --btn-save-bg-hover-color: var(--color-level-success-bg); /* new: rgba(59,122,72,0.8) */
+    --btn-save-disabled-bg-color: var(--color-dark-6);   /* new: #7a695f (was var(--color-dark-6) – #9b7c66) */
+
+    /* Form Groups */
+    --form-group-bg-color: var(--earth-dark);           /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --form-group-bg-hover-color: var(--deep-brown);       /* new: #3a2e24 (was var(--color-dark-2) – #4a3426) */
+    --form-group-border-color: var(--earth-gold);        /* new: #cbb28d (was var(--color-light-4) – #d4c5b6) */
+    --form-group-label-color: var(--stone-gray);         /* new: ~#7b7160 (was var(--color-light-3) – #7a5a46) */
+    --form-group-help-color: var(--color-light-2);        /* new: #f2eee5 (was var(--color-light-2) – #f3e9df) */
+    --form-group-input-bg-color: var(--earth-dark);      /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --form-group-input-border-color: var(--color-light-6); /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --form-group-input-color: var(--earth-cream);         /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --form-group-help-icon-color: var(--color-warm-1);    /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+
+    /* Messages */
+    --message-color: var(--earth-cream);                /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --message-warn-bg-color: var(--earth-red);           /* new: #ba4f42 (was var(--color-warm-2) – #bc483b) */
+    --message-warn-border-color: var(--color-warm-1);     /* new: #dd7263 (was var(--color-warm-1) – #e07060) */
+    --message-success-bg-color: var(--color-level-success); /* new: #4f6d4a (was #3b7a48) */
+    --message-success-border-color: var(--color-level-success-border); /* new: #3e5a3a (was #2e5c38) */
+    --message-info-bg-color: var(--color-dark-3);         /* new: #3a2e24 (was var(--color-dark-3) – #5e4230) */
+    --message-info-border-color: var(--color-dark-4);       /* new: #503d33 (was var(--color-dark-4) – #70523c) */
+    --message-danger-bg-color: var(--color-level-error);  /* new: #a14040 (was #bc483b) */
+    --message-danger-border-color: var(--color-level-error-border); /* new: #7a2e2e (was #7a3a60) */
+
+    /* Multi-select */
+    --multi-select-option-bg-color: var(--color-dark-4);  /* new: #503d33 (was var(--color-dark-4) – #70523c) */
+    --multi-select-option-bg-hover-color: var(--color-dark-5); /* new: #66544b (was var(--color-dark-5) – #84644a) */
+    --multi-select-option-border-color: var(--color-light-6); /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --multi-select-option-color: var(--earth-cream);      /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --multi-select-disabled-bg-color: var(--earth-dark);  /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --multi-select-disabled-color: var(--color-light-3);  /* new: #e6dccf (was var(--color-light-3) – #e6d9cc) */
+
+    /* Note Categories */
+    --note-cat-color: var(--earth-cream);               /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --note-cat-bg-color: var(--color-dark-6);            /* new: #7a695f (was var(--color-dark-6) – #a99786) */
+    --note-cat-box-shadow-color: var(--earth-dark);       /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --note-cat-secondary-bg-color: var(--color-warm-1);   /* new: #dd7263 (was var(--color-light-3) – #e07060) */
+    --note-cat-secondary-color: var(--earth-dark);       /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --note-cat-success-bg-color: var(--color-level-success); /* new: #4f6d4a (was #3b7a48) */
+    --note-cat-success-color: var(--earth-cream);        /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --note-cat-danger-bg-color: var(--color-level-error);  /* new: #a14040 (was #bc483b) */
+    --note-cat-danger-color: var(--earth-cream);         /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --note-cat-reminder-bg-color: var(--earth-taupe);     /* new: #99857b (was var(--color-light-3) – #ba9a94) */
+    --note-cat-reminder-color: var(--earth-dark);        /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+
+    /* Note List */
+    --note-list-note-border-color: var(--earth-gold);     /* new: #cbb28d (was var(--color-light-4) – #d4c5b6) */
+    --note-list-note-bg-hover-color: var(--color-dark-5);  /* new: #66544b (was var(--color-dark-5) – #84644a) */
+    --note-list-note-hover-color: var(--earth-cream);     /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --note-list-note-dragger-bg-color: var(--color-light-6); /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --note-list-note-dragger-box-shadow-color: var(--earth-dark); /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+
+    /* Note Sheet */
+    --note-sheet-page-list-border-color: var(--stone-gray); /* new: ~#7b7160 (was var(--color-light-3) – #7a5a46) */
+    --note-sheet-page-list-page-hover-bg-color: var(--color-dark-5); /* new: #66544b (was var(--color-dark-5) – #84644a) */
+
+    /* Pre-calendar */
+    --pre-cal-color: var(--earth-taupe);                /* new: #99857b (was var(--color-light-3) – #ba9a94) */
+    --pre-cal-border-color: var(--color-light-6);        /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --pre-cal-border-hover-color: var(--earth-gold);     /* new: #cbb28d (was var(--color-light-4) – #d4c5b6) */
+    --precal-hover-color: var(--earth-cream);            /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+
+    /* Progress Bar */
+    --progress-bar-bg-color: var(--earth-dark);         /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --progress-bar-border-color: var(--color-light-6);    /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --progress-bar-fill-color: var(--earth-taupe);        /* new: #99857b (was var(--color-light-3) – #ba9a94) */
+
+    /* Editor */
+    --editor-color: var(--earth-cream);                 /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --editor-menu-bg-color: var(--color-light-2);         /* new: #f2eee5 (was var(--color-light-2) – #f3e9df) */
+    --editor-menu-control-bg-color: var(--color-light-3);  /* new: #e6dccf (was var(--color-light-3) – #e6d9cc) */
+    --editor-menu-control-bg-hover-color: var(--earth-gold); /* new: #cbb28d (was var(--color-light-4) – #d4c5b6) */
+
+    /* Search & Time Selector */
+    --search-box-placeholder-color: var(--color-light-3); /* new: #e6dccf (was var(--color-light-3) – #e6d9cc) */
+    --search-box-color: var(--earth-cream);              /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --time-selector-color: var(--earth-cream);           /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --time-selector-input-bg-color: var(--earth-dark);    /* new: #1d1918 (was var(--color-dark-1) – #3e2a1e) */
+    --time-selector-input-border-color: var(--color-light-6); /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --time-selector-option-bg-even-color: var(--color-light-6); /* new: #7f6a60 (was var(--color-light-6) – #a99786) */
+    --time-selector-option-hover-bg-color: var(--color-dark-5); /* new: #66544b (was var(--color-dark-5) – #84644a) */
+
+    /* Toggle */
+    --toggle-border-color: var(--earth-cream);          /* new: #faf4ea (was var(--color-light-1) – #fffbf3) */
+    --toggle-checked-bg-color: var(--stone-gray);        /* new: ~#7b7160 (was var(--color-light-3) – #7a5a46) */
+}
+
+body .simple-calendar.light {
+    --font-family: var(--font-family), sans-serif;
+    --heading-font-family: var(--font-h1), sans-serif;
+
+    /* Inputs */
+    --input-bg-color: var(--earth-cream);           /* was var(--color-light-1) [old: #fffbf3] → new: #faf4ea */
+    --input-border-color: var(--color-dark-6);         /* (new --color-dark-6 = #7a695f) */
+    --input-color: var(--earth-dark);                  /* was var(--color-dark-1) [old: #3e2a1e] → new: #1d1918 */
+
+    /* Links */
+    --link-color: var(--color-dark-5);                 /* (new --color-dark-5 = #66544b) [old comment: #5e4230] */
+    --link-hover-color: var(--earth-red);              /* was var(--color-warm-2) [old: #bc483b] → new: #ba4f42 */
+
+    /* Entity links */
+    --entity-link-bg-color: var(--earth-gold);         /* was var(--color-light-4) [old: #d4c5b6] → new: #cbb28d */
+    --entity-link-border-color: var(--color-light-6);   /* (new --color-light-6 = #7f6a60) */
+    --entity-link-icon-color: var(--deep-brown);        /* was var(--color-dark-3) [old: #5e4230] → new: #3a2e24 */
+    --entity-link-icon-hover-color: var(--earth-red);   /* was var(--color-warm-2) [old: #bc483b] → new: #ba4f42 */
+
+    /* Headings & App Header */
+    --heading-border-color: var(--deep-brown);          /* was var(--color-dark-3) → new: #3a2e24 */
+    --about-heading-border-color: var(--earth-gold);      /* was var(--color-light-4) → new: #cbb28d */
+    --app-header-bg-color: var(--earth-cream);            /* was var(--color-light-1) → new: #faf4ea */
+    --app-header-bg-image: unset;
+    --app-header-color: var(--earth-cream);                /* was var(--color-dark-3) → new: #3a2e24 */
+    --app-header-border: 0;
+    --app-header-border-image: unset;
+    --app-header-height: 1.875rem;
+
+    /* App container */
+    --app-bg-color: var(--color-light-2);               /* (new --color-light-2 = #f2eee5) */
+    --app-bg-image: unset;
+    --app-border: 0;
+    --app-border-image: unset;
+    --app-color: var(--earth-dark);                     /* was var(--color-dark-1) → new: #1d1918 */
+
+    /* Compact header controls */
+    --comapct-header-control-grey: var(--color-dark-6);   /* (#7a695f) */
+    --comapct-header-control-secondary: var(--deep-brown);/* was var(--color-dark-3) → new: #3a2e24 */
+    --comapct-header-control-tertiary: var(--deep-brown); /* was var(--color-dark-3) */
+    --comapct-header-control-save: var(--color-level-success); /* (new success = #4f6d4a) */
+
+    /* Sections */
+    --section-bg-color: var(--color-light-3);            /* (new --color-light-3 = #e6dccf) */
+    --section-border-color: var(--color-dark-6);         /* (#7a695f) */
+    --section-color: var(--earth-dark);                 /* (#1d1918) */
+
+    /* Side Drawer */
+    --side-drawer-color: var(--earth-dark);             /* (#1d1918) */
+    --side-drawer-bg-color: var(--color-light-2);         /* (#f2eee5) */
+    --side-drawer-bg-image: unset;
+    --side-drawer-border-color: var(--color-light-2);     /* (#f2eee5) */
+    --side-drawer-border-image: unset;
+
+    /* Scrollbar */
+    --scrollbar-background-color: var(--earth-gold);    /* was var(--color-light-4) → new: #cbb28d */
+    --scrollbar-border-color: var(--color-light-6);       /* (#7f6a60) */
+    --scrollbar-track-bg-color: transparent;
+    --scrollbar-track-border: unset;
+    --scrollbar-button-height: 0;
+    --scrollbar-button-bg-color: unset;
+    --scrollbar-button-border: unset;
+
+    /* Calendar */
+    --cal-weekend-bg-color: rgba(43, 36, 31, 0.25);     /* was var(--color-cool-5-25): rgba(29, 25, 24, 0.25) → new: rgba(43,36,31,0.25) */
+    --cal-day-border-color: var(--earth-gold);          /* was var(--color-light-4) → new: #cbb28d */
+    --cal-day-hover-color: var(--earth-cream);          /* was var(--color-light-1) → new: #faf4ea */
+    --cal-day-current-bg-color: var(--color-light-6);     /* (new --color-light-6 = #7f6a60) */
+    --cal-day-current-box-shadow-color: var(--color-light-6); /* (#7f6a60) */
+    --cal-day-current-hover-bg-color: var(--earth-gold);  /* was var(--color-light-4) → new: #cbb28d */
+    /* For the “selected” day, the old comment indicated a success color */
+    --cal-day-selected-bg-color: var(--color-light-6); /* new success = #4f6d4a */
+    --cal-day-selected-box-shadow-color: var(--color-light-6);   /* was var(--color-dark-3) → new: #3a2e24 */
+    /* And its hover state uses the “success background” value */
+    --cal-day-selected-hover-bg-color: var(--color-light-6); /* new: rgba(79,109,74,0.8) */
+    --cal-note-indicator-bg-color: var(--deep-brown);    /* was var(--color-dark-3) → new: #3a2e24 */
+    --cal-note-reminder-indicator-bg-color: var(--deep-brown); /* same as above */
+    --cal-note-indicator-color: var(--earth-cream);      /* was var(--color-light-1) → new: #faf4ea */
+    --cal-moon-group-bg-color: var(--earth-cream);       /* was var(--color-light-1) */
+    --cal-moon-group-border-color: var(--color-light-6);  /* (#7f6a60) */
+    --cal-moon-group-box-shadow-color: rgba(43, 36, 31, 0.25); /* updated cool tone */
+    --cal-moon-text-shadow: rgba(43, 36, 31, 0.25);      /* updated cool tone */
+    --cal-list-color: var(--earth-dark);                /* was var(--color-dark-1) → new: #1d1918 */
+    --cal-list-active-border-color: var(--deep-brown);   /* was var(--color-dark-3) → new: #3a2e24 */
+    --cal-list-active-bg-color: var(--color-light-5);      /* (#7f6a60) */
+    --cal-list-visible-bg-color: var(--color-light-5);      /* was var(--color-dark-3) */
+    --cal-list-bg-hover-color: var(--color-light-4);        /* (#7a695f) */
+
+    /* Clock */
+    --clock-started-color: var(--color-level-success);   /* new: #4f6d4a */
+    --clock-stopped-color: var(--color-level-error);       /* new: #a14040 */
+    --clock-paused-color: var(--deep-brown);             /* was var(--color-dark-3) */
+
+    /* Context Menu */
+    --context-menu-color: var(--earth-dark);             /* (#1d1918) */
+    --context-menu-border-color: var(--deep-brown);      /* (#3a2e24) */
+    --context-menu-bg-color: var(--earth-cream);         /* (#faf4ea) */
+    --context-menu-action-hover-color: var(--deep-brown); /* (#3a2e24) */
+    --context-menu-divider-color: var(--color-dark-6);    /* (#7a695f) */
+
+    /* Config Menu */
+    --config-menu-heading-color: var(--deep-brown);      /* was var(--color-dark-3) */
+    --config-menu-item-border-color: var(--earth-cream);  /* was var(--color-light-1) */
+    --config-menu-item-color: var(--deep-brown);          /* was var(--color-dark-3) */
+    --config-menu-item-hover-color: var(--earth-cream);   /* was var(--color-light-1) */
+    --config-menu-item-hover-bg-color: var(--color-dark-6); /* (#7a695f) */
+    --config-menu-cal-settings-bg-color: var(--earth-cream);/* was var(--color-light-1) */
+    --config-menu-cal-selector-bg-color: var(--color-light-2); /* (#f2eee5) */
+    --config-menu-cal-selector-hover-bg-color: var(--color-light-3); /* (#e6dccf) */
+    --config-menu-cal-selector-color: var(--earth-dark);  /* was var(--color-dark-1) */
+    --config-menu-cal-selector-hover-color: var(--earth-dark); /* was var(--color-dark-1) */
+
+    /* Buttons */
+    --btn-bg-image: unset;
+    --btn-border: 1px solid;
+    --btn-border-image: unset;
+    --btn-grey-border-color: var(--color-dark-6);        /* (#7a695f) */
+    --btn-grey-bg-color: var(--color-dark-6);            /* (#7a695f) */
+    --btn-grey-color: var(--earth-cream);                /* was var(--color-light-1) */
+    --btn-grey-bg-hover-color: var(--color-dark-5);       /* (new --color-dark-5 = #66544b) */
+    --btn-grey-disabled-bg-color: var(--color-dark-4);    /* (new --color-dark-4 = #503d33) */
+
+    --btn-primary-border-color: var(--color-light-5);     /* (#7f6a60) */
+    --btn-primary-bg-color: var(--color-light-5);         /* (#7f6a60) */
+    --btn-primary-color: var(--earth-dark);              /* (#1d1918) */
+    --btn-primary-bg-hover-color: var(--earth-gold);       /* was var(--color-light-4) → new: #cbb28d */
+    --btn-primary-disabled-bg-color: var(--color-light-3);  /* (#e6dccf) */
+
+    --btn-secondary-border-color: var(--color-dark-5);    /* (#7a695f) */
+    --btn-secondary-bg-color: var(--color-dark-5);        /* (#7a695f) */
+    --btn-secondary-color: var(--earth-cream);            /* was var(--color-light-1) */
+    --btn-secondary-bg-hover-color: var(--earth-red);     /* was var(--color-warm-2) */
+    --btn-secondary-disabled-bg-color: var(--color-warm-3); /* (new --color-warm-3 = #8e2f2a) */
+
+    --btn-tertiary-border-color: var(--deep-brown);       /* was var(--color-dark-3) */
+    --btn-tertiary-bg-color: var(--deep-brown);           /* was var(--color-dark-3) */
+    --btn-tertiary-color: var(--earth-cream);             /* was var(--color-light-1) */
+    --btn-tertiary-bg-hover-color: var(--color-dark-6);     /* (#7a695f) */
+    --btn-tertiary-disabled-bg-color: var(--color-dark-5);  /* (#66544b) */
+
+    --btn-delete-border-color: var(--color-level-error);  /* new: #a14040 */
+    --btn-delete-bg-color: var(--color-level-error);      /* #a14040 */
+    --btn-delete-color: var(--earth-cream);               /* was var(--color-light-1) */
+    --btn-delete-bg-hover-color: var(--earth-red);        /* was var(--color-warm-2) */
+    --btn-delete-disabled-bg-color: var(--color-warm-3);   /* (#8e2f2a) */
+
+    --btn-save-border-color: var(--color-level-success);  /* new: #4f6d4a */
+    --btn-save-bg-color: var(--color-level-success);      /* #4f6d4a */
+    --btn-save-color: var(--earth-cream);                 /* was var(--color-light-1) */
+    --btn-save-bg-hover-color: var(--color-level-success-bg); /* new: rgba(79,109,74,0.8) */
+    --btn-save-disabled-bg-color: var(--color-light-3);   /* (#e6dccf) */
+
+    /* Form Groups */
+    --form-group-bg-color: var(--earth-cream);            /* was var(--color-light-1) */
+    --form-group-bg-hover-color: var(--color-light-2);      /* (#f2eee5) */
+    --form-group-border-color: var(--color-dark-6);       /* (#7a695f) */
+    --form-group-label-color: var(--deep-brown);          /* was var(--color-dark-3) */
+    --form-group-help-color: var(--color-dark-2);         /* (new --color-dark-2 = var(--midnight-brown) = #2b241f) */
+    --form-group-input-bg-color: var(--earth-cream);      /* was var(--color-light-1) */
+    --form-group-input-border-color: var(--color-dark-6);   /* (#7a695f) */
+    --form-group-input-color: var(--earth-dark);          /* (#1d1918) */
+    --form-group-help-icon-color: var(--deep-brown);      /* was var(--color-dark-3) */
+
+    /* Messages */
+    --message-color: var(--earth-dark);                  /* (#1d1918) */
+    --message-warn-bg-color: var(--color-warm-1);            /* was var(--color-warm-2) */
+    --message-warn-border-color: var(--color-warm-1);     /* (new --color-warm-1 = #dd7263) */
+    --message-success-bg-color: var(--color-level-success); /* (#4f6d4a) */
+    --message-success-border-color: var(--color-level-success-border); /* (new = #3e5a3a) */
+    --message-info-bg-color: var(--color-light-3);         /* (#e6dccf) */
+    --message-info-border-color: var(--earth-gold);       /* was var(--color-light-4) */
+    --message-danger-bg-color: var(--color-level-error);  /* (#a14040) */
+    --message-danger-border-color: var(--color-level-error-border); /* (new = #7a2e2e) */
+
+    /* Multi-select */
+    --multi-select-option-bg-color: var(--earth-gold);    /* was var(--color-light-4) */
+    --multi-select-option-bg-hover-color: var(--color-light-6); /* (#7f6a60) */
+    --multi-select-option-border-color: var(--color-dark-6); /* (#7a695f) */
+    --multi-select-option-color: var(--earth-dark);       /* (#1d1918) */
+    --multi-select-disabled-bg-color: var(--earth-cream);   /* was var(--color-light-1) */
+    --multi-select-disabled-color: var(--color-dark-4);    /* (#503d33) */
+
+    /* Note categories */
+    --note-cat-color: var(--earth-dark);                /* (#1d1918) */
+    --note-cat-bg-color: var(--color-light-6);            /* (#7f6a60) */
+    --note-cat-box-shadow-color: var(--earth-cream);      /* was var(--color-light-1) */
+    --note-cat-secondary-bg-color: var(--deep-brown);     /* was var(--color-dark-3) */
+    --note-cat-secondary-color: var(--earth-cream);       /* was var(--color-light-1) */
+    --note-cat-success-bg-color: var(--color-level-success); /* (#4f6d4a) */
+    --note-cat-success-color: var(--earth-cream);         /* was var(--color-light-1) */
+    --note-cat-danger-bg-color: var(--color-level-error);  /* (#a14040) */
+    --note-cat-danger-color: var(--earth-cream);          /* was var(--color-light-1) */
+    --note-cat-reminder-bg-color: var(--deep-brown);      /* was var(--color-dark-3) */
+    --note-cat-reminder-color: var(--earth-cream);        /* was var(--color-light-1) */
+
+    /* Note List */
+    --note-list-note-border-color: var(--color-dark-6);    /* (#7a695f) */
+    --note-list-note-bg-hover-color: var(--color-light-6);   /* (#7f6a60) */
+    --note-list-note-hover-color: var(--earth-dark);       /* (#1d1918) */
+    --note-list-note-dragger-bg-color: var(--color-dark-6);  /* (#7a695f) */
+    --note-list-note-dragger-box-shadow-color: var(--earth-cream); /* was var(--color-light-1) */
+
+    /* Note Sheet */
+    --note-sheet-page-list-border-color: var(--deep-brown); /* was var(--color-dark-3) */
+    --note-sheet-page-list-page-hover-bg-color: var(--color-light-6); /* (#7f6a60) */
+
+    /* Pre-calendar */
+    --pre-cal-color: var(--deep-brown);                 /* was var(--color-dark-3) */
+    --pre-cal-border-color: var(--color-dark-6);          /* (#7a695f) */
+    --pre-cal-border-hover-color: var(--color-dark-5);    /* (#66544b) */
+    --precal-hover-color: var(--earth-dark);              /* (#1d1918) */
+
+    /* Progress Bar */
+    --progress-bar-bg-color: var(--earth-cream);          /* was var(--color-light-1) */
+    --progress-bar-border-color: var(--color-dark-6);     /* (#7a695f) */
+    --progress-bar-fill-color: var(--deep-brown);         /* was var(--color-dark-3) */
+
+    /* Editor */
+    --editor-color: var(--earth-dark);                   /* (#1d1918) */
+    --editor-menu-bg-color: var(--color-light-3);          /* (#e6dccf) */
+    --editor-menu-control-bg-color: var(--earth-gold);     /* was var(--color-light-4) */
+    --editor-menu-control-bg-hover-color: var(--earth-gold);/* was var(--color-light-4) */
+
+    /* Search & Time Selector */
+    --search-box-placeholder-color: var(--color-dark-4);   /* (new --color-dark-4 = #503d33) */
+    --search-box-color: var(--earth-gold);                /* was var(--color-light-4) */
+    --time-selector-color: var(--earth-gold);             /* was var(--color-light-4) */
+    --time-selector-input-bg-color: var(--earth-cream);    /* was var(--color-light-1) */
+    --time-selector-input-border-color: var(--color-dark-6); /* (#7a695f) */
+    --time-selector-option-bg-even-color: var(--color-dark-6); /* (#7a695f) */
+    --time-selector-option-hover-bg-color: var(--color-light-6); /* (#7f6a60) */
+
+    /* Toggle */
+    --toggle-border-color: var(--earth-dark);             /* (#1d1918) */
+    --toggle-checked-bg-color: var(--deep-brown);          /* (#3a2e24) */
+}
+
+body .simple-calendar.classic {
+    --font-family: var(--font-family), sans-serif;
+    --heading-font-family: var(--font-h1), sans-serif;
+
+    /* Inputs */
+    --input-bg-color: var(--earth-cream);           /* was var(--color-light-1) [old: #fffbf3] → new: #faf4ea */
+    --input-border-color: var(--color-dark-6);         /* (new --color-dark-6 = #7a695f) */
+    --input-color: var(--earth-dark);                  /* was var(--color-dark-1) [old: #3e2a1e] → new: #1d1918 */
+
+    /* Links */
+    --link-color: var(--color-dark-5);                 /* (new --color-dark-5 = #66544b) [old comment: #5e4230] */
+    --link-hover-color: var(--earth-red);              /* was var(--color-warm-2) [old: #bc483b] → new: #ba4f42 */
+
+    /* Entity links */
+    --entity-link-bg-color: var(--earth-gold);         /* was var(--color-light-4) [old: #d4c5b6] → new: #cbb28d */
+    --entity-link-border-color: var(--color-light-6);   /* (new --color-light-6 = #7f6a60) */
+    --entity-link-icon-color: var(--deep-brown);        /* was var(--color-dark-3) [old: #5e4230] → new: #3a2e24 */
+    --entity-link-icon-hover-color: var(--earth-red);   /* was var(--color-warm-2) [old: #bc483b] → new: #ba4f42 */
+
+    /* Headings & App Header */
+    --heading-border-color: var(--deep-brown);          /* was var(--color-dark-3) → new: #3a2e24 */
+    --about-heading-border-color: var(--earth-gold);      /* was var(--color-light-4) → new: #cbb28d */
+    --app-header-bg-color: var(--earth-cream);            /* was var(--color-light-1) → new: #faf4ea */
+    --app-header-bg-image: unset;
+    --app-header-color: var(--earth-cream);                /* was var(--color-dark-3) → new: #3a2e24 */
+    --app-header-border: 0;
+    --app-header-border-image: unset;
+    --app-header-height: 1.875rem;
+
+    /* App container */
+    --app-bg-color: var(--color-light-2);               /* (new --color-light-2 = #f2eee5) */
+    --app-bg-image: unset;
+    --app-border: 0;
+    --app-border-image: unset;
+    --app-color: var(--earth-dark);                     /* was var(--color-dark-1) → new: #1d1918 */
+
+    /* Compact header controls */
+    --comapct-header-control-grey: var(--color-dark-6);   /* (#7a695f) */
+    --comapct-header-control-secondary: var(--deep-brown);/* was var(--color-dark-3) → new: #3a2e24 */
+    --comapct-header-control-tertiary: var(--deep-brown); /* was var(--color-dark-3) */
+    --comapct-header-control-save: var(--color-level-success); /* (new success = #4f6d4a) */
+
+    /* Sections */
+    --section-bg-color: var(--color-light-3);            /* (new --color-light-3 = #e6dccf) */
+    --section-border-color: var(--color-dark-6);         /* (#7a695f) */
+    --section-color: var(--earth-dark);                 /* (#1d1918) */
+
+    /* Side Drawer */
+    --side-drawer-color: var(--earth-cream);             /* (#1d1918) */
+    --side-drawer-bg-color: var(--color-light-2);         /* (#f2eee5) */
+    --side-drawer-bg-image: unset;
+    --side-drawer-border-color: var(--color-light-2);     /* (#f2eee5) */
+    --side-drawer-border-image: unset;
+
+    /* Scrollbar */
+    --scrollbar-background-color: var(--earth-gold);    /* was var(--color-light-4) → new: #cbb28d */
+    --scrollbar-border-color: var(--color-light-6);       /* (#7f6a60) */
+    --scrollbar-track-bg-color: transparent;
+    --scrollbar-track-border: unset;
+    --scrollbar-button-height: 0;
+    --scrollbar-button-bg-color: unset;
+    --scrollbar-button-border: unset;
+
+    /* Calendar */
+    --cal-weekend-bg-color: rgba(43, 36, 31, 0.25);     /* was var(--color-cool-5-25): rgba(29, 25, 24, 0.25) → new: rgba(43,36,31,0.25) */
+    --cal-day-border-color: var(--earth-gold);          /* was var(--color-light-4) → new: #cbb28d */
+    --cal-day-hover-color: var(--earth-cream);          /* was var(--color-light-1) → new: #faf4ea */
+    --cal-day-current-bg-color: var(--color-light-6);     /* (new --color-light-6 = #7f6a60) */
+    --cal-day-current-box-shadow-color: var(--color-light-6); /* (#7f6a60) */
+    --cal-day-current-hover-bg-color: var(--earth-gold);  /* was var(--color-light-4) → new: #cbb28d */
+    /* For the “selected” day, the old comment indicated a success color */
+    --cal-day-selected-bg-color: var(--color-light-6); /* new success = #4f6d4a */
+    --cal-day-selected-box-shadow-color: var(--color-light-6);   /* was var(--color-dark-3) → new: #3a2e24 */
+    /* And its hover state uses the “success background” value */
+    --cal-day-selected-hover-bg-color: var(--color-light-6); /* new: rgba(79,109,74,0.8) */
+    --cal-note-indicator-bg-color: var(--deep-brown);    /* was var(--color-dark-3) → new: #3a2e24 */
+    --cal-note-reminder-indicator-bg-color: var(--deep-brown); /* same as above */
+    --cal-note-indicator-color: var(--earth-cream);      /* was var(--color-light-1) → new: #faf4ea */
+    --cal-moon-group-bg-color: var(--earth-cream);       /* was var(--color-light-1) */
+    --cal-moon-group-border-color: var(--color-light-6);  /* (#7f6a60) */
+    --cal-moon-group-box-shadow-color: rgba(43, 36, 31, 0.25); /* updated cool tone */
+    --cal-moon-text-shadow: rgba(43, 36, 31, 0.25);      /* updated cool tone */
+    --cal-list-color: var(--earth-cream);                /* was var(--color-dark-1) → new: #1d1918 */
+    --cal-list-active-border-color: var(--earth-cream);   /* was var(--color-dark-3) → new: #3a2e24 */
+    --cal-list-active-bg-color: var(--color-dark-4);      /* (#7f6a60) */
+    --cal-list-visible-bg-color: var(--color-dark-4);      /* was var(--color-dark-3) */
+    --cal-list-bg-hover-color: var(--color-dark-4);        /* (#7a695f) */
+
+    /* Clock */
+    --clock-started-color: var(--color-level-success);   /* new: #4f6d4a */
+    --clock-stopped-color: var(--color-level-error);       /* new: #a14040 */
+    --clock-paused-color: var(--deep-brown);             /* was var(--color-dark-3) */
+
+    /* Context Menu */
+    --context-menu-color: var(--earth-dark);             /* (#1d1918) */
+    --context-menu-border-color: var(--deep-brown);      /* (#3a2e24) */
+    --context-menu-bg-color: var(--earth-cream);         /* (#faf4ea) */
+    --context-menu-action-hover-color: var(--deep-brown); /* (#3a2e24) */
+    --context-menu-divider-color: var(--color-dark-6);    /* (#7a695f) */
+
+    /* Config Menu */
+    --config-menu-heading-color: var(--deep-brown);      /* was var(--color-dark-3) */
+    --config-menu-item-border-color: var(--earth-cream);  /* was var(--color-light-1) */
+    --config-menu-item-color: var(--deep-brown);          /* was var(--color-dark-3) */
+    --config-menu-item-hover-color: var(--earth-cream);   /* was var(--color-light-1) */
+    --config-menu-item-hover-bg-color: var(--color-dark-6); /* (#7a695f) */
+    --config-menu-cal-settings-bg-color: var(--earth-cream);/* was var(--color-light-1) */
+    --config-menu-cal-selector-bg-color: var(--color-light-2); /* (#f2eee5) */
+    --config-menu-cal-selector-hover-bg-color: var(--color-light-3); /* (#e6dccf) */
+    --config-menu-cal-selector-color: var(--earth-dark);  /* was var(--color-dark-1) */
+    --config-menu-cal-selector-hover-color: var(--earth-dark); /* was var(--color-dark-1) */
+
+    /* Buttons */
+    --btn-bg-image: unset;
+    --btn-border: 1px solid;
+    --btn-border-image: unset;
+    --btn-grey-border-color: var(--color-dark-4);        /* (#7a695f) */
+    --btn-grey-bg-color: var(--color-dark-4);            /* (#7a695f) */
+    --btn-grey-color: var(--earth-cream);                /* was var(--color-light-1) */
+    --btn-grey-bg-hover-color: var(--color-dark-5);       /* (new --color-dark-5 = #66544b) */
+    --btn-grey-disabled-bg-color: var(--color-dark-4);    /* (new --color-dark-4 = #503d33) */
+
+    --btn-primary-border-color: var(--color-light-5);     /* (#7f6a60) */
+    --btn-primary-bg-color: var(--color-light-5);         /* (#7f6a60) */
+    --btn-primary-color: var(--earth-dark);              /* (#1d1918) */
+    --btn-primary-bg-hover-color: var(--earth-gold);       /* was var(--color-light-4) → new: #cbb28d */
+    --btn-primary-disabled-bg-color: var(--color-light-3);  /* (#e6dccf) */
+
+    --btn-secondary-border-color: var(--color-dark-4);    /* (#7a695f) */
+    --btn-secondary-bg-color: var(--color-dark-4);        /* (#7a695f) */
+    --btn-secondary-color: var(--earth-cream);            /* was var(--color-light-1) */
+    --btn-secondary-bg-hover-color: var(--earth-red);     /* was var(--color-warm-2) */
+    --btn-secondary-disabled-bg-color: var(--color-warm-3); /* (new --color-warm-3 = #8e2f2a) */
+
+    --btn-tertiary-border-color: var(--deep-brown);       /* was var(--color-dark-3) */
+    --btn-tertiary-bg-color: var(--deep-brown);           /* was var(--color-dark-3) */
+    --btn-tertiary-color: var(--earth-cream);             /* was var(--color-light-1) */
+    --btn-tertiary-bg-hover-color: var(--color-dark-6);     /* (#7a695f) */
+    --btn-tertiary-disabled-bg-color: var(--color-dark-5);  /* (#66544b) */
+
+    --btn-delete-border-color: var(--color-level-error);  /* new: #a14040 */
+    --btn-delete-bg-color: var(--color-level-error);      /* #a14040 */
+    --btn-delete-color: var(--earth-cream);               /* was var(--color-light-1) */
+    --btn-delete-bg-hover-color: var(--earth-red);        /* was var(--color-warm-2) */
+    --btn-delete-disabled-bg-color: var(--color-warm-3);   /* (#8e2f2a) */
+
+    --btn-save-border-color: var(--color-level-success);  /* new: #4f6d4a */
+    --btn-save-bg-color: var(--color-level-success);      /* #4f6d4a */
+    --btn-save-color: var(--earth-cream);                 /* was var(--color-light-1) */
+    --btn-save-bg-hover-color: var(--color-level-success-bg); /* new: rgba(79,109,74,0.8) */
+    --btn-save-disabled-bg-color: var(--color-light-3);   /* (#e6dccf) */
+
+    /* Form Groups */
+    --form-group-bg-color: var(--earth-cream);            /* was var(--color-light-1) */
+    --form-group-bg-hover-color: var(--color-light-2);      /* (#f2eee5) */
+    --form-group-border-color: var(--color-dark-6);       /* (#7a695f) */
+    --form-group-label-color: var(--deep-brown);          /* was var(--color-dark-3) */
+    --form-group-help-color: var(--color-dark-2);         /* (new --color-dark-2 = var(--midnight-brown) = #2b241f) */
+    --form-group-input-bg-color: var(--earth-cream);      /* was var(--color-light-1) */
+    --form-group-input-border-color: var(--color-dark-6);   /* (#7a695f) */
+    --form-group-input-color: var(--earth-dark);          /* (#1d1918) */
+    --form-group-help-icon-color: var(--deep-brown);      /* was var(--color-dark-3) */
+
+    /* Messages */
+    --message-color: var(--earth-dark);                  /* (#1d1918) */
+    --message-warn-bg-color: var(--color-warm-1);            /* was var(--color-warm-2) */
+    --message-warn-border-color: var(--color-warm-1);     /* (new --color-warm-1 = #dd7263) */
+    --message-success-bg-color: var(--color-level-success); /* (#4f6d4a) */
+    --message-success-border-color: var(--color-level-success-border); /* (new = #3e5a3a) */
+    --message-info-bg-color: var(--color-light-3);         /* (#e6dccf) */
+    --message-info-border-color: var(--earth-gold);       /* was var(--color-light-4) */
+    --message-danger-bg-color: var(--color-level-error);  /* (#a14040) */
+    --message-danger-border-color: var(--color-level-error-border); /* (new = #7a2e2e) */
+
+    /* Multi-select */
+    --multi-select-option-bg-color: var(--earth-gold);    /* was var(--color-light-4) */
+    --multi-select-option-bg-hover-color: var(--color-light-6); /* (#7f6a60) */
+    --multi-select-option-border-color: var(--color-dark-6); /* (#7a695f) */
+    --multi-select-option-color: var(--earth-dark);       /* (#1d1918) */
+    --multi-select-disabled-bg-color: var(--earth-cream);   /* was var(--color-light-1) */
+    --multi-select-disabled-color: var(--color-dark-4);    /* (#503d33) */
+
+    /* Note categories */
+    --note-cat-color: var(--earth-dark);                /* (#1d1918) */
+    --note-cat-bg-color: var(--color-light-6);            /* (#7f6a60) */
+    --note-cat-box-shadow-color: var(--earth-cream);      /* was var(--color-light-1) */
+    --note-cat-secondary-bg-color: var(--deep-brown);     /* was var(--color-dark-3) */
+    --note-cat-secondary-color: var(--earth-cream);       /* was var(--color-light-1) */
+    --note-cat-success-bg-color: var(--color-level-success); /* (#4f6d4a) */
+    --note-cat-success-color: var(--earth-cream);         /* was var(--color-light-1) */
+    --note-cat-danger-bg-color: var(--color-level-error);  /* (#a14040) */
+    --note-cat-danger-color: var(--earth-cream);          /* was var(--color-light-1) */
+    --note-cat-reminder-bg-color: var(--deep-brown);      /* was var(--color-dark-3) */
+    --note-cat-reminder-color: var(--earth-cream);        /* was var(--color-light-1) */
+
+    /* Note List */
+    --note-list-note-border-color: var(--color-dark-6);    /* (#7a695f) */
+    --note-list-note-bg-hover-color: var(--color-light-6);   /* (#7f6a60) */
+    --note-list-note-hover-color: var(--earth-dark);       /* (#1d1918) */
+    --note-list-note-dragger-bg-color: var(--color-dark-6);  /* (#7a695f) */
+    --note-list-note-dragger-box-shadow-color: var(--earth-cream); /* was var(--color-light-1) */
+
+    /* Note Sheet */
+    --note-sheet-page-list-border-color: var(--deep-brown); /* was var(--color-dark-3) */
+    --note-sheet-page-list-page-hover-bg-color: var(--color-light-6); /* (#7f6a60) */
+
+    /* Pre-calendar */
+    --pre-cal-color: var(--deep-brown);                 /* was var(--color-dark-3) */
+    --pre-cal-border-color: var(--color-dark-6);          /* (#7a695f) */
+    --pre-cal-border-hover-color: var(--color-dark-5);    /* (#66544b) */
+    --precal-hover-color: var(--earth-dark);              /* (#1d1918) */
+
+    /* Progress Bar */
+    --progress-bar-bg-color: var(--earth-cream);          /* was var(--color-light-1) */
+    --progress-bar-border-color: var(--color-dark-6);     /* (#7a695f) */
+    --progress-bar-fill-color: var(--deep-brown);         /* was var(--color-dark-3) */
+
+    /* Editor */
+    --editor-color: var(--earth-dark);                   /* (#1d1918) */
+    --editor-menu-bg-color: var(--color-light-3);          /* (#e6dccf) */
+    --editor-menu-control-bg-color: var(--earth-gold);     /* was var(--color-light-4) */
+    --editor-menu-control-bg-hover-color: var(--earth-gold);/* was var(--color-light-4) */
+
+    /* Search & Time Selector */
+    --search-box-placeholder-color: var(--color-dark-4);   /* (new --color-dark-4 = #503d33) */
+    --search-box-color: var(--earth-gold);                /* was var(--color-light-4) */
+    --time-selector-color: var(--earth-gold);             /* was var(--color-light-4) */
+    --time-selector-input-bg-color: var(--earth-cream);    /* was var(--color-light-1) */
+    --time-selector-input-border-color: var(--color-dark-6); /* (#7a695f) */
+    --time-selector-option-bg-even-color: var(--color-dark-6); /* (#7a695f) */
+    --time-selector-option-hover-bg-color: var(--color-light-6); /* (#7f6a60) */
+
+    /* Toggle */
+    --toggle-border-color: var(--earth-dark);             /* (#1d1918) */
+    --toggle-checked-bg-color: var(--deep-brown);          /* (#3a2e24) */
+}
+
+body.game .fsc-oc.simple-calendar.window-app .window-content .fsc-ph .fsc-pc h2,
+body.game .simple-calendar.window-app header.window-header a.header-button,
+body.game .simple-calendar.window-app header.window-header a.header-button.close {
+    font-size: var(--font-size-8);
+    font-family: var(--font-h1), sans-serif;
+}
+
+body.game .simple-calendar.window-app header.window-header .window-title {
+    font-family: var(--font-h1), sans-serif;
+    font-size: var(--font-size-8);
+}
+
+body.game .simple-calendar.window-app .fsc-of h2 {
+    font-size: var(--font-h2-size);
+}
+
+body.game .simple-calendar.window-app header.window-header {
+}
+
+body.game .fsc-i .fsc-k .fsc-l .fsc-m {
+    font-family: var(--font-h4), sans-serif;
+    font-size: var(--font-h4-size);
+}
+
+body.game .fsc-i .fsc-t .fsc-u .fsc-w .fsc-x,
+body.game .fsc-i .fsc-k .fsc-q .fsc-r,
+body.game .fsc-jf .fsc-jg .fsc-dk .fsc-kh,
+body.game .simple-calendar.window-app .fsc-of h3,
+body.game .simple-calendar.window-app .fsc-df .fsc-hg .fsc-lj {
+    font-size: unset;
+}
+
+body.game .fsc-jf .fsc-jg .fsc-dk .fsc-kh {
+    font-size: var(--font-size-12);
+}
+
+body.game .fsc-mb .fsc-ob {
+    font-family: var(--font-h4), sans-serif;
+    font-size: var(--font-size-16);
+}
+
+body.game .fsc-mb .fsc-nb svg {
+    padding-top: 6px;
+}
+
+body.game .fsc-jf .fsc-jg .fsc-dk .fsc-kh {
+    font-family: var(--font-h4), sans-serif;
+}
+
+body.game .simple-calendar.journal-sheet form>h1 {
+    margin: 0;
+    border-color: var(--heading-border-color);
+    font-family: var(--heading-font-family), sans-serif;
+}
+
+body.game .simple-calendar.journal-sheet form>h1 input{
+    font-size: var(--font-size-9);
+}
+
+body.game .simple-calendar.journal-sheet form .fsc-_g h2 {
+    font-size: var(--font-size-12);
+}
+
+body.game .simple-calendar.window-app.classic .fsc-of {
+    background: var(--color-cool-5-90) !important;
+}
+
+body.game .simple-calendar.window-app.dark .fsc-of {
+    background: var(--color-cool-5-90) !important;
+}
+
+body.game .simple-calendar.window-app header.window-header {
+    background-color: var(--color-cool-5-90);
+    --link-color: var(--earth-beige);
+}

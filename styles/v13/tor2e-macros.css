@@ -1,0 +1,9 @@
+.tor2e-chatreports-titre, .tor2e-chatreports-th {
+    background-color: var(--earth-brown);
+    color: white;
+}
+
+.tor2e-macrobar-macrogroup-title {
+    font-family: var(--font-h1), sans-serif;
+    font-size: var(--font-size-7);
+}

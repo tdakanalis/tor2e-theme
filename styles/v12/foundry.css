@@ -205,12 +205,12 @@ li.folder > .folder-header h6 {
 }
 
 #chat-form textarea {
-    background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
     background-size: cover;
 }
 
 .chat-message, .chat-message.whisper {
-    background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
     background-size: cover;
 }
 
@@ -371,7 +371,7 @@ li.roll-characteristic.active.negative {
 }
 
 .journal-sheet .window-content {
-    background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
     background-size: cover;
 }
 
@@ -415,7 +415,7 @@ li.roll-characteristic.active.negative {
 .sheet.journal-entry .journal-entry-content {
     flex: 1;
     height: 100%;
-    background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
     background-size: cover;
     border: 2px solid var(--color-border-dark);
     border-radius: 6px 0 0 0;
@@ -428,7 +428,7 @@ li.roll-characteristic.active.negative {
 }
 
 .sheet.journal-entry .journal-sidebar {
-    background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
     background-size: cover;
     color: var(--color-text-dark-primary);
     border-radius: 5px;
@@ -534,14 +534,14 @@ pre {
 .editor-container .editor-content blockquote::before,
 .journal-sheet blockquote::before {
     left: 0;
-    background-image: url(../img/tor_border_left.webp);
+    background-image: url(../../img/tor_border_left.webp);
 }
 
 .sheet-container .editor-content blockquote::after,
 .editor-container .editor-content blockquote::after,
 .journal-sheet blockquote::after {
     right: 0;
-    background-image: url(../img/tor_border_right.webp);
+    background-image: url(../../img/tor_border_right.webp);
 }
 
 .journal-page-content code,
@@ -577,14 +577,14 @@ pre {
 .sheet-container .editor-content code:before,
 .editor-container .editor-content code:before {
     top: 0;
-    background-image: url(../img/tor_border_top.webp); /* Top border image */
+    background-image: url(../../img/tor_border_top.webp); /* Top border image */
 }
 
 .journal-page-content code::after,
 .sheet-container .editor-content code:after,
 .editor-container .editor-content code:after {
     bottom: 0;
-    background-image: url(../img/tor_border_bottom.webp); /* Bottom border image */
+    background-image: url(../../img/tor_border_bottom.webp); /* Bottom border image */
 }
 
 .application .window-header .window-title {

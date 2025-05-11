@@ -9,7 +9,7 @@ body {
 .monks-enhanced-journal .enhanced-journal .journal-sheet-container .sidebar.directory,
 .monks-enhanced-journal .sheet.journal-entry .pages-list .directory-item.active,
 .monks-enhanced-journal .enhanced-journal .sheet.journal-entry .journal-entry-content {
-    background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
     background-size: cover;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .monks-enhanced-journal .enhanced-journal-header {
-    background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
     background-size: cover;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .monks-enhanced-journal .directory-sidebar,
 .monks-enhanced-journal .directory-sidebar > section .directory-header {
-    background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
     background-size: cover;
 }
 

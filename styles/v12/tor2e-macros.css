@@ -1,9 +1,6 @@
 .tor2e-cb-text {
     font-family: var(--font-label), sans-serif;
     font-size: var(--font-size-12);
-    /*font-family: "Sigmika", serif !important;
-    font-size: small !important;*/
-
 }
 
 .tor2e-chatreports-titre, .tor2e-chatreports-th {

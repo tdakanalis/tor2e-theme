@@ -1,9 +1,7 @@
 ---
-version: "3.8"
-
 services:
   foundry:
-    image: felddy/foundryvtt:release
+    image: felddy/foundryvtt:13
     dns:
       - 8.8.8.8
       - 8.8.4.4
@@ -14,5 +12,6 @@ services:
       - FOUNDRY_PASSWORD=${FOUNDRY_PASSWORD:-test}
       - FOUNDRY_USERNAME=${FOUNDRY_USERNAME:-test}
       - FOUNDRY_ADMIN_KEY=${FOUNDRY_ADMIN_KEY:-test}
+      - FOUNDRY_VERSION=${FOUNDRY_VERSION:-13.342}
     ports:
       - "30000:30000"

@@ -1,0 +1,1113 @@
+/* Tolkien‐Inspired Earthy Theme */
+:root {
+    --earth-red: #ba4f42;  /* Warm brick red */
+    --earth-brown:  #543b28;  /* Deep, rich brown */
+    --earth-gold:   #cbb28d;  /* Muted golden beige */
+    --earth-ivory:  #fffbf3;  /* Soft, gentle ivory */
+    --earth-dark:   #1d1918;  /* Charcoal-like near–black */
+    --earth-taupe:  #99857b;  /* Subdued taupe */
+    --earth-beige:  #e9ded1;  /* Light beige */
+    --earth-cream:  #faf4ea;  /* Warm cream */
+    --forest-green:   #407d64;  /* A fresh forest green */
+    --moss-green:     #587a5e;  /* A vibrant, organic moss green */
+    --stone-gray:     #7b7160;  /* Weathered stone gray */
+    --deep-brown:     #3a2e24;  /* Intense deep brown */
+    --midnight-brown: #2b241f;  /* Almost black brown */
+}
+
+@layer variables, elements, blocks, applications, compatibility;
+
+@layer variables.base {
+    /* ----------------------------------------- */
+    /*  Root                                     */
+    /* ----------------------------------------- */
+    body.game :is(.app, .sidebar-tab) {
+
+        --color-text-light-highlight: var(--earth-cream);
+        --color-text-light-heading:   var(--earth-gold);
+        --color-text-light-primary:   var(--earth-beige);
+
+        --color-text-dark-primary:    var(--midnight-brown);
+        --color-text-dark-secondary:  var(--deep-brown);
+        --color-text-dark-header:     var(--midnight-brown);
+        --color-text-dark-inactive:   var(--deep-brown);
+
+        /* Hyperlink & Selection */
+        --color-text-hyperlink:       var(--earth-red);
+        --color-text-selection:       var(--earth-ivory);
+        --color-text-selection-bg:    var(--earth-red);
+
+        /* Grayscale Text Scale (Light Theme) */
+        --color-text-light-0: var(--earth-ivory);
+        --color-text-light-1: var(--earth-cream);
+        --color-text-light-2: var(--earth-beige);
+        --color-text-light-3: var(--earth-gold);
+        --color-text-light-4: var(--earth-taupe);
+        --color-text-light-5: var(--earth-brown);
+        --color-text-light-6: var(--deep-brown);
+        --color-text-light-7: var(--earth-dark);
+
+        /* Grayscale Text Scale (Dark Theme) */
+        --color-text-dark-1: var(--earth-ivory);
+        --color-text-dark-2: var(--earth-cream);
+        --color-text-dark-3: var(--earth-beige);
+        --color-text-dark-4: var(--earth-gold);
+        --color-text-dark-5: var(--earth-taupe);
+        --color-text-dark-6: var(--earth-brown);
+
+        /* Light Theme Borders */
+        --color-border-light-1: var(--earth-beige);
+        --color-border-light-2: var(--earth-taupe);
+
+        /* Dark Theme Borders */
+        --color-border-dark-1: var(--earth-dark);
+        --color-border-dark-2: var(--earth-brown);
+        --color-border-dark-3: var(--deep-brown);
+        --color-border-dark-4: var(--midnight-brown);
+        --color-border-dark-5: var(--earth-dark);
+
+        /* Border Highlights */
+        --color-border-light-highlight: var(--earth-ivory);
+        --color-border-light-primary:     var(--earth-gold);
+        --color-border-light-secondary:   var(--earth-beige);
+        --color-border-light-tertiary:    var(--earth-taupe);
+
+        --color-border-dark:            var(--earth-dark);
+        --color-border-dark-primary:    var(--earth-dark);
+        --color-border-dark-secondary:  var(--midnight-brown);
+        --color-border-dark-tertiary:   var(--deep-brown);
+        --color-border-highlight:       var(--earth-red);
+        --color-border-highlight-alt:   #8a3c36;  /* Deep terracotta */
+
+        --color-shadow-primary:      var(--earth-brown);
+        --color-shadow-highlight:    var(--earth-red);
+        --color-shadow-dark:         var(--earth-dark);
+
+        --color-underline-inactive:  var(--earth-taupe);
+        --color-underline-active:    #8a3c36;  /* Deep terracotta */
+        --color-underline-header:    #a24f43;  /* Warm inviting tone */
+
+        /* Button Backgrounds */
+        --color-bg-btn-minor-inactive: var(--earth-taupe);
+        --color-bg-btn-minor-active:   var(--earth-gold);
+
+        /* Select Option Background */
+        --color-select-option-bg: var(--earth-beige);
+
+        /* Checkbox */
+        --color-checkbox-checked: var(--earth-brown);
+
+        /* Ownership */
+        --color-ownership-none:     var(--stone-gray);
+        --color-ownership-observer: var(--earth-taupe);
+        --color-ownership-owner:    var(--earth-red);
+
+        /* Blind Mode */
+        --color-blind-bg:     var(--earth-beige);
+        --color-blind-border: var(--earth-brown);
+
+        /* Emote */
+        --color-emote-bg:     var(--earth-ivory);
+        --color-emote-border: var(--earth-taupe);
+
+        /* Whisper */
+        --color-whisper-bg:     var(--earth-cream);
+        --color-whisper-border: var(--earth-brown);
+
+        /* Scrollbar Colors */
+        --color-scrollbar: var(--color-warm-3);  /* Deep, robust red */
+        --color-scrollbar-border: #a24f43;
+
+        --font-primary: "NewBaskerville", "Signika", sans-serif;
+    }
+
+    /* ---------------------------------------- */
+    /*  Colors                                  */
+    /* ---------------------------------------- */
+    body {
+        /* Warm Tones – these add a rustic amber to terracotta warmth */
+        --color-warm-1: #dd7263;  /* Soft amber */
+        --color-warm-2: var(--earth-red);  /* Muted terracotta */
+        --color-warm-3: #8e2f2a;  /* Deep, robust red */
+
+        /* Cool Tones – shifting away from purples toward slate and steel accents */
+        --color-cool-3: var(--color-dark-4);
+        --color-cool-4: var(--color-dark-3);
+        --color-cool-5: var(--midnight-brown);
+        --color-cool-5-25: rgba(43, 36, 31, 0.25);
+        --color-cool-5-50: rgba(43, 36, 31, 0.5);
+        --color-cool-5-75: rgba(43, 36, 31, 0.75);
+        --color-cool-5-90: rgba(43, 36, 31, 0.9);
+
+        /* Light Neutrals – subtle backgrounds & accents */
+        --color-light-1: #f8f8f8;  /* Soft, neutral off-white with a cool tone */
+        --color-light-2: #eae7e3;  /* Light gray-beige with a subtle cool undertone */
+        --color-light-3: #dbd4ce;  /* Muted taupe with a cool balance */
+        --color-light-4: #c7beb6;  /* Soft greige with a cooler tint */
+        --color-light-5: #a99b94;  /* Desaturated taupe with a grayish tone */
+        --color-light-6: #95897f;  /* Muted, earthy gray-brown */
+
+        /* Dark Neutrals – rich, grounded dark shades */
+        --color-dark-1: var(--earth-dark);
+        --color-dark-2: var(--midnight-brown);  /* Midnight brown */
+        --color-dark-3: var(--deep-brown);  /* Deep brown */
+        --color-dark-4: #55453B;  /* Muted brown with subtle taupe influence */
+        --color-dark-5: #625349;  /* Cool, earthy brown */
+        --color-dark-6: #736459;  /* Dark taupe with a gray-brown balance */
+
+        /* Error – an earthy, muted red */
+        --color-level-error: #a14040;
+        --color-level-error-bg: rgba(161, 64, 64, 0.8);
+        --color-level-error-border: #7a2e2e;
+
+        /* Info – a dusty slate blue */
+        --color-level-info: #55453B;
+        --color-level-info-bg: #625349;
+        --color-level-info-border: #736459;
+
+        /* Success – a natural forest green */
+        --color-level-success: #4f6d4a;
+        --color-level-success-bg: rgba(79, 109, 74, 0.8);
+        --color-level-success-border: #3e5a3a;
+
+        /* Warning – warm amber/terracotta (using our warm tones) */
+        --color-level-warning: var(--color-warm-1);
+        --color-level-warning-bg: rgba(217,156,90, 0.8);
+        --color-level-warning-border: var(--color-warm-2);
+
+        /* ========================
+           Scrollbar Colors
+           ======================== */
+        --color-scrollbar: var(--color-warm-3);  /* Deep, robust red */
+        --color-scrollbar-border: #a24f43;
+
+        --color-bg-light: rgba(84, 59, 40, 0.1);
+    }
+
+    /* ---------------------------------------- */
+    /*  Font Declarations                       */
+    /* ---------------------------------------- */
+    @font-face {
+        font-family: Aniron;
+        src: url(../../fonts/Aniron.ttf);
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: Aniron;
+        src: url(../../fonts/AnironBold.ttf);
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: NewBaskerville;
+        src: url(../../fonts/NewBaskerville.ttf);
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: NewBaskerville;
+        src: url(../../fonts/NewBaskervilleBold.ttf);
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: MinionPro;
+        src: url(../../fonts/MinionProRegular.ttf);
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: NiveauGroteskMedium;
+        src: url(../../fonts/NiveauGroteskMedium.otf);
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    /* ---------------------------------------- */
+    /*  Typography                              */
+    /* ---------------------------------------- */
+    body {
+        --font-awesome: "Font Awesome 6 Pro";
+        --font-awesome-duotone: "Font Awesome 6 Duotone";
+        --font-sans: "NewBaskerville", "Signika", "Palatino Linotype", sans-serif;
+        --font-serif: "NewBaskerville", "Amiri", serif;
+        --font-body: "NewBaskerville", "Signika", "Palatino Linotype", sans-serif;
+        --font-monospace: "MinionPro", monospace;
+        --font-code: "NiveauGroteskMedium", "Signika", "Palatino Linotype", sans-serif;
+        --font-h1: "Aniron", "Modesto Condensed", serif;
+        --font-h2: "Aniron", "Amiri", serif;
+        --font-h3: "Aniron", "Signika", "Palatino Linotype", sans-serif;
+        --font-h4: "Aniron", "Modesto Condensed", serif;
+        --font-h5: "Aniron", "Amiri", serif;
+        --font-h6: "Aniron", "Signika", "Palatino Linotype", sans-serif;
+        --font-size-6: 0.41rem;
+        --font-size-7: 0.464rem;
+        --font-size-8: 0.5rem;
+        --font-size-9: 0.5625rem;
+        --font-size-10: 0.625rem;
+        --font-size-11: 0.6875rem;
+        --font-size-12: 0.75rem;
+        --font-size-13: 0.8125rem;
+        --font-size-14: 0.875rem;
+        --font-size-15: 0.9375rem;
+        --font-size-16: 1rem;
+        --font-size-18: 1.125rem;
+        --font-size-20: 1.25rem;
+        --font-size-24: 1.5rem;
+        --font-size-28: 1.75rem;
+        --font-size-32: 2rem;
+        --font-size-36: 2.25rem;
+        --font-size-48: 3rem;
+        --font-size-64: 4rem;
+        --font-size-80: 5rem;
+        --font-h1-size: var(--font-size-24);
+        --font-h2-size: var(--font-size-16);
+        --font-h3-size: var(--font-size-14);
+        --font-h4-size: var(--font-size-12);/*var(--font-size-24);*/
+        --font-h5-size: var(--font-size-10);
+        --font-h6-size: var(--font-size-8);
+    }
+
+    /* ---------------------------------------- */
+    /*  Chat Cards                              */
+    /* ---------------------------------------- */
+    .chat-message,.chat-message.whisper {
+        font-size: var(--font-size-13);
+        background: url("../../img/tor_bg.webp") repeat;
+        background-size: cover;
+
+        /*--color-blind-background: #f5eaf5;
+        --color-blind-border: #6b476b;
+        --color-emote-background: #f3edde;
+        --color-emote-border: #887c5d;
+        --color-whisper-background: #e8e8ef;
+        --color-whisper-border: #545469;
+        --chat-message-border-color: #6f6c66;*/
+    }
+
+    .ui-control {
+        /*--toggle-bg-color: rgba(34, 34, 72, 0.75);
+        --toggle-border-color: #5252d7;
+        --toggle-active-bg-color: #5252d7;
+        --toggle-active-border-color: #8484ff;*/
+    }
+
+    /* ---------------------------------------- */
+    /*  CodeMirror                              */
+    /* ---------------------------------------- */
+    code-mirror {
+        /*--active-line-color: #2f393c44;
+        --syntax-keyword-color: #c678dd;
+        --syntax-operator-color: #56b6c2;
+        --syntax-var-name-color: #e06c75;
+        --syntax-func-name-color: #61afef;
+        --syntax-local-var-color: #fff;
+        --syntax-class-name-color: #e5c07b;
+        --syntax-prop-def-color: #e06c75;
+        --syntax-boolean-color: #d19a66;
+        --syntax-number-color: #e5c07b;
+        --syntax-string-color: #98c379;
+        --syntax-regexp-color: #56b6c2;*/
+    }
+}
+
+@layer variables.themes {
+    /* ---------------------------------------- */
+    /*  Theme Layers                            */
+    /* ---------------------------------------- */
+
+    /* Dark Theme */
+    @layer general {
+        body.theme-dark .sheet.journal-entry .toc li.page {
+            border-top: 1px solid var(--color-dark-3);
+        }
+        body.theme-dark .journal-entry-page :is(h2, h4, h6){
+            color: var(--earth-red);
+        }
+        body.theme-dark .journal-entry-page :is(h1, h3, h5),
+        body.theme-dark .journal-header .title {
+            color: var(--earth-gold);
+        }
+        body.theme-dark code-mirror {
+            --input-background-color: var(--color-cool-5-25);
+            --active-line-color: rgba(43, 36, 31, 0.27);
+            --syntax-keyword-color: var(--earth-red);         /* Keywords: Warm brick red */
+            --syntax-comment-color: var(--earth-taupe);        /* Comments: Subdued taupe */
+            --syntax-operator-color: var(--stone-gray);        /* Operators: Weathered stone gray */
+            --syntax-var-name-color: var(--earth-gold);       /* Variable names: Deep, rich brown */
+            --syntax-func-name-color: var(--moss-green);        /* Function names: Vibrant moss green */
+            --syntax-local-var-color: var(--earth-ivory);       /* Local variables: Soft, gentle ivory */
+            --syntax-class-name-color: var(--earth-gold);       /* Class names: Muted golden beige */
+            --syntax-prop-def-color: var(--earth-gold);         /* Property definitions: Intense deep brown */
+            --syntax-boolean-color: var(--earth-beige);         /* Booleans: Light beige */
+            --syntax-number-color: var(--earth-gold);           /* Numbers: Muted golden beige (mirroring class names) */
+            --syntax-string-color: var(--forest-green);         /* Strings: Fresh forest green */
+            --syntax-regexp-color: var(--midnight-brown);       /* RegExp: Almost black brown */
+        }
+
+        body.theme-dark .sheet.journal-entry .toc li.page.active + li.page.active {
+            border-top: 1px solid var(--color-dark-3) !important;
+        }
+
+        body.theme-dark .sheet.journal-entry .toc li.page.active + li.page {
+            border-top: 1px solid var(--color-dark-3) !important;
+        }
+    }
+    @layer specific {
+    }
+
+    /* Light Theme */
+    @layer general {
+        body.theme-light {
+            --content-link-background: rgb(84 59 40 / 15%);
+        }
+        body.theme-light input:disabled,
+        body.theme-light select:disabled,
+        body.theme-light textarea:disabled,
+        body.theme-light code-mirror:disabled {
+            --input-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light input,
+        body.theme-light select {
+            --input-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light code-mirror {
+            /* Gutter */
+            --gutter-background-color: var(--color-light-1);        /* originally #f5f5f5 */
+            --gutter-border-color: var(--color-border-light-1);       /* originally #ddd */
+
+            /* Active line (using a semi‐transparent version of var(--color-warm-1) which is #dd7263) */
+            --active-line-color: rgba(221, 114, 99, 0.1);            /* originally #cceeff44 */
+
+            /* Syntax Highlighting */
+            --syntax-keyword-color: var(--earth-red);                 /* replaces #708 with an earthy red */
+            --syntax-var-name-color: var(--forest-green);             /* replaces #00f with forest green */
+            --syntax-local-var-color: var(--moss-green);              /* replaces #30a with moss green */
+            --syntax-class-name-color: var(--earth-gold);             /* replaces #167 with warm gold */
+            --syntax-prop-def-color: var(--stone-gray);               /* replaces #00c with stone gray */
+            --syntax-boolean-color: var(--earth-taupe);               /* replaces #219 with earth taupe */
+            --syntax-number-color: var(--color-level-success);        /* replaces #164 with a natural forest green */
+            --syntax-string-color: var(--color-level-error);          /* replaces #a11 with our error red */
+            --syntax-regexp-color: var(--color-level-warning);        /* replaces #e40 with a warm amber tone */
+            --syntax-invalid-color: var(--color-level-error-border);  /* replaces #f00 with a darker error red */
+            --syntax-tag-color: var(--color-cool-4);                  /* replaces #085 with a cool, dark accent */
+            --syntax-separator-color: var(--color-cool-3);            /* replaces #00f with a cool neutral */
+        }
+        body.theme-light code-mirror:disabled {
+            --gutter-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light label.icon {
+            --input-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light label.icon:has(> input:disabled) {
+            --input-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light input[readonly] {
+            --input-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light .form-footer button {
+            --button-background-color: rgb(84 59 40 / 15%);
+        }
+        body.theme-light .prosemirror,
+        body.theme-light prose-mirror,
+        body.theme-light #prosemirror-dropdown,
+        body.theme-light .menu-dialog.prosemirror,
+        body.theme-light#prosemirror-dropdown,
+        body.theme-light.menu-dialog.prosemirror {
+            --color-control-hover: var(--color-light-2);
+            --menu-background: rgb(84 59 40 / 15%);
+            --dropdown-background: rgb(84 59 40 / 15%);
+            --dropdown-border: var(--color-border-light-2);
+        }
+        body.theme-light .application {
+            --background: url("../modules/tor2e-theme/img/tor_bg.webp") repeat;
+            background-size: cover;
+        }
+        body.theme-light .sheet.journal-entry .journal-sidebar {
+            background: url("../../img/tor_bg.webp") repeat;
+            background-size: cover;
+            color: var(--color-text-primary);
+        }
+        body.theme-light .sheet.journal-entry .journal-sidebar search .inline-control {
+            --button-border-color: revert;
+            --button-hover-border-color: var(--color-text-primary);
+            color: var(--color-text-primary);
+        }
+        body.theme-light .sheet.journal-entry .journal-sidebar search input {
+            --input-background-color: transparent;
+            --input-border-color: var(--earth-taupe);
+            --input-focus-outline-color: var(--earth-red);
+            --input-text-color: var(--midnight-brown);
+        }
+        body.theme-light .sheet.journal-entry .journal-sidebar button {
+             --button-text-color: revert;
+        }
+        body.theme-light .journal-entry-page :is(h1, h3, h5),
+        body.theme-light .journal-header .title {
+            color: var(--earth-brown);
+        }
+        body.theme-light .journal-entry-page :is(h2, h4, h6){
+            color: var(--earth-red);
+        }
+        body.theme-light .sheet.journal-entry .toc .page-heading {
+            color: var(--earth-brown);
+        }
+        body.theme-light .sheet.journal-entry .toc li.page {
+            border-top: 1px solid var(--earth-beige);
+        }
+        body.theme-light .sheet.journal-entry .toc .page-heading .page-number,
+        body.theme-light .sheet.journal-entry .toc .page-heading .page-index {
+             color: var(--earth-brown);
+        }
+        body.theme-light .sheet.journal-entry .journal-sidebar input {
+            --input-text-color: var(--earth-brown);
+            --input-placeholder-color: var(--earth-brown);
+        }
+        body.theme-light .sheet.journal-entry .toc .page-heading {
+            font-weight: 700;
+        }
+        body.theme-light .sheet.journal-sheet blockquote,
+        body.theme-light .sheet.journal-sheet code {
+            color: var(--earth-brown);
+        }
+
+        body.theme-light .sheet.journal-entry .toc li.page.active + li.page.active {
+            border-top: 1px solid var(--earth-beige) !important;
+        }
+
+        body.theme-light .sheet.journal-entry .toc li.page.active + li.page {
+            border-top: 1px solid var(--earth-beige) !important;
+        }
+    }
+    @layer specific {
+        .application.theme-light,
+        .themed.theme-light {
+            --background: url("../../img/tor_bg.webp") repeat;
+            background-size: cover;
+        }
+        .app.theme-light .standard-form {
+            --background: url("../../img/tor_bg.webp") repeat;
+            background-size: cover;
+        }
+        .application.theme-light,
+        .themed.theme-light {
+            /* #ddd → a soft, light beige */
+            --content-link-background: var(--earth-beige);
+        }
+        .application.theme-light #context-menu,
+        .themed.theme-light #context-menu,
+        .application.theme-light#context-menu,
+        .themed.theme-light#context-menu {
+            /* #d9d8c8 → a warm light neutral */
+            --background-color: var(--color-light-3);
+            /* #999 → using a light border tone from the palette */
+            --border-color: var(--color-border-light-2);
+            --group-separator: var(--color-border-light-2);
+            --hover-entry-border: var(--color-border-light-2);
+            /* #f0f0e0 → a subtle off-white */
+            --hover-entry-background: var(--color-light-2);
+        }
+        .application.theme-light code-mirror,
+        .themed.theme-light code-mirror {
+            /* #f5f5f5 → a very light tone */
+            --gutter-background-color: var(--earth-cream);
+            /* #ddd → a soft, neutral tone */
+            --gutter-border-color: var(--earth-beige);
+            /* Active line highlight: using forest-green (converted to rgb) at ~27% opacity */
+            --active-line-color: rgba(64, 125, 100, 0.27);
+            /* Syntax colors */
+            --syntax-keyword-color: var(--earth-red);         /* replaces #708 */
+            --syntax-var-name-color: var(--moss-green);       /* replaces #00f */
+            --syntax-local-var-color: var(--forest-green);     /* replaces #30a */
+            --syntax-class-name-color: var(--earth-gold);      /* replaces #167 */
+            --syntax-prop-def-color: var(--earth-taupe);       /* replaces #00c */
+            --syntax-boolean-color: var(--deep-brown);         /* replaces #219 */
+            --syntax-number-color: var(--earth-brown);         /* replaces #164 */
+            --syntax-string-color: var(--earth-ivory);         /* replaces #a11 */
+            --syntax-regexp-color: var(--midnight-brown);      /* replaces #e40 */
+            --syntax-invalid-color: var(--color-level-error);  /* replaces #f00 */
+            --syntax-tag-color: var(--stone-gray);             /* replaces #085 */
+            --syntax-separator-color: var(--earth-dark);       /* replaces #00f */
+        }
+
+        .application.theme-light .prosemirror,
+        .themed.theme-light .prosemirror,
+        .application.theme-light prose-mirror,
+        .themed.theme-light prose-mirror,
+        .application.theme-light #prosemirror-dropdown,
+        .themed.theme-light #prosemirror-dropdown,
+        .application.theme-light .menu-dialog.prosemirror,
+        .themed.theme-light .menu-dialog.prosemirror,
+        .application.theme-light#prosemirror-dropdown,
+        .themed.theme-light#prosemirror-dropdown,
+        .application.theme-light.menu-dialog.prosemirror,
+        .themed.theme-light.menu-dialog.prosemirror {
+            --menu-background: rgb(84 59 40 / 15%);
+            /* Originally #f0f0e0 */
+            --color-control-hover: var(--color-light-2);
+            /* Originally #d9d8c8 */
+            --dropdown-background: var(--color-light-3);
+            /* Originally #999 */
+            --dropdown-border: var(--color-border-light-2);
+        }
+
+        .app.theme-light .standard-form {
+            /* Originally #ddd */
+            --content-link-background: var(--earth-beige);
+        }
+
+        .app.theme-light .standard-form #context-menu,
+        .app.theme-light .standard-form#context-menu {
+            /* Originally #d9d8c8 */
+            --background-color: var(--color-light-3);
+            /* Originally #999 */
+            --border-color: var(--color-border-light-2);
+            --group-separator: var(--color-border-light-2);
+            --hover-entry-border: var(--color-border-light-2);
+            /* Originally #f0f0e0 */
+            --hover-entry-background: var(--color-light-2);
+        }
+        .app.theme-light .standard-form code-mirror {
+            /* Originally #f5f5f5 – a very light background */
+            --gutter-background-color: var(--earth-cream);
+            /* Originally #ddd – a light neutral border */
+            --gutter-border-color: var(--earth-beige);
+            /* Active line: using forest-green (#407d64 → rgb(64,125,100)) at 27% opacity */
+            --active-line-color: rgba(64, 125, 100, 0.27);
+
+            /* Syntax Colors */
+            --syntax-keyword-color: var(--earth-red);         /* replaces #708 */
+            --syntax-var-name-color: var(--moss-green);         /* replaces #00f */
+            --syntax-local-var-color: var(--forest-green);       /* replaces #30a */
+            --syntax-class-name-color: var(--earth-gold);        /* replaces #167 */
+            --syntax-prop-def-color: var(--earth-taupe);         /* replaces #00c */
+            --syntax-boolean-color: var(--deep-brown);           /* replaces #219 */
+            --syntax-number-color: var(--earth-brown);           /* replaces #164 */
+            --syntax-string-color: var(--earth-ivory);           /* replaces #a11 */
+            --syntax-regexp-color: var(--midnight-brown);        /* replaces #e40 */
+            --syntax-invalid-color: var(--color-level-error);    /* replaces #f00 */
+            --syntax-tag-color: var(--stone-gray);               /* replaces #085 */
+            --syntax-separator-color: var(--earth-dark);         /* replaces #00f */
+        }
+        .app.theme-light .standard-form .prosemirror,
+        .app.theme-light .standard-form prose-mirror,
+        .app.theme-light .standard-form #prosemirror-dropdown,
+        .app.theme-light .standard-form .menu-dialog.prosemirror,
+        .app.theme-light .standard-form#prosemirror-dropdown,
+        .app.theme-light .standard-form.menu-dialog.prosemirror {
+            --color-control-hover: var(--color-light-2);   /* Originally #f0f0e0 */
+            --dropdown-background: var(--color-light-3);     /* Originally #d9d8c8 */
+            --dropdown-border: var(--color-border-light-2);    /* Originally #999 */
+        }
+    }
+}
+
+@layer elements.typography {
+    span.reference {
+        font-size: var(--font-size-9);
+        background: var(--color-dark-2); /* Originally #282e33 */
+        color: var(--earth-cream);        /* Originally #c5dbe3 */
+        border: 1px solid var(--earth-beige); /* Originally #def7ff */
+    }
+}
+
+@layer blocks.base {
+    /* ----------------------------------------- */
+    /*  Roll Message                             */
+    /* ----------------------------------------- */
+    .dice-roll .dice-total {
+        border: unset !important;
+        font-size: var(--font-size-12);
+        color: var(--earth-brown);
+    }
+
+    .dice-roll .dice-total .failure {
+        color: var(--earth-red);
+    }
+
+    .dice-roll .dice-total .success {
+        color: var(--color-level-success);
+    }
+    .dice-roll .dice-formula, .dice-roll .dice-total {
+        background: var(--color-bg-light);
+    }
+}
+
+@layer applications {
+    /* ---------------------------------------- */
+    /* Support Details Report                   */
+    /* ---------------------------------------- */
+    #support-details pre {
+        font-family: var(--font-monospace), sans-serif;
+        letter-spacing: 0.05em;
+    }
+
+    /* ----------------------------------------- */
+    /*  Settings                                 */
+    /* ----------------------------------------- */
+    .settings-sidebar .info {
+        font-size: var(--font-size-13);
+    }
+    .settings-sidebar .info .title {
+        font-size: var(--font-size-14);
+    }
+    .settings-sidebar .info .subtitle {
+        margin: 0.2rem 0 0;
+        color: revert;
+    }
+
+    /* ----------------------------------------- */
+    /*  Journal Entry Pages                      */
+    /* ----------------------------------------- */
+    .journal-entry-page {
+        --font-h1: "Aniron", "Modesto Condensed", serif;
+        --font-h2: "Aniron", "Amiri", serif;
+        --font-h3: "Aniron", "Signika", "Palatino Linotype", sans-serif;
+        --font-h4: "Aniron", "Modesto Condensed", serif;
+        --font-h5: "Aniron", "Amiri", serif;
+        --font-h6: "Aniron", "Signika", "Palatino Linotype", sans-serif;
+        --font-h1-size: var(--font-size-16); /*2em;*/
+        --font-h2-size: var(--font-size-14); /*1.5em;*/
+        --font-h3-size: var(--font-size-13); /*1.25em;*/
+        --font-h4-size: var(--font-size-11); /*1em;*/
+        --font-h5-size: var(--font-size-10); /*0.83em;*/
+        --font-h6-size: var(--font-size-9); /*0.67em;*/
+        /* Headings */
+        /* Tables */
+    }
+    .journal-entry-page h3 {
+        font-family: "NewBaskerville", "Signika", "Palatino Linotype", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    .journal-entry-page h1,
+    .journal-entry-page h2 {
+        border-bottom: none;
+    }
+    .journal-entry-page h1,
+    .journal-entry-page h2,
+    .journal-entry-page h3,
+    .journal-entry-page h4,
+    .journal-entry-page h5,
+    .journal-entry-page h6 {
+        line-height: 2;
+        margin-bottom: 0;
+    }
+    .journal-entry-page :is(h1, h2, h3, h4, h5, h6):not(:first-child) {
+        margin-top: 0;
+    }
+    .journal-sheet .journal-header {
+        margin: 5px;
+    }
+    .journal-sheet .journal-header .title {
+        height: 40px;
+    }
+    .journal-sheet p {
+        line-height: 1.2;
+        margin: 0.3rem 0;
+        text-align: justify;
+    }
+    .journal-sheet p:empty {
+        min-height: 0.5rem;
+    }
+    .journal-sheet :is(h1, h2, h3, h4, h5, h6) {
+        border-bottom: none;
+    }
+    .journal-sheet .journal-header .title {
+        background: none;
+        border: none;
+        font-family: var(--font-h1), sans-serif;
+        font-size: var(--font-size-18);
+    }
+    .sheet.journal-entry .journal-entry-content {
+        background-size: cover;
+    }
+    .sheet.journal-entry .journal-entry-content {
+        flex: 1;
+        height: 100%;
+        border-radius: 6px 0 0 0;
+    }
+    .sheet.journal-entry .journal-sidebar {
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .sheet.journal-entry {
+        --level-indent: 6px;
+    }
+    .sheet.journal-entry .toc li.page {
+        border-bottom: 0;
+    }
+    .sheet.journal-entry .toc {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .sheet.journal-entry .toc li.page.active:has(+ li.page.active) {
+        border-bottom: none;
+    }
+
+    .sheet.journal-entry .toc li.page.active {
+        border-top: 2px solid var(--color-warm-2);
+        border-bottom: 2px solid var(--color-warm-2);
+        border-left: 1px solid var(--color-warm-2);
+        border-right: 1px solid var(--color-warm-2);
+    }
+    .sheet.journal-entry .toc .heading-link {
+        font-size: var(--font-size-13);
+    }
+    .sheet.journal-entry .toc .headings li {
+        --line-height: 24px;
+    }
+    .sheet.journal-sheet blockquote {
+        position: relative;
+        font-family: var(--font-body), sans-serif;
+        font-style: unset;
+        margin: 0;
+        border-left: 0;
+        border-right: 0;
+        padding: 0 20px;
+    }
+    .sheet.journal-sheet blockquote:before,
+    .sheet.journal-sheet blockquote:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        background-position: center;
+    }
+    .sheet.journal-sheet blockquote:before {
+        left: 0;
+        background-image: url(../../img/tor_border_left.webp);
+    }
+    .sheet.journal-sheet blockquote:after {
+        right: 0;
+        background-image: url(../../img/tor_border_right.webp);
+    }
+    .sheet.journal-sheet code {
+        font-family: var(--font-code), sans-serif;
+        letter-spacing: 0.08125em;
+        position: relative;
+        display: block;
+        padding: 30px 0;
+        background: revert;
+        border: none;
+        font-size: var(--font-size-12);
+        white-space: break-spaces;
+        text-align: justify;
+    }
+    .sheet.journal-sheet code:before,
+    .sheet.journal-sheet code:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .sheet.journal-sheet code:before {
+        top: 0;
+        background-image: url(../../img/tor_border_top.webp);
+    }
+    .sheet.journal-sheet code:after {
+        bottom: 0;
+        background-image: url(../../img/tor_border_bottom.webp);
+    }
+    /* ---------------------------------------- */
+    /* RollTable Sheet                          */
+    /* ---------------------------------------- */
+    .roll-table-sheet.view-mode header.sheet-header h1 {
+        font-size: var(--font-h2-size);
+    }
+    .roll-table-sheet.view-mode table td > details > p {
+        margin-left: 0;
+    }
+    /* --------------------------------------- */
+    /*  Shared DocumentSheet Styling           */
+    /* --------------------------------------- */
+    .sheet .standard-form header.img-name input {
+        font-family: var(--font-h1), sans-serif;
+        font-size: var(--font-h2-size);
+    }
+    /* ---------------------------------- */
+    /*  Scenes                            */
+    /* ---------------------------------- */
+    .scenes-sidebar .scene .entry-name {
+        font-size: var(--font-size-12);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Actors                       */
+    /* ---------------------------------- */
+    .actors-sidebar .directory-item .entry-name {
+        font-size: var(--font-size-8);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Items
+    /* ---------------------------------- */
+    .items-sidebar .directory-item .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Folders                           */
+    /* ---------------------------------- */
+    li.folder > .folder-header .folder-name {
+        font-size: var(--font-size-10);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Journal                           */
+    /* ---------------------------------- */
+    .journal-sidebar .directory-item.entry .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Combat Tracker                    */
+    /* ---------------------------------- */
+    .combat-sidebar .combat-tracker .combatant {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Combat Tracker                    */
+    /* ---------------------------------- */
+    .compendium-sidebar .compendium .entry-name strong {
+        font-size: var(--font-size-12);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Macros                    */
+    /* ---------------------------------- */
+    .macros-sidebar .directory-item.entry .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Macros                    */
+    /* ---------------------------------- */
+    .macros-sidebar .directory-item.entry .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Cards                    */
+    /* ---------------------------------- */
+    .cards-sidebar .directory-item.entry .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ---------------------------------- */
+    /*  Tables                    */
+    /* ---------------------------------- */
+    .tables-sidebar .directory-item.entry .entry-name {
+        font-size: var(--font-size-9);
+        font-family: var(--font-h1), sans-serif;
+    }
+    /* ------------------------------------------ */
+    /*  Players                                   */
+    /* ------------------------------------------ */
+    #players {
+        font-size: var(--font-size-7);
+        font-family: var(--font-h1), sans-serif;
+    }
+    #players #performance-stats {
+        font-family: var(--font-monospace), sans-serif;
+        letter-spacing: 0.05em;
+        font-size: var(--font-size-9);
+    }
+    #players .player.self .player-name {
+        --player-name-color: var(--earth-gold);
+    }
+    /* ------------------------------------------ */
+    /*  Tooltip                                   */
+    /* ------------------------------------------ */
+    #tooltip,
+    .locked-tooltip {
+        font-family: var(--font-h1), sans-serif;
+        font-size: var(--font-size-9);
+    }
+
+    /* ---------------------------------- */
+    /*  Single Chat Message               */
+    /* ---------------------------------- */
+    .chat-message .message-header .message-sender {
+        color: var(--earth-red);
+        font-weight: bold;
+        font-family: var(--font-h4), sans-serif;
+        font-size: var(--font-size-10);
+    }
+    .chat-message .message-header .message-metadata {
+        font-size: var(--font-size-12);
+    }
+
+    .window-app .window-header .window-title,
+    .application .window-header .window-title {
+        font-family: var(--font-h4), sans-serif;
+        font-size: var(--font-size-10);
+    }
+
+    .window-app .window-header .header-button {
+        font-family: var(--font-h4), sans-serif;
+        font-size: var(--font-size-9);
+    }
+
+}
+
+@layer compatibility {
+    .package-configuration aside.sidebar nav.tabs .category-tab.active {
+        color: var(--earth-red);
+        border-bottom: 1px solid var(--color-border-light-primary);
+    }
+    body.game .app .tabs > [data-tab].active {
+        text-shadow: revert;
+    }
+    body.game .sheet.app .editor-content blockquote,
+    body.game .sheet.app .editor-container-toggelable blockquote {
+        position: relative;
+        font-family: var(--font-body), sans-serif;
+        font-style: unset;
+        margin: 0;
+        border-left: 0;
+        border-right: 0;
+        padding: 0 20px;
+        color: var(--earth-brown);
+    }
+    body.game .sheet.app .editor-content blockquote:before,
+    body.game .sheet.app .editor-content blockquote:after,
+    body.game .sheet.app .editor-container-toggelable blockquote:before,
+    body.game .sheet.app .editor-container-toggelable blockquote:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        background-position: center;
+    }
+    body.game .sheet.app .editor-content blockquote:before,
+    body.game .sheet.app .editor-container-toggelable blockquote:before {
+        left: 0;
+        background-image: url(../../img/tor_border_left.webp);
+    }
+    body.game .sheet.app .editor-content blockquote:after,
+    body.game .sheet.app .editor-container-toggelable blockquote:after {
+        right: 0;
+        background-image: url(../../img/tor_border_right.webp);
+    }
+    body.game .sheet.app .editor-content code,
+    body.game .sheet.app .editor-container-toggelable code {
+        font-family: var(--font-code), sans-serif;
+        letter-spacing: 0.08125em;
+        position: relative;
+        display: block;
+        padding: 30px 0;
+        background: revert;
+        border: none;
+        font-size: var(--font-size-12);
+        white-space: break-spaces;
+        color: var(--earth-brown);
+    }
+    body.game .sheet.app .editor-content code:before,
+    body.game .sheet.app .editor-content code:after,
+    body.game .sheet.app .editor-container-toggelable code:before,
+    body.game .sheet.app .editor-container-toggelable code:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    body.game .sheet.app .editor-content code:before,
+    body.game .sheet.app .editor-container-toggelable code:before {
+        top: 0;
+        background-image: url(../../img/tor_border_top.webp);
+    }
+    body.game .sheet.app .editor-content code:after,
+    body.game .sheet.app .editor-container-toggelable code:after {
+        bottom: 0;
+        background-image: url(../../img/tor_border_bottom.webp);
+    }
+    body.game .sheet.app .editor-edit {
+        z-index: 1;
+    }
+    #tours-management .tour .status {
+        color: var(--color-text-dark-6);
+    }
+
+    @layer base {
+        body.game .app h1,
+        body.game .app h2,
+        body.game .app h3,
+        body.game .app h4,
+        body.game .app h5,
+        body.game .app h6 {
+            font-family: var(--font-h1), sans-serif;
+        }
+        body.game .app h2 {
+            font-size: var(--font-size-14);
+        }
+        body.game .app h4 {
+            font-size: var(--font-size-10);
+        }
+        body.game .app.window-app .window-content {
+            background: url("../../img/tor_bg.webp") repeat;
+            background-size: cover;
+        }
+        body.game .app form button {
+            background: rgb(84 59 40 / 15%);
+        }
+        body.game .app input[type="text"],
+        body.game .app input[type="number"],
+        body.game .app input[type="password"],
+        body.game .app input[type="date"],
+        body.game .app input[type="time"],
+        body.game .app input[type="search"] {
+            background: rgb(84 59 40 / 15%);
+        }
+        body.game .app input[type="text"]:focus,
+        body.game .app input[type="number"]:focus,
+        body.game .app input[type="password"]:focus,
+        body.game .app input[type="date"]:focus,
+        body.game .app input[type="time"]:focus,
+        body.game .app input[type="search"]:focus {
+            border: 2px solid var(--earth-red);
+            box-shadow: 0 0 0;
+        }
+        body.game .app select {
+            background: rgb(84 59 40 / 15%);
+        }
+        body.game .app select:focus {
+            border: 2px solid var(--earth-red);
+            box-shadow: 0 0 0;
+        }
+        body.game .app.dialog .dialog-buttons button {
+            background: rgb(84 59 40 / 15%);
+        }
+        #keybindings .binding .key.uneditable {
+            background: rgb(84 59 40 / 15%);
+        }
+    }
+}
