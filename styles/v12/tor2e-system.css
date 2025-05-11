@@ -1,5 +1,5 @@
 .tor2e.sheet .window-content {
-    background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
     background-size: cover;
 }
 

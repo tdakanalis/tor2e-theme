@@ -1,0 +1,318 @@
+.system-tor2e .roll-message-body .roll-information-row .label,
+.system-tor2e .roll-event-title,
+.system-tor2e .formula p.label,
+.system-tor2e .roll-characteristic-card p.label,
+.system-tor2e .roll-combat-card p.label,
+.system-tor2e .damage-card .block-title,
+.system-tor2e .warn-card .block-title,
+.system-tor2e .message-content .song-result-message .song-result-message-body .song-attribute-row .label{
+    background: var(--earth-brown);
+    font-family: var(--font-primary), sans-serif;
+    font-weight: bold;
+    font-size: var(--font-size-13);
+}
+
+.system-tor2e .roll-message-body .roll-information-row {
+    background: unset;
+}
+
+.system-tor2e .roll-message-body .roll-information-row .value,
+.system-tor2e .roll-event-message .roll-event-message-body,
+.system-tor2e .damage-card .block-content a,
+.system-tor2e .warn-card .block-content a {
+    background: var(--color-bg-light);
+}
+
+.system-tor2e li.roll-characteristic.active.positive {
+    color: var(--color-level-success);
+}
+
+.tor2e.sheet .window-content {
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
+    background-size: cover;
+}
+
+.tor2e.sheet .sheet-container img.background {
+    opacity: 0.04;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper, .tor2e.sheet.actor .sheet-content .main-stat .item-value {
+    background: var(--color-bg-light);
+}
+.tor2e.sheet.actor .sheet-content .main-stat .computed > .main-stat-value {
+    background: var(--color-bg-light);
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .input-stat-wrapper input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .input-stat-wrapper input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-value input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .input-stat-wrapper .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .input-stat-wrapper .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-value .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value .input-stat-value {
+    font-size: var(--font-size-13);
+    background: unset;
+    color: var(--earth-red);
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .input-stat-wrapper,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .input-stat-wrapper,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value {
+    background: var(--color-bg-light);
+    border: 2px solid var(--earth-red);
+    font-size: var(--font-size-13);
+    color: var(--earth-red);
+}
+.tor2e.sheet.actor .skill-element-row .skill-display-element-full {
+    background-color: var(--earth-red);
+}
+.tor2e.sheet.actor .skill-element-row > * {
+    border: 1px solid var(--earth-red);
+}
+.tor2e.sheet.actor h2 {
+    color: var(--earth-red);
+    font-size: var(--font-size-14);
+    font-family: var(--font-h1), sans-serif;
+    font-weight: 900;
+}
+.tor2e.sheet input,  .tor2e.sheet select {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: bold;
+    color: var(--earth-red);
+    background: unset;
+}
+.tor2e.sheet .skill-card-component .identification a.skill-name.active {
+    font-family: var(--font-primary), sans-serif;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .main-stat-value .main-stat-label {
+    left: -2em;
+    color: var(--earth-red);
+}
+.tor2e.sheet .biography-element span, .tor2e.sheet .main-stat {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: bold;
+}
+.tor2e.sheet h1 input {
+    font-family: var(--font-h1), sans-serif;
+    font-size: var(--font-size-18);
+    color: var(--earth-brown);
+}
+.tor2e.sheet.actor .sheet-header img {
+    border: 5px double var(--stone-gray);
+    background: var(--color-bg-light);
+    padding: 2px 0;
+}
+
+.tor2e.sheet .table-caption-row,
+.tor2e.sheet .collapsibleList,
+.tor2e.sheet.actor .section.main-section .active-effect-row,
+.tor2e.sheet.actor .actor-row,
+.tor2e.sheet.actor.character .table-layout,
+.tor2e.sheet.actor.community .table-layout {
+    background: var(--color-bg-light);
+}
+.tor2e.sheet.actor .sheet-content .main-stat {
+    padding-right: 5px;
+}
+.tor2e.sheet div.editor-container-toggelable.show {
+    padding-top: 10px;
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat label,
+.tor2e.sheet.actor .sheet-content .main-stat .label,
+.tor2e.sheet.actor .section h4 {
+    font-family: var(--font-h2), sans-serif !important;
+    font-size: var(--font-size-12);
+    color: var(--earth-brown);
+    font-weight: 900;
+}
+
+.tor2e.sheet.actor .attribute-label {
+    font-weight: 900;
+}
+
+.tor2e.sheet .collapsibleList li .skill-item-row .identification a,
+.tor2e.sheet .connectionsList li .skill-item-row .identification a,
+.tor2e.sheet .collapsibleList li .list-actor-row .identification a,
+.tor2e.sheet .connectionsList li .list-actor-row .identification a,
+.tor2e.sheet .collapsibleList li .skill-item-row .identification p,
+.tor2e.sheet .connectionsList li .skill-item-row .identification p,
+.tor2e.sheet .collapsibleList li .list-actor-row .identification p,
+.tor2e.sheet .connectionsList li .list-actor-row .identification p {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: bold;
+}
+.tor2e.sheet.actor .table-caption {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: bold;
+}
+.tor2e.sheet .trait-item h3 {
+    font-size: var(--font-size-14);
+    padding-top: 11px;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat label,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item label {
+    font-size: var(--font-size-6);
+    color: var(--earth-red);
+    left: 3.5em;
+    top: -1.5em;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat label {
+    font-size: var(--font-size-6);
+    color: var(--earth-red);
+    right: -9.8em;
+    top: -1.8em;
+}
+
+.tor2e.sheet.actor .sheet-content .main-stat .item-name,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-name,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-name {
+    font-size: var(--font-size-12);
+    color: var(--earth-red);
+    font-family: var(--font-primary), sans-serif;
+    font-weight: bold;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .item-name p {
+    margin-left: 0.1em;
+}
+.tor2e.sheet.actor .sheet-content .main-stat label,
+.tor2e.sheet.actor .sheet-content .main-stat .label {
+    margin-bottom: 0.7em;
+}
+.tor2e.sheet.actor .biography-element {
+    flex: 2;
+}
+
+.tor2e.sheet.actor .hostile-friendly,
+.tor2e.sheet.actor .rest-actions .rest-action p,
+.tor2e.sheet.actor .section .active-effect .label {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: bold;
+}
+
+.tor2e.sheet.journey-log h2 {
+    color: var(--earth-red);
+    font-size: var(--font-size-12);
+}
+.tor2e.sheet.journey-log h3 {
+    font-size: var(--font-size-11);
+}
+.tor2e.sheet.item.journey-log .table-heading {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: bold;
+}
+
+.tor2e.sheet.item.journey-log label {
+    font-weight: 900;
+}
+
+.tor2e.sheet .skill-card-component .identification p.skill-label.magical-skill:before,
+.tor2e.sheet .skill-card-component .identification p.skill-label.magical-skill:after {
+    margin-bottom: 0.2em;
+}
+
+.tor2e.sheet.actor.community .lbl-toggle-travel-log,
+.tor2e.sheet.actor.character .lbl-toggle-travel-log,
+.tor2e.sheet.actor.community .lbl-toggle-undertaking,
+.tor2e.sheet.actor.character .lbl-toggle-undertaking {
+    background: unset;
+}
+
+.tor2e.sheet.actor .tor2e-round-checkbox .active > .label {
+    background-color: var(--earth-brown);
+    border-color: var(--earth-brown);
+}
+.tor2e.sheet.actor .tor2e-round-checkbox .label {
+    background-color: unset;
+    border-color: var(--earth-brown);
+}
+.tor2e.sheet.actor .character-actor-drop,
+.tor2e.sheet.actor #unassigned-members .actor-drop,
+.tor2e.sheet.actor #travel-roles .actor-drop {
+    background: unset;
+}
+
+.tor2e.sheet.actor .hostile-friendly .hf-slider span {
+    align-content: center;
+}
+.tor2e.sheet .window-content h1,
+.tor2e.sheet .window-content h2,
+.tor2e.sheet .window-content h3,
+.tor2e.sheet .window-content h4,
+.tor2e.sheet .window-content h5,
+.tor2e.sheet .window-content h6 {
+    color: var(--earth-brown);
+}
+
+.system-tor2e .popup .form-group p.label,
+.system-tor2e section#difficulty-block .form-group label,
+.system-tor2e section#modifier-block .form-group label,
+.system-tor2e section#advanced-block .form-group label,
+.system-tor2e section#hope .form-group .input.principal p.warn.label {
+    font-family: var(--font-h1), sans-serif;
+    color: var(--color-warm-2);
+    font-size: var(--font-size-10);
+    font-weight: 900;
+}
+
+.system-tor2e section#hope .form-group .input.secondary p.label {
+    font-size: var(--font-size-8);
+}
+
+.system-tor2e .roll-event-message h4 {
+    font-family: var(--font-body), sans-serif;
+    background-color: var(--earth-brown);
+    font-size: var(--font-size-14);
+    font-weight: 900;
+}
+
+.system-tor2e .roll-event-message .roll-event-message-body {
+    background: var(--color-bg-light);
+    border: 0;
+}
+
+.system-tor2e #roll-dialog-window h4 {
+    font-family: var(--font-h4), sans-serif !important;
+    color: var(--color-warm-2);
+    font-weight: 900;
+}
+
+.system-tor2e .popup .content .hope .actor-stats span.label {
+    color: var(--color-warm-2);
+}
+
+
+.system-tor2e .popup input {
+    width: 1.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+}
+
+.system-tor2e .popup .label {
+    align-content: center;
+}
+
+.system-tor2e #roll-dialog-window .hint {
+    font-family: var(--font-body), sans-serif !important;
+    font-weight: 900;
+}
+
+.system-tor2e .slider {
+    align-content: center;
+    background-color: var(--color-level-success);
+}
+
+.system-tor2e input:checked + .slider {
+    background-color: var(--color-warm-2);
+}
+
+.system-tor2e .popup .form-group .label {
+    font-family: var(--font-h1), sans-serif;
+    color: var(--color-warm-2);
+    font-weight: 900;
+}
+.system-tor2e .failure {
+    color: var(--color-warm-2);
+}
+.system-tor2e .success {
+    color: var(--color-level-success);
+}

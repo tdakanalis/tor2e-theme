@@ -118,9 +118,36 @@
     font-size: var(--font-size-20);
 }
 
+.dnd5e2.sheet.actor.character .sheet-body .sidebar .card {
+    background: var(--deep-brown);
+}
+
+.dnd5e2.sheet.actor.character .ability-scores .ability-score .score,
+.dnd5e2.vertical-tabs nav.tabs > .item {
+    background: var(--midnight-brown);
+}
+
+.system-dnd5e .dnd5e-tooltip {
+    font-family: var(--font-body), sans-serif;
+    font-size: var(--font-size-12) !important;
+}
+
+.system-dnd5e :is(.chat-popout, #chat-log, .chat-log) .message::before {
+background: unset;
+}
+
+.system-dnd5e :is(.chat-popout, #chat-log, .chat-log) .message .message-header .title,
+.system-dnd5e :is(.chat-popout, #chat-log, .chat-log) .message .message-content button {
+    color: var(--earth-brown);
+}
+
 .system-dnd5e :is(.chat-popout, #chat-log, .chat-log) .message .message-header .subtitle {
      font-size: var(--font-size-6);
      color: var(--dnd5e-color-red);
+}
+
+.system-dnd5e .chat-message {
+    color: var(--deep-brown);
 }
 
 .system-dnd5e  .dice-total {
@@ -160,7 +187,7 @@
 }
 
 .sheet.dnd5e2-journal.journal-entry .journal-entry-content, .sheet.dnd5e2-journal.journal-entry-page .window-content {
-    background: var(--color-light-1) url(../img/tor_bg.webp) no-repeat;
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
     background-size: cover;
 }
 

@@ -1,32 +1,23 @@
 {
   "id": "tor2e-theme",
-  "name": "tor2e-theme",
   "title": "TOR2E - Theme",
   "description": "A foundry VTT theme for The One Ring 2nd Edition.",
   "version": "1.3.0",
   "compatibility": {
-    "minimum": "11",
-    "verified": "12.331",
-    "maximum": "12"
+    "minimum": "12",
+    "verified": "13",
+    "maximum": "13"
   },
   "authors": [
     {
       "name": "tdakanalis",
-      "url": "https://github.com/tdakanalis"
+      "url": "https://github.com/tdakanalis",
+      "flags": {}
     }
   ],
-  "styles": [
-    "css/theme.css",
-    "css/foundry.css",
-    "css/tor2e-system.css",
-    "css/dnd5e-system.css",
-    "css/tor2e-macros.css",
-    "css/monks-enhanced-journal.css",
-    "css/weather-control.css",
-    "css/simple-calendar.css",
-    "css/token-action-hud.css"
+  "esmodules": [
+    "scripts/tor2e-theme.mjs"
   ],
-  "esmodules": [],
   "changelog": "https://raw.githubusercontent.com/tdakanalis/tor2e-theme/refs/heads/main/CHANGELOG.md",
   "url": "https://github.com/tdakanalis/tor2e-theme",
   "manifest": "https://github.com/tdakanalis/tor2e-theme/releases/latest/download/module.json",

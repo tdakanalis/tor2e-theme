@@ -1,31 +1,31 @@
 @font-face {
     font-family: Aniron;
-    src: url(../fonts/Aniron.ttf)
+    src: url(../../fonts/Aniron.ttf)
 }
 
 @font-face {
     font-family: AnironBold;
-    src: url(../fonts/AnironBold.ttf)
+    src: url(../../fonts/AnironBold.ttf)
 }
 
 @font-face {
     font-family: NewBaskerville;
-    src: url(../fonts/NewBaskerville.ttf)
+    src: url(../../fonts/NewBaskerville.ttf)
 }
 
 @font-face {
     font-family: NewBaskervilleBold;
-    src: url(../fonts/NewBaskervilleBold.ttf)
+    src: url(../../fonts/NewBaskervilleBold.ttf)
 }
 
 @font-face {
     font-family: MinionPro;
-    src: url(../fonts/MinionProRegular.ttf)
+    src: url(../../fonts/MinionProRegular.ttf)
 }
 
 @font-face {
     font-family: NiveauGroteskMedium;
-    src: url(../fonts/NiveauGroteskMedium.otf);
+    src: url(../../fonts/NiveauGroteskMedium.otf);
 }
 
 
