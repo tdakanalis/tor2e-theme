@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/tdakanalis/tor2e-theme/compare/1.3.0...1.4.0) (2025-05-11)
+
+
+### Bug Fixes
+
+* **token-action-hud:** Fix font size ([2f8dee5](https://github.com/tdakanalis/tor2e-theme/commit/2f8dee57fdd9ae8588a137c22c7b5f1fdeb4f086))
+
+
+### Features
+
+* **theme:** Add support for Foundry VTT v13 ([2edc7de](https://github.com/tdakanalis/tor2e-theme/commit/2edc7de2dd9499ebc5e7524cb8849e8606217527))
+
 # [1.3.0](https://github.com/tdakanalis/tor2e-theme/compare/1.2.3...1.3.0) (2025-04-27)
 
 
