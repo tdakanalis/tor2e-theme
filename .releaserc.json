@@ -7,7 +7,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "sh ./substitute-module-json.sh ${nextRelease.version} ${nextRelease.gitTag} && zip -r tor2e-theme.zip css/ fonts/ img/ module.json CHANGELOG.md LICENSE"
+        "prepareCmd": "sh ./substitute-module-json.sh ${nextRelease.version} ${nextRelease.gitTag} && zip -r tor2e-theme.zip styles/ scripts/ fonts/ img/ module.json CHANGELOG.md LICENSE"
       }
     ],
     [
