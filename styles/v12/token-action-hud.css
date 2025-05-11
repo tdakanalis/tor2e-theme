@@ -1,0 +1,57 @@
+.tah-style-foundry-vtt-dark {
+    --tah-button-background: var(--color-cool-5-90);
+    --tah-button-background-color: var(--color-cool-5-90);
+    --tah-button-hover-background-color: var(--color-cool-5);
+    --tah-button-image-background-color: var(--color-cool-5-90);
+    --color-border-dark: var(--color-cool-5-90);
+    --tah-button-box-shadow: 0 2px 0 -1px #30251e, 0 0 0 1px #251c17, 0 0 5px #1a140f;
+    --tah-text-primary-color: white;
+    --tah-button-active-background-color: #551a1f;
+    --tah-button-active-box-shadow: 0 0 0 1px #bc483b, inset 0 0 10px #bc483b;
+    --tah-button-text-shadow: 1px 1px 1px #2d231c, 1px 1px 1px #2d231c, 1px 1px 3px #2d231c, 1px 1px 5px #2d231c;
+}
+
+.tah-style-foundry-vtt-dark .tah-info1 { color: #FFD700 !important; }
+.tah-style-foundry-vtt-dark .tah-info2 { color: #39FF14 !important; }
+.tah-style-foundry-vtt-dark .tah-info3 { color: #FF7F50 !important; }
+
+.tah-style-foundry-vtt-light {
+    --tah-button-background: rgba(255, 255, 255, 0.85);
+    --tah-button-background-color: rgba(255, 255, 255, 0.85);
+    --tah-button-hover-background-color: rgba(255, 255, 255, 0.85);
+    --tah-button-image-background-color: rgba(255, 255, 255, 0.85);
+    --color-border-dark: rgba(255, 255, 255, 0.85);
+    --tah-button-box-shadow: 0 2px 0 -1px rgba(255, 255, 255, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.85), 0 0 5px rgba(29, 25, 24, 0.1);
+    --tah-text-primary-color: #3a2e24;
+    --tah-button-active-background-color: rgba(255, 255, 255, 0.85);
+    --tah-button-active-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.85), inset 0 0 8px rgba(188, 72, 59, 0.2);
+    --tah-button-text-shadow: 1px 1px 1px rgba(255, 251, 243, 0.5),
+    -1px -1px 1px rgba(227, 217, 206, 0.5);
+    --tah-subgroups-background: rgba(255, 255, 255, 0.85);
+
+    --tah-button-text-color: #3a2e24;
+}
+
+.tah-style-foundry-vtt-light .tah-info1 { color: #ba4f42 !important; }
+.tah-style-foundry-vtt-light .tah-info2 { color: #407d64 !important; }
+.tah-style-foundry-vtt-light .tah-info3 { color: darkblue !important; }
+
+#token-action-hud .tah-button-box .tah-info-container .tah-info {
+    font-family: var(--font-body), sans-serif;
+}
+
+#token-action-hud .tah-list-subgroup-title-text {
+    font-family: var(--font-h1), sans-serif;
+    font-size: var(--font-size-6) !important;
+    text-transform: none;
+}
+
+#token-action-hud #tah-character-name {
+    font-family: var(--font-h1), sans-serif;
+    font-size: var(--font-size-6) !important;
+}
+
+.tah-tooltip {
+    font-family: var(--font-body), sans-serif !important;
+}
+
