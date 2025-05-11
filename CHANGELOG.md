@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/tdakanalis/tor2e-theme/compare/1.4.1...1.4.2) (2025-05-11)
+
+
+### Bug Fixes
+
+* **ci:** Fix release ci ([7dd53ba](https://github.com/tdakanalis/tor2e-theme/commit/7dd53ba29153388ffbc4e530efd19598405bb487))
+
 ## [1.4.1](https://github.com/tdakanalis/tor2e-theme/compare/1.4.0...1.4.1) (2025-05-11)
 
 
