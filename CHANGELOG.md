@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/tdakanalis/tor2e-theme/compare/1.4.0...1.4.1) (2025-05-11)
+
+
+### Bug Fixes
+
+* **module:** Fix module.js ([840aa74](https://github.com/tdakanalis/tor2e-theme/commit/840aa746789e70bcf54205d54c941d541517b0b4))
+
 # [1.4.0](https://github.com/tdakanalis/tor2e-theme/compare/1.3.0...1.4.0) (2025-05-11)
 
 
