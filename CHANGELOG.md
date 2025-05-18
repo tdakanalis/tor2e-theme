@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/tdakanalis/tor2e-theme/compare/1.4.2...1.4.3) (2025-05-18)
+
+
+### Bug Fixes
+
+* **menu:** Fix font size for menu items ([d14c7ca](https://github.com/tdakanalis/tor2e-theme/commit/d14c7ca75eac042e420aa91198c86f8cbf6f42ae))
+
 ## [1.4.2](https://github.com/tdakanalis/tor2e-theme/compare/1.4.1...1.4.2) (2025-05-11)
 
 
