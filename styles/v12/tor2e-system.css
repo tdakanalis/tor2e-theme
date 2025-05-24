@@ -232,8 +232,12 @@
 
 .roll-event-message h4 {
     font-family: var(--font-label), sans-serif;
-    background-color: var(--color-text-dark-header);
+    background-color: var(--color-dark-2);
     font-size: var(--font-size-14);
+}
+
+.damage-card .block-title, .warn-card .block-title {
+    font-weight: normal;
 }
 
 .roll-event-message .roll-event-message-body {

@@ -259,7 +259,7 @@ li.folder > .folder-header h6 {
 .chat-message h4 {
     font-family: var(--font-h4-bold), sans-serif;
     font-size: var(--font-size-8);
-    #color: var(--color-text-dark-header);
+    #color: var(--color-dark-2);
 }
 
 .chat-message h5 {
@@ -306,14 +306,14 @@ li.roll-characteristic.active.negative {
 
 .dice-roll .dice-total, .treasure-header {
     font-size: var(--font-size-12);
-    color: var(--color-text-dark-header);
+    color: var(--color-dark-2);
 }
 
 .roll-message-body .roll-information-row .label, .formula p.label,
 .roll-characteristic-card p.label, .roll-combat-card p.label,
 .damage-card .block-title, .warn-card .block-title,
 .message-content .song-result-message .song-result-message-body .song-attribute-row .label {
-    background: var(--color-text-dark-header);
+    background: var(--color-dark-2);
     font-family: var(--font-label), sans-serif;
 }
 
@@ -331,7 +331,7 @@ li.roll-characteristic.active.negative {
 }
 
 .display-description-message .display-description-message-header .summary .block .title {
-    background: var(--color-text-dark-header);
+    background: var(--color-dark-2);
     font-family: var(--font-label), sans-serif;
 }
 

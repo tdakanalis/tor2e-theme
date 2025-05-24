@@ -6,7 +6,7 @@
 .system-tor2e .damage-card .block-title,
 .system-tor2e .warn-card .block-title,
 .system-tor2e .message-content .song-result-message .song-result-message-body .song-attribute-row .label{
-    background: var(--earth-brown);
+    background: var(--deep-brown);
     font-family: var(--font-primary), sans-serif;
     font-weight: bold;
     font-size: var(--font-size-13);
@@ -14,6 +14,10 @@
 
 .system-tor2e .roll-message-body .roll-information-row {
     background: unset;
+}
+
+.system-tor2e .roll-message-body .roll-information-row .label {
+    padding: 0.1em 0.2em;
 }
 
 .system-tor2e .roll-message-body .roll-information-row .value,
@@ -30,6 +34,10 @@
 .tor2e.sheet .window-content {
     background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
     background-size: cover;
+}
+
+.system-tor2e .message-content .label {
+    margin: 0 !important;
 }
 
 .tor2e.sheet .sheet-container img.background {

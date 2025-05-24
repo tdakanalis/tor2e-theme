@@ -5,14 +5,16 @@
 
 .tor2e-chatreports-titre, .tor2e-chatreports-th {
     font-family: var(--font-label), sans-serif;
-    background-color: var(--color-text-dark-header);
+    background-color: var(--color-dark-2);
     text-align: center;
     font-size: var(--font-size-14);
 }
 
-.tor2e-macrobar-macrogroup-title {
+.tor2e-macrobar-macrogroup-title,
+.tor2e-gamebar-group-title {
     font-family: var(--font-h1), sans-serif;
     font-size: var(--font-size-6);
+    text-shadow: 1px 1px 2px var(--color-dark-1) !important;
 }
 
 .tor2e-cb-values,
@@ -20,4 +22,53 @@
     align-content: center;
     font-family: var(--font-label), sans-serif;
     font-size: var(--font-size-12);
+}
+
+.tor2e-gc-titre {
+    font-family: var(--font-h1), sans-serif !important;
+    font-size: var(--font-size-18) !important;
+    color: var(--color-warm-2) !important;
+    text-shadow: 1px 1px 2px var(--color-dark-1) !important;
+}
+
+.tor2e-gc-soustitre {
+    font-family: var(--font-body), sans-serif !important;
+    font-size: var(--font-size-20) !important;
+    color: var(--color-warm-2) !important;
+    padding-bottom: 4px;
+    font-weight: 900;
+}
+
+.tor2e-gc-dialog-window .window-content {
+    background: var(--color-light-1) url(../../img/tor_bg.webp) no-repeat;
+    background-size: cover;
+}
+
+.tor2e-gc-h5 {
+    font-family: var(--font-body), sans-serif !important;
+    font-weight: bold !important;
+}
+
+.tor2e-gc-dialog-window button {
+    background-color: var(--color-cool-5-50);
+    font-weight: bold;
+}
+
+.tor2e-gc-dialog-window button:hover {
+    background-color: var(--color-warm-2);
+}
+
+.tor2e-gc-soussoustitre,
+.tor2e-gc-text,
+.tor2e-gc-label,
+.tor2e-gc-dialog-window {
+    font-weight: bold !important;
+}
+
+.tor2e-gc-chatreports-titre {
+    background-color: var(--color-dark-2) !important;
+}
+
+.tor2e-gc-chatreports-th {
+    background-color: var(--color-dark-6);
 }
