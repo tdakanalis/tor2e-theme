@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/tdakanalis/tor2e-theme/compare/1.4.3...1.5.0) (2025-05-24)
+
+
+### Features
+
+* **game-control:** Add support for tor2e game control module ([ee7b95c](https://github.com/tdakanalis/tor2e-theme/commit/ee7b95cec40f296d97ccbc35442caa370c59dacc))
+
 ## [1.4.3](https://github.com/tdakanalis/tor2e-theme/compare/1.4.2...1.4.3) (2025-05-18)
 
 
