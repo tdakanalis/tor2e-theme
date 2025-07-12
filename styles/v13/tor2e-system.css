@@ -324,3 +324,66 @@
 .system-tor2e .success {
     color: var(--color-level-success);
 }
+
+
+body.theme-dark .chat-message,
+body.theme-dark .chat-message.whisper {
+    background: var(--color-cool-5-90);
+    background-size: unset;
+}
+
+body.theme-dark .chat-message .message-header .message-sender {
+    color: var(--earth-red);
+}
+
+body.theme-dark .chat-message .message-header {
+    color: var(--earth-gold);
+}
+
+body.theme-dark .chat-message {
+    color: var(--earth-beige);
+}
+
+body.theme-dark .roll-message-body .roll-information-row .label {
+    color: var(--earth-beige);
+}
+
+body.theme-dark .roll-message-body .roll-information-row {
+    border: 1px solid var(--color-dark-3);
+}
+
+body.theme-dark .dice-roll .dice-total {
+    color: var(--earth-gold);
+    box-shadow: unset;
+    margin-top: 3px;
+    background: var(--midnight-brown);
+}
+
+body.theme-dark .dice-roll .dice-formula {
+    border: 1px solid var(--earth-brown);
+    background: var(--midnight-brown);
+    box-shadow: unset;
+}
+
+body.theme-dark .dice-roll .dice-formula .formula .value {
+    border: 0 !important;
+}
+
+body.theme-dark.system-tor2e .roll-message-body .roll-information-row .value,
+body.theme-dark.system-tor2e .roll-event-message .roll-event-message-body {
+    background: var(--midnight-brown);
+}
+
+body.theme-dark .formula p.label,
+body.theme-dark .roll-characteristic-card p.label,
+body.theme-dark .roll-combat-card p.label,
+body.theme-dark .tor2e-gc-chatreports-titre,
+body.theme-dark .tor2e-gc-chatreports-th-soustitre,
+body.theme-dark .damage-card .block-title,
+body.theme-dark .warn-card .block-title {
+    color: var(--earth-beige);
+}
+
+body.theme-dark table tbody tr:nth-child(even) {
+    --table-row-color-even: var(--midnight-brown)
+}

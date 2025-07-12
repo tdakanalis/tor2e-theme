@@ -346,18 +346,6 @@
             color: var(--earth-brown) !important;
         }
 
-        /*body.theme-light .journal-entry-page .window-content :is(h1, h3, h5),
-        body.theme-light .journal-entry-page .journal-page-content :is(h1, h3, h5),
-        body.theme-light .journal-entry-page .journal-page-header :is(h1, h3, h5),
-        body.theme-light .journal-header .title {
-            color: var(--earth-brown);
-        }
-        body.theme-light .journal-entry-page .window-content :is(h2, h4, h6),
-        body.theme-light .journal-entry-page .journal-page-content :is(h2, h4, h6),
-        body.theme-light .journal-entry-page .journal-page-header :is(h2, h4, h6) {
-            color: var(--earth-red);
-        }*/
-
         body.theme-dark .app.sheet.journal-entry .toc li,
         body.theme-dark .application.sheet.journal-entry .toc li {
             border-top: 1px solid var(--color-dark-3);
