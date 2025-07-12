@@ -1,0 +1,7 @@
+.fxmaster.specials .directory-item.folder h3 {
+    font-size: var(--font-size-10);
+}
+
+.fxmaster.specials .special-effects .description h4 {
+    font-size: var(--font-size-9);
+}
