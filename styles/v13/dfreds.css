@@ -1,0 +1,5 @@
+.effect-panel .effects-panel-container .effect-item .effect-info a.content-link {
+    --content-link-icon-color: var(--earth-gold);
+    --content-link-border-color: var(--earth-gold);
+    color: var(--earth-gold);
+}
