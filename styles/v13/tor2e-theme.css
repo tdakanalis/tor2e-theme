@@ -2,7 +2,7 @@
 :root {
     --earth-red: #ba4f42;  /* Warm brick red */
     --earth-brown:  #543b28;  /* Deep, rich brown */
-    --earth-gold:   #cbb28d;  /* Muted golden beige */
+    --earth-gold:   #dac2a0;  /* Muted golden beige */
     --earth-ivory:  #fffbf3;  /* Soft, gentle ivory */
     --earth-dark:   #1d1918;  /* Charcoal-like near–black */
     --earth-taupe:  #99857b;  /* Subdued taupe */
@@ -324,17 +324,63 @@
 
     /* Dark Theme */
     @layer general {
-        body.theme-dark .sheet.journal-entry .toc li.page {
+        body.theme-dark .app .journal-entry-page :is(h2, h4, h6),
+        body.theme-dark .app.journal-entry-page .window-content :is(h2, h4, h6),
+        body.theme-dark .application .journal-entry-page :is(h2, h4, h6),
+        body.theme-dark .application.journal-entry-page .window-content :is(h2, h4, h6){
+            color: var(--earth-red) !important;
+        }
+
+        body.theme-dark .app:not(.theme-light) .journal-entry-page :is(h1, h3, h5),
+        body.theme-dark .app:not(.theme-light) .journal-header .title,
+        body.theme-dark .application:not(.theme-light).journal-entry-page :is(h1, h3, h5),
+        body.theme-dark .application:not(.theme-light) .journal-entry-page :is(h1, h3, h5),
+        body.theme-dark .application:not(.theme-light) .journal-header .title {
+            color: var(--earth-gold) !important;
+        }
+        body.theme-dark .app.theme-light .journal-entry-page :is(h1, h3, h5),
+        body.theme-dark .app.theme-light .journal-header .title,
+        body.theme-dark .application.theme-light.journal-entry-page :is(h1, h3, h5),
+        body.theme-dark .application.theme-light .journal-entry-page :is(h1, h3, h5),
+        body.theme-dark .application.theme-light .journal-header .title {
+            color: var(--earth-brown) !important;
+        }
+
+        body.theme-dark .app.sheet.journal-entry .toc li,
+        body.theme-dark .application.sheet.journal-entry .toc li {
             border-top: 1px solid var(--color-dark-3);
         }
-        body.theme-dark .journal-entry-page :is(h2, h4, h6){
-            color: var(--earth-red);
-        }
-        body.theme-dark .journal-entry-page :is(h1, h3, h5),
-        body.theme-dark .journal-header .title {
+
+        body.theme-dark .app.sheet.journal-entry .toc .page-heading .page-number,
+        body.theme-dark .app.sheet.journal-entry .toc .page-heading .page-title,
+        body.theme-dark .application.sheet.journal-entry .toc .page-heading .page-index,
+        body.theme-dark .application.sheet.journal-entry .toc .page-heading .page-title {
             color: var(--earth-gold);
         }
-        body.theme-dark code-mirror {
+
+        body.theme-dark .app.sheet.journal-entry .toc li.active,
+        body.theme-dark .application.sheet.journal-entry .toc li.active{
+            border-top: 2px solid var(--earth-gold) !important;
+            border-bottom: 2px solid var(--earth-gold) !important;
+            border-left: 1px solid var(--earth-gold) !important;
+            border-right: 1px solid var(--earth-gold) !important;
+        }
+
+        body.theme-dark .app input[type="search"],
+        body.theme-dark .application input[type="search"],
+        body.theme-dark .app input[type="search"]::placeholder,
+        body.theme-dark .application input[type="search"]::placeholder{
+            --input-placeholder-color: var(--earth-gold) !important;
+            color: var(--earth-gold) !important;
+        }
+
+        body.theme-dark .app input[type="search"]:focus,
+        body.theme-dark .application input[type="search"]:focus{
+            --input-focus-outline-color: var(--earth-gold) !important;
+            border: 2px solid var(--earth-gold) !important;
+        }
+
+        body.theme-dark code-mirror{
             --input-background-color: var(--color-cool-5-25);
             --active-line-color: rgba(43, 36, 31, 0.27);
             --syntax-keyword-color: var(--earth-red);         /* Keywords: Warm brick red */
@@ -349,14 +395,6 @@
             --syntax-number-color: var(--earth-gold);           /* Numbers: Muted golden beige (mirroring class names) */
             --syntax-string-color: var(--forest-green);         /* Strings: Fresh forest green */
             --syntax-regexp-color: var(--midnight-brown);       /* RegExp: Almost black brown */
-        }
-
-        body.theme-dark .sheet.journal-entry .toc li.page.active + li.page.active {
-            border-top: 1px solid var(--color-dark-3) !important;
-        }
-
-        body.theme-dark .sheet.journal-entry .toc li.page.active + li.page {
-            border-top: 1px solid var(--color-dark-3) !important;
         }
     }
     @layer specific {
@@ -378,14 +416,11 @@
             --input-background-color: rgb(84 59 40 / 15%);
         }
         body.theme-light code-mirror {
-            /* Gutter */
             --gutter-background-color: var(--color-light-1);        /* originally #f5f5f5 */
             --gutter-border-color: var(--color-border-light-1);       /* originally #ddd */
 
-            /* Active line (using a semi‐transparent version of var(--color-warm-1) which is #dd7263) */
             --active-line-color: rgba(221, 114, 99, 0.1);            /* originally #cceeff44 */
 
-            /* Syntax Highlighting */
             --syntax-keyword-color: var(--earth-red);                 /* replaces #708 with an earthy red */
             --syntax-var-name-color: var(--forest-green);             /* replaces #00f with forest green */
             --syntax-local-var-color: var(--moss-green);              /* replaces #30a with moss green */
@@ -448,17 +483,21 @@
         body.theme-light .sheet.journal-entry .journal-sidebar button {
              --button-text-color: revert;
         }
-        body.theme-light .journal-entry-page :is(h1, h3, h5),
+        body.theme-light .journal-entry-page .window-content :is(h1, h3, h5),
+        body.theme-light .journal-entry-page .journal-page-content :is(h1, h3, h5),
+        body.theme-light .journal-entry-page .journal-page-header :is(h1, h3, h5),
         body.theme-light .journal-header .title {
             color: var(--earth-brown);
         }
-        body.theme-light .journal-entry-page :is(h2, h4, h6){
+        body.theme-light .journal-entry-page .window-content :is(h2, h4, h6),
+        body.theme-light .journal-entry-page .journal-page-content :is(h2, h4, h6),
+        body.theme-light .journal-entry-page .journal-page-header :is(h2, h4, h6) {
             color: var(--earth-red);
         }
         body.theme-light .sheet.journal-entry .toc .page-heading {
             color: var(--earth-brown);
         }
-        body.theme-light .sheet.journal-entry .toc li.page {
+        body.theme-light .sheet.journal-entry .toc li {
             border-top: 1px solid var(--earth-beige);
         }
         body.theme-light .sheet.journal-entry .toc .page-heading .page-number,
@@ -477,33 +516,33 @@
             color: var(--earth-brown);
         }
 
-        body.theme-light .sheet.journal-entry .toc li.page.active + li.page.active {
+        body.theme-light .sheet.journal-entry .toc li.active + li.active {
             border-top: 1px solid var(--earth-beige) !important;
         }
 
-        body.theme-light .sheet.journal-entry .toc li.page.active + li.page {
+        body.theme-light .sheet.journal-entry .toc li.active + li {
             border-top: 1px solid var(--earth-beige) !important;
         }
     }
     @layer specific {
-        .application.theme-light,
-        .themed.theme-light {
+        body:not(.theme-dark) .application.theme-light,
+        body:not(.theme-dark) .themed.theme-light {
             --background: url("../../img/tor_bg.webp") repeat;
             background-size: cover;
         }
-        .app.theme-light .standard-form {
+        body:not(.theme-dark) .app.theme-light .standard-form {
             --background: url("../../img/tor_bg.webp") repeat;
             background-size: cover;
         }
-        .application.theme-light,
-        .themed.theme-light {
+        body:not(.theme-dark) .application.theme-light,
+        body:not(.theme-dark) .themed.theme-light {
             /* #ddd → a soft, light beige */
             --content-link-background: var(--earth-beige);
         }
-        .application.theme-light #context-menu,
-        .themed.theme-light #context-menu,
-        .application.theme-light#context-menu,
-        .themed.theme-light#context-menu {
+        body:not(.theme-dark) .application.theme-light #context-menu,
+        body:not(.theme-dark) .themed.theme-light #context-menu,
+        body:not(.theme-dark) .application.theme-light#context-menu,
+        body:not(.theme-dark) .themed.theme-light#context-menu {
             /* #d9d8c8 → a warm light neutral */
             --background-color: var(--color-light-3);
             /* #999 → using a light border tone from the palette */
@@ -513,15 +552,11 @@
             /* #f0f0e0 → a subtle off-white */
             --hover-entry-background: var(--color-light-2);
         }
-        .application.theme-light code-mirror,
-        .themed.theme-light code-mirror {
-            /* #f5f5f5 → a very light tone */
+        body:not(.theme-dark) .application.theme-light code-mirror,
+        body:not(.theme-dark) .themed.theme-light code-mirror {
             --gutter-background-color: var(--earth-cream);
-            /* #ddd → a soft, neutral tone */
             --gutter-border-color: var(--earth-beige);
-            /* Active line highlight: using forest-green (converted to rgb) at ~27% opacity */
             --active-line-color: rgba(64, 125, 100, 0.27);
-            /* Syntax colors */
             --syntax-keyword-color: var(--earth-red);         /* replaces #708 */
             --syntax-var-name-color: var(--moss-green);       /* replaces #00f */
             --syntax-local-var-color: var(--forest-green);     /* replaces #30a */
@@ -536,18 +571,18 @@
             --syntax-separator-color: var(--earth-dark);       /* replaces #00f */
         }
 
-        .application.theme-light .prosemirror,
-        .themed.theme-light .prosemirror,
-        .application.theme-light prose-mirror,
-        .themed.theme-light prose-mirror,
-        .application.theme-light #prosemirror-dropdown,
-        .themed.theme-light #prosemirror-dropdown,
-        .application.theme-light .menu-dialog.prosemirror,
-        .themed.theme-light .menu-dialog.prosemirror,
-        .application.theme-light#prosemirror-dropdown,
-        .themed.theme-light#prosemirror-dropdown,
-        .application.theme-light.menu-dialog.prosemirror,
-        .themed.theme-light.menu-dialog.prosemirror {
+        body:not(.theme-dark) .application.theme-light .prosemirror,
+        body:not(.theme-dark) .themed.theme-light .prosemirror,
+        body:not(.theme-dark) .application.theme-light prose-mirror,
+        body:not(.theme-dark) .themed.theme-light prose-mirror,
+        body:not(.theme-dark) .application.theme-light #prosemirror-dropdown,
+        body:not(.theme-dark) .themed.theme-light #prosemirror-dropdown,
+        body:not(.theme-dark) .application.theme-light .menu-dialog.prosemirror,
+        body:not(.theme-dark) .themed.theme-light .menu-dialog.prosemirror,
+        body:not(.theme-dark) .application.theme-light#prosemirror-dropdown,
+        body:not(.theme-dark) .themed.theme-light#prosemirror-dropdown,
+        body:not(.theme-dark) .application.theme-light.menu-dialog.prosemirror,
+        body:not(.theme-dark) .themed.theme-light.menu-dialog.prosemirror {
             --menu-background: rgb(84 59 40 / 15%);
             /* Originally #f0f0e0 */
             --color-control-hover: var(--color-light-2);
@@ -557,13 +592,13 @@
             --dropdown-border: var(--color-border-light-2);
         }
 
-        .app.theme-light .standard-form {
+        body:not(.theme-dark) .app.theme-light .standard-form {
             /* Originally #ddd */
             --content-link-background: var(--earth-beige);
         }
 
-        .app.theme-light .standard-form #context-menu,
-        .app.theme-light .standard-form#context-menu {
+        body:not(.theme-dark) .app.theme-light .standard-form #context-menu,
+        body:not(.theme-dark) .app.theme-light .standard-form#context-menu {
             /* Originally #d9d8c8 */
             --background-color: var(--color-light-3);
             /* Originally #999 */
@@ -573,7 +608,7 @@
             /* Originally #f0f0e0 */
             --hover-entry-background: var(--color-light-2);
         }
-        .app.theme-light .standard-form code-mirror {
+        body:not(.theme-dark) .app.theme-light .standard-form code-mirror {
             /* Originally #f5f5f5 – a very light background */
             --gutter-background-color: var(--earth-cream);
             /* Originally #ddd – a light neutral border */
@@ -595,12 +630,12 @@
             --syntax-tag-color: var(--stone-gray);               /* replaces #085 */
             --syntax-separator-color: var(--earth-dark);         /* replaces #00f */
         }
-        .app.theme-light .standard-form .prosemirror,
-        .app.theme-light .standard-form prose-mirror,
-        .app.theme-light .standard-form #prosemirror-dropdown,
-        .app.theme-light .standard-form .menu-dialog.prosemirror,
-        .app.theme-light .standard-form#prosemirror-dropdown,
-        .app.theme-light .standard-form.menu-dialog.prosemirror {
+        body:not(.theme-dark) .app.theme-light .standard-form .prosemirror,
+        body:not(.theme-dark) .app.theme-light .standard-form prose-mirror,
+        body:not(.theme-dark) .app.theme-light .standard-form #prosemirror-dropdown,
+        body:not(.theme-dark) .app.theme-light .standard-form .menu-dialog.prosemirror,
+        body:not(.theme-dark) .app.theme-light .standard-form#prosemirror-dropdown,
+        body:not(.theme-dark) .app.theme-light .standard-form.menu-dialog.prosemirror {
             --color-control-hover: var(--color-light-2);   /* Originally #f0f0e0 */
             --dropdown-background: var(--color-light-3);     /* Originally #d9d8c8 */
             --dropdown-border: var(--color-border-light-2);    /* Originally #999 */
@@ -749,7 +784,7 @@
     .sheet.journal-entry {
         --level-indent: 6px;
     }
-    .sheet.journal-entry .toc li.page {
+    .sheet.journal-entry .toc li {
         border-bottom: 0;
     }
     .sheet.journal-entry .toc {
@@ -757,11 +792,11 @@
         padding-left: 5px;
     }
 
-    .sheet.journal-entry .toc li.page.active:has(+ li.page.active) {
+    .sheet.journal-entry .toc li.active:has(+ li.active) {
         border-bottom: none;
     }
 
-    .sheet.journal-entry .toc li.page.active {
+    .sheet.journal-entry .toc li.active {
         border-top: 2px solid var(--color-warm-2);
         border-bottom: 2px solid var(--color-warm-2);
         border-left: 1px solid var(--color-warm-2);
@@ -906,13 +941,7 @@
         font-size: var(--font-size-9);
         font-family: var(--font-h1), sans-serif;
     }
-    /* ---------------------------------- */
-    /*  Macros                    */
-    /* ---------------------------------- */
-    .macros-sidebar .directory-item.entry .entry-name {
-        font-size: var(--font-size-9);
-        font-family: var(--font-h1), sans-serif;
-    }
+
     /* ---------------------------------- */
     /*  Cards                    */
     /* ---------------------------------- */
@@ -1060,6 +1089,10 @@
     body.game .sheet.app .editor-edit {
         z-index: 1;
     }
+    body.game .app.journal-entry.sheet .pages-list .directory-item.active .headings {
+        margin-left: 27px;
+    }
+
     #tours-management .tour .status {
         color: var(--color-text-dark-6);
     }
@@ -1079,10 +1112,14 @@
         body.game .app h4 {
             font-size: var(--font-size-10);
         }
-        body.game .app.window-app .window-content {
+        /*body.game .app.window-app .window-content {
             background: url("../../img/tor_bg.webp") repeat;
             background-size: cover;
         }
+        body.game .app.sidebar-popout .window-content {
+            background: none;
+            color: var(--color-border-light-1);
+        }*/
         body.game .app form button {
             background: rgb(84 59 40 / 15%);
         }

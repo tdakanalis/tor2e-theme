@@ -4,3 +4,5 @@
 @import "tor2e-macros.css"  layer(modules);
 @import "simple-calendar.css"  layer(modules);
 @import "dnd5e-system.css"  layer(modules);
+@import "fxmaster.css"  layer(modules);
+@import "dfreds.css"  layer(modules);

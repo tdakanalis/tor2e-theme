@@ -107,6 +107,10 @@
     --dnd5e-capacity-container-border-color: #4a3426;      /* --color-dark-2 */
 }
 
+html {
+    font-size: 16px !important;
+}
+
 .dnd5e2.sheet.actor.character .sheet-body .skills .name,
 .dnd5e2.sheet.actor.character .sheet-body .tools .name,
 .dnd5e2.sheet.actor.character .sheet-body .saves .name {
@@ -137,7 +141,8 @@ background: unset;
 }
 
 .system-dnd5e :is(.chat-popout, #chat-log, .chat-log) .message .message-header .title,
-.system-dnd5e :is(.chat-popout, #chat-log, .chat-log) .message .message-content button {
+.system-dnd5e :is(.chat-popout, #chat-log, .chat-log) .message .message-content button,
+.system-dnd5e :is(.chat-popout, #chat-log, .chat-log) .message .message-content :is(h1,h2,h3,h4,h5,h6){
     color: var(--earth-brown);
 }
 
@@ -163,27 +168,44 @@ background: unset;
     font-size: var(--font-size-13) !important;
 }
 
-.sheet.dnd5e2-journal.journal-entry .journal-entry-content h3 {
-    font-family: NewBaskervilleBold, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+.sheet.dnd5e2-journal.journal-entry .journal-header .title {
+    font-size: var(--font-size-18) !important;
+    background: none;
+    border: none;
 }
 
-.sheet.dnd5e2-journal.journal-entry .journal-header .title,
 .sheet.dnd5e2-journal.journal-entry .journal-entry-content h1,
-.sheet.dnd5e2-journal.journal-entry-page .window-content h1,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h1 {
+    font-size: var(--font-size-16);
+}
+
 .sheet.dnd5e2-journal.journal-entry .journal-entry-content h2,
-.sheet.dnd5e2-journal.journal-entry-page .window-content h2,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h2 {
+    font-size: var(--font-size-14);
+}
+
 .sheet.dnd5e2-journal.journal-entry .journal-entry-content h3,
-.sheet.dnd5e2-journal.journal-entry-page .window-content h3,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h3 {
+    font-family: "NewBaskerville", "Signika", "Palatino Linotype", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: var(--font-size-13);
+}
+
 .sheet.dnd5e2-journal.journal-entry .journal-entry-content h4,
-.sheet.dnd5e2-journal.journal-entry-page .window-content h4,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h4 {
+    font-size: var(--font-size-11);
+}
+
 .sheet.dnd5e2-journal.journal-entry .journal-entry-content h5,
-.sheet.dnd5e2-journal.journal-entry-page .window-content h5,
+.sheet.dnd5e2-journal.journal-entry-page .window-content h5 {
+    font-size: var(--font-size-10);
+}
+
 .sheet.dnd5e2-journal.journal-entry .journal-entry-content h6,
 .sheet.dnd5e2-journal.journal-entry-page .window-content h6 {
-    font-size: unset;
-    font-weight: normal;
+    font-size: var(--font-size-9);
 }
 
 .sheet.dnd5e2-journal.journal-entry .journal-entry-content, .sheet.dnd5e2-journal.journal-entry-page .window-content {
