@@ -1,3 +1,13 @@
+# [1.6.0](https://github.com/tdakanalis/tor2e-theme/compare/1.5.0...1.6.0) (2025-07-12)
+
+
+### Features
+
+* **chat:** add support for dark theme in the chat ([9a8bd02](https://github.com/tdakanalis/tor2e-theme/commit/9a8bd020cb3295f1983715a9b1e3c3e3ed4cb15a))
+* **dfreds:** add support for drfeds modules ([0c64035](https://github.com/tdakanalis/tor2e-theme/commit/0c64035b8f45f032d8d08c1e646752a1367e9109))
+* **dnd5e:** add support for dark theme in journals ([1d15406](https://github.com/tdakanalis/tor2e-theme/commit/1d154061f32e58086550b0aa1f4c84c2fae3ebc5)), closes [#4](https://github.com/tdakanalis/tor2e-theme/issues/4)
+* **fxmaster:** add support for fxmaster module ([083404f](https://github.com/tdakanalis/tor2e-theme/commit/083404fa4eece53203f7812a56a5566430c87e83))
+
 # [1.5.0](https://github.com/tdakanalis/tor2e-theme/compare/1.4.3...1.5.0) (2025-05-24)
 
 
