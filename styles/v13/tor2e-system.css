@@ -565,3 +565,23 @@ body.theme-dark.system-tor2e .app h3 {
 body.theme-dark.system-tor2e .tor2e.sheet.item.journey-log .event {
     border-bottom: 1px solid var(--earth-gold);
 }
+
+body.theme-dark .tor2e.sheet.actor #travel-roles .actor-drop,
+body.theme-dark .tor2e.sheet.actor #unassigned-members .actor-drop,
+body.theme-dark .tor2e.sheet.actor .character-actor-drop {
+    border-color: var(--earth-gold);
+}
+
+body.theme-dark .tor2e.sheet.actor.community .lbl-toggle-travel-log,
+body.theme-dark .tor2e.sheet.actor.character .lbl-toggle-travel-log,
+body.theme-dark .tor2e.sheet.actor.community .lbl-toggle-undertaking,
+body.theme-dark .tor2e.sheet.actor.character .lbl-toggle-undertaking {
+    color: var(--earth-taupe);
+}
+
+body.theme-dark .tor2e.sheet.actor.community .lbl-toggle-travel-log:hover,
+body.theme-dark .tor2e.sheet.actor.character .lbl-toggle-travel-log:hover,
+body.theme-dark .tor2e.sheet.actor.community .lbl-toggle-undertaking:hover,
+body.theme-dark .tor2e.sheet.actor.character .lbl-toggle-undertaking:hover {
+    color: var(--earth-gold);
+}
