@@ -107,10 +107,6 @@
     --dnd5e-capacity-container-border-color: #4a3426;      /* --color-dark-2 */
 }
 
-html {
-    font-size: 16px !important;
-}
-
 .dnd5e2.sheet.actor.character .sheet-body .skills .name,
 .dnd5e2.sheet.actor.character .sheet-body .tools .name,
 .dnd5e2.sheet.actor.character .sheet-body .saves .name {
