@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/tdakanalis/tor2e-theme/compare/1.6.1...1.7.0) (2025-07-13)
+
+
+### Features
+
+* **tor2e:** add support for a dark theme in actors and item sheets ([9848f0f](https://github.com/tdakanalis/tor2e-theme/commit/9848f0fa7d0605661c6f39fe7dcab20616ae9269))
+
 ## [1.6.1](https://github.com/tdakanalis/tor2e-theme/compare/1.6.0...1.6.1) (2025-07-13)
 
 
