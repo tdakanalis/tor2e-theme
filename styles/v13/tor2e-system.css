@@ -333,7 +333,7 @@ body.theme-dark .chat-message.whisper {
 }
 
 body.theme-dark .chat-message .message-header .message-sender {
-    color: var(--earth-red);
+    color: var(--earth-gold);
 }
 
 body.theme-dark .chat-message .message-header {
@@ -342,6 +342,8 @@ body.theme-dark .chat-message .message-header {
 
 body.theme-dark .chat-message {
     color: var(--earth-beige);
+    --chat-message-border-color: var(--earth-brown);
+    --color-whisper-border: var(--earth-brown);
 }
 
 body.theme-dark .roll-message-body .roll-information-row .label {
@@ -386,4 +388,180 @@ body.theme-dark .warn-card .block-title {
 
 body.theme-dark table tbody tr:nth-child(even) {
     --table-row-color-even: var(--midnight-brown)
+}
+
+body.theme-dark .tor2e.sheet .window-content {
+    background: var(--color-cool-5-90);
+    background-size: unset;
+}
+
+body.theme-dark .app.window-app .window-content {
+    --color-text-dark-primary: var(--earth-beige);
+}
+
+body.theme-dark .tor2e.sheet input,
+body.theme-dark .tor2e.sheet select {
+    border-bottom: 2px solid var(--earth-brown);
+    color: var(--earth-gold);
+}
+
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper input {
+    border: 0;
+}
+
+body.theme-dark .tor2e.sheet h1 input,
+body.theme-dark .tor2e.sheet .window-content :is(h1,h2,h3,h4,h5,h6){
+    color: var(--earth-gold);
+}
+
+body.theme-dark .tor2e.sheet .window-content h2 {
+    border-bottom: 1px solid var(--earth-taupe);
+}
+
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat label,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .label,
+body.theme-dark .tor2e.sheet.actor .section h4 {
+    color: var(--earth-gold);
+}
+
+body.theme-dark .tor2e.sheet.actor .skill-element-row .skill-display-element-full {
+    background-color: var(--earth-gold) !important;
+}
+
+body.theme-dark .tor2e.sheet.actor .skill-element-row > * {
+    border: 1px solid var(--earth-gold);
+}
+
+body.theme-dark .tor2e.sheet.actor .tor2e-round-checkbox .label {
+    border-color: var(--earth-gold);
+}
+
+body.theme-dark .tor2e.sheet .skill-card-component .identification a.skill-name.active {
+    color: var(--earth-gold);
+}
+
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper input,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .item-value input,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper .input-stat-value,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .item-value .input-stat-value,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .main-stat-value .main-stat-label,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .item-value {
+    color: var(--earth-gold);
+}
+
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .item-value {
+    border: 4px double var(--earth-gold)
+}
+
+body.theme-dark .tor2e.sheet.actor .sheet-header img {
+    border: 5px double var(--earth-gold);
+    background: var(--midnight-brown);
+}
+
+body.theme-dark .tor2e.sheet.actor .common-skill-column:not(:last-child) {
+    border-right: 3px double var(--earth-gold);
+}
+
+body.theme-dark .app input[type="text"]:focus,
+body.theme-dark .app input[type="number"]:focus,
+body.theme-dark .app input[type="password"]:focus,
+body.theme-dark .app input[type="date"]:focus,
+body.theme-dark .app input[type="time"]:focus,
+body.theme-dark .app input[type="search"]:focus {
+    border: 2px solid var(--earth-gold);
+}
+
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .input-stat-wrapper,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .secondary-item .input-stat-wrapper,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-value,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat .input-stat-wrapper,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat .item-value {
+    background: var(--midnight-brown);
+    border: 2px solid var(--earth-gold);
+    color: var(--earth-gold);
+}
+
+body.theme-dark .tor2e.sheet .table-caption-row,
+body.theme-dark .tor2e.sheet .collapsibleList,
+body.theme-dark .tor2e.sheet.actor .section.main-section .active-effect-row,
+body.theme-dark .tor2e.sheet.actor .actor-row,
+body.theme-dark .tor2e.sheet.actor.character .table-layout,
+body.theme-dark .tor2e.sheet.actor.community .table-layout {
+    background: var(--midnight-brown);
+}
+
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .item-name,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-name,
+body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-name {
+    color: var(--earth-gold);
+}
+
+body.theme-dark .tor2e.sheet.actor .dropped {
+    opacity: 0.3;
+}
+
+body.theme-dark .tor2e.sheet.actor .section .active-effect img {
+    opacity: 0.25;
+}
+body.theme-dark .tor2e.sheet.actor .section .active-effect img.active {
+    opacity: 1;
+}
+
+body.theme-dark .sheet.app .editor-content blockquote,
+body.theme-dark .sheet.app .editor-container-toggelable blockquote,
+body.theme-dark .sheet.app .editor-content code,
+body.theme-dark .sheet.app .editor-container-toggelable code {
+    color: var(--earth-gold);
+}
+
+body.theme-dark.system-tor2e #roll-dialog-window h4 {
+    color: var(--earth-beige);
+}
+
+body.theme-dark.system-tor2e .popup .form-group p.label,
+body.theme-dark.system-tor2e section#difficulty-block .form-group label,
+body.theme-dark.system-tor2e section#modifier-block .form-group label,
+body.theme-dark.system-tor2e section#advanced-block .form-group label,
+body.theme-dark.system-tor2e section#hope .form-group .input.principal p.warn.label {
+    color: var(--earth-beige);
+}
+
+body.theme-dark .formula div.roll-hope-points p.count.standard,
+body.theme-dark .roll-characteristic-card div.roll-hope-points p.count.standard,
+body.theme-dark .roll-combat-card div.roll-hope-points p.count.standard {
+    color: var(--earth-beige);
+    border-color: var(--earth-beige);
+}
+
+body.theme-dark.system-tor2e .app form .notes,
+body.theme-dark.system-tor2e .app form .hint {
+    color: var(--earth-beige);
+}
+body.theme-dark.system-tor2e  .app form button {
+    background: rgb(84 59 40 / 15%);
+    border: 1px solid var(--button-border-color);
+    color: var(--earth-beige)
+}
+
+body.theme-dark.system-tor2e .app form button:hover {
+    border: 1px solid var(--earth-gold);
+}
+
+body.theme-dark.system-tor2e nav.tabs [data-tab] {
+    color: var(--earth-beige);
+}
+
+body.theme-dark .tor2e.sheet.item.journey-log section:not(:last-child) {
+    border-right: 1px solid var(--earth-gold);
+}
+
+body.theme-dark.system-tor2e .app h3 {
+    border-bottom: 1px solid var(--earth-taupe);
+}
+
+body.theme-dark.system-tor2e .tor2e.sheet.item.journey-log .event {
+    border-bottom: 1px solid var(--earth-gold);
 }
