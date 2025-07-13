@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/tdakanalis/tor2e-theme/compare/1.7.0...1.7.1) (2025-07-13)
+
+
+### Bug Fixes
+
+* **tor2e:** fix dark theme support for community sheet ([53ef3d6](https://github.com/tdakanalis/tor2e-theme/commit/53ef3d6739598d5335d9a6a041aaab26a55fb111))
+
 # [1.7.0](https://github.com/tdakanalis/tor2e-theme/compare/1.6.1...1.7.0) (2025-07-13)
 
 
