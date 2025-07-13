@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/tdakanalis/tor2e-theme/compare/1.6.0...1.6.1) (2025-07-13)
+
+
+### Bug Fixes
+
+* **tor2e:** fix font scaling support ([dad1159](https://github.com/tdakanalis/tor2e-theme/commit/dad11598cb85195b04342c4b15ffaffae16d9ce9))
+
 # [1.6.0](https://github.com/tdakanalis/tor2e-theme/compare/1.5.0...1.6.0) (2025-07-12)
 
 
