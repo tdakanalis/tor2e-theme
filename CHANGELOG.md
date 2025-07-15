@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/tdakanalis/tor2e-theme/compare/1.7.1...1.7.2) (2025-07-15)
+
+
+### Bug Fixes
+
+* **tor2e:** improve dark theme support for actor sheets to better match Application V2 stylesheet ([34d40b6](https://github.com/tdakanalis/tor2e-theme/commit/34d40b6a945527a715feeee3e8d291e9297487cd))
+
 ## [1.7.1](https://github.com/tdakanalis/tor2e-theme/compare/1.7.0...1.7.1) (2025-07-13)
 
 
