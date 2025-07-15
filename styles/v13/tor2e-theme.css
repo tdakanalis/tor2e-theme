@@ -12,7 +12,7 @@
     --moss-green:     #587a5e;  /* A vibrant, organic moss green */
     --stone-gray:     #7b7160;  /* Weathered stone gray */
     --deep-brown:     #4d3d30;  /* Intense deep brown */
-    --midnight-brown: #27201c;  /* Almost black brown */
+    --midnight-brown: #2b241f;  /* Almost black brown */
 }
 
 @layer variables, elements, blocks, applications, compatibility;

@@ -358,12 +358,12 @@ body.theme-dark .dice-roll .dice-total {
     color: var(--earth-gold);
     box-shadow: unset;
     margin-top: 3px;
-    background: var(--midnight-brown);
+    background: var(--color-cool-5-90);
 }
 
 body.theme-dark .dice-roll .dice-formula {
     border: 1px solid var(--earth-brown);
-    background: var(--midnight-brown);
+    background: var(--color-cool-5-90);
     box-shadow: unset;
 }
 
@@ -373,7 +373,7 @@ body.theme-dark .dice-roll .dice-formula .formula .value {
 
 body.theme-dark.system-tor2e .roll-message-body .roll-information-row .value,
 body.theme-dark.system-tor2e .roll-event-message .roll-event-message-body {
-    background: var(--midnight-brown);
+    background: var(--color-cool-5-90);
 }
 
 body.theme-dark .formula p.label,
@@ -387,11 +387,21 @@ body.theme-dark .warn-card .block-title {
 }
 
 body.theme-dark table tbody tr:nth-child(even) {
-    --table-row-color-even: var(--midnight-brown)
+    --table-row-color-even: var(--color-cool-5-90)
 }
 
-body.theme-dark .tor2e.sheet .window-content {
+body.game.theme-dark .tor2e.sheet.actor.character .sheet-container img.background {
+    opacity: 0.1;
+}
+
+body.game.theme-dark .app.tor2e.sheet {
     background: var(--color-cool-5-90);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+body.game.theme-dark .tor2e.sheet .window-content {
+    background: unset;
     background-size: unset;
 }
 
@@ -457,7 +467,7 @@ body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .item-value {
 
 body.theme-dark .tor2e.sheet.actor .sheet-header img {
     border: 5px double var(--earth-gold);
-    background: var(--midnight-brown);
+    background: var(--color-cool-5-90);
 }
 
 body.theme-dark .tor2e.sheet.actor .common-skill-column:not(:last-child) {
@@ -479,7 +489,7 @@ body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .it
 body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value,
 body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat .input-stat-wrapper,
 body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat .item-value {
-    background: var(--midnight-brown);
+    background: var(--color-cool-5-90);
     border: 2px solid var(--earth-gold);
     color: var(--earth-gold);
 }
@@ -490,7 +500,7 @@ body.theme-dark .tor2e.sheet.actor .section.main-section .active-effect-row,
 body.theme-dark .tor2e.sheet.actor .actor-row,
 body.theme-dark .tor2e.sheet.actor.character .table-layout,
 body.theme-dark .tor2e.sheet.actor.community .table-layout {
-    background: var(--midnight-brown);
+    background: var(--color-cool-5-90);
 }
 
 body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .item-name,
