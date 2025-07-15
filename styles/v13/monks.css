@@ -1,0 +1,29 @@
+.chat-log .message.round-marker {
+    margin: var(--chat-message-spacing);
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.chat-log .message.round-marker {
+    background: url(../../img/tor_bg.webp) repeat !important;
+    background-size: cover;
+    color: var(--color-dark-1);
+}
+
+.chat-log .message.round-marker .message-header .flavor-text {
+    color: var(--color-dark-1) !important;
+}
+
+body.theme-dark .chat-log .message.round-marker {
+    border-bottom: 1px solid var(--earth-brown) !important;
+    background: var(--color-cool-5-90) !important;
+    background: unset;
+}
+
+body.theme-dark .chat-log .message.round-marker .message-header .message-delete {
+    color: var(--earth-gold);
+}
+
+body.theme-dark .chat-log .message.round-marker .message-header .flavor-text {
+    color: var(--earth-beige) !important;
+}
