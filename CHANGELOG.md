@@ -1,3 +1,16 @@
+# [1.8.0](https://github.com/tdakanalis/tor2e-theme/compare/1.7.2...1.8.0) (2025-07-19)
+
+
+### Bug Fixes
+
+* **tor2e:** fix dark theme for select options ([0f0ae0a](https://github.com/tdakanalis/tor2e-theme/commit/0f0ae0a8d048ce116307aba7c1f5072c7547ac4b))
+* **tor2e:** small adjustments in the dark palette colors ([172b954](https://github.com/tdakanalis/tor2e-theme/commit/172b954f6a292ec7abda15068fd42993f21f387f))
+
+
+### Features
+
+* **monks:** add support for monks combat details ([c6e2466](https://github.com/tdakanalis/tor2e-theme/commit/c6e2466ab61051df595118835ca4bc9d35d0e02b))
+
 ## [1.7.2](https://github.com/tdakanalis/tor2e-theme/compare/1.7.1...1.7.2) (2025-07-15)
 
 
