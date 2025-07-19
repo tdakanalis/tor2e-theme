@@ -166,9 +166,11 @@
         --color-level-info-border: #736459;
 
         /* Success – a natural forest green */
-        --color-level-success: #4f6d4a;
-        --color-level-success-bg: rgba(79, 109, 74, 0.8);
-        --color-level-success-border: #3e5a3a;
+        --color-level-light-magical: #2f85d0;
+        --color-level-dark-magical: #256ea8;
+        --color-level-success: #5d7c57;
+        --color-level-success-bg: rgba(93, 124, 87, 0.75);
+        --color-level-success-border: #4c6847;
 
         /* Warning – warm amber/terracotta (using our warm tones) */
         --color-level-warning: var(--color-warm-1);
