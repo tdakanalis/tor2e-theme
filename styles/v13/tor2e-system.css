@@ -5,11 +5,18 @@
 .system-tor2e .roll-combat-card p.label,
 .system-tor2e .damage-card .block-title,
 .system-tor2e .warn-card .block-title,
-.system-tor2e .message-content .song-result-message .song-result-message-body .song-attribute-row .label{
+.system-tor2e .message-content .song-result-message .song-result-message-body .song-attribute-row .label,
+.system-tor2e .display-description-message .display-description-message-header .summary .block .title {
     background: var(--deep-brown);
     font-family: var(--font-primary), sans-serif;
     font-weight: bold;
     font-size: var(--font-size-13);
+}
+
+.system-tor2e .magical,
+.tor2e.sheet .skill-card-component .identification p.skill-label.magical-skill,
+.tor2e.sheet .skill-card-component .value p.skill-label.magical-skill {
+    color: var(--color-level-dark-magical)
 }
 
 .system-tor2e .roll-message-body .roll-information-row {
@@ -325,6 +332,14 @@
     color: var(--color-level-success);
 }
 
+.tor2e.sheet.actor .skillBonus-element-row .skill-display-element-full {
+    background-color: var(--color-level-success) !important;
+}
+
+.tor2e.sheet.actor .skillBonus-element-row > * {
+    border: 1px solid var(--color-level-success);
+}
+
 
 body.theme-dark .chat-message,
 body.theme-dark .chat-message.whisper {
@@ -442,12 +457,14 @@ body.theme-dark .tor2e.sheet.actor .skill-element-row > * {
     border: 1px solid var(--earth-gold);
 }
 
-body.theme-dark .tor2e.sheet.actor .tor2e-round-checkbox .label {
-    border-color: var(--earth-gold);
+body.theme-dark .system-tor2e .magical,
+body.theme-dark .tor2e.sheet .skill-card-component .identification p.skill-label.magical-skill,
+body.theme-dark .tor2e.sheet .skill-card-component .value p.skill-label.magical-skill {
+    color: var(--color-level-light-magical)
 }
 
-body.theme-dark .tor2e.sheet .skill-card-component .identification a.skill-name.active {
-    color: var(--earth-gold);
+body.theme-dark .tor2e.sheet.actor .tor2e-round-checkbox .label {
+    border-color: var(--earth-gold);
 }
 
 body.theme-dark .tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper input,
@@ -551,13 +568,15 @@ body.theme-dark.system-tor2e .app form .notes,
 body.theme-dark.system-tor2e .app form .hint {
     color: var(--earth-beige);
 }
-body.theme-dark.system-tor2e  .app form button {
+body.theme-dark.system-tor2e .app form button,
+body.theme-dark.system-tor2e .app .dialog-buttons button {
     background: rgb(84 59 40 / 15%);
     border: 1px solid var(--button-border-color);
     color: var(--earth-beige)
 }
 
-body.theme-dark.system-tor2e .app form button:hover {
+body.theme-dark.system-tor2e .app form button:hover,
+body.theme-dark.system-tor2e .app .dialog-buttons button:hover {
     border: 1px solid var(--earth-gold);
 }
 
@@ -600,4 +619,13 @@ body.theme-dark .tor2e.sheet.actor.character .lbl-toggle-undertaking:hover {
 body.theme-dark .app option,
 body.theme-dark .app optgroup {
     --color-select-option-bg: var(--color-cool-4)
+}
+
+body.theme-dark.system-tor2e .popup .content .hope .actor-stats span.label,
+body.theme-dark.system-tor2e .popup .form-group label {
+    color: var(--earth-gold);
+}
+
+body.theme-dark.system-tor2e .popup .content .hope .actor-stats span.value {
+    color: var(--earth-beige);
 }
