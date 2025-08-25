@@ -25,6 +25,15 @@
           "verified": "5",
           "maximum": "5"
         }
+      },
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4",
+          "verified": "5",
+          "maximum": "5"
+        }
       }
     ]
   },
