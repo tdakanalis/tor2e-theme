@@ -11,14 +11,35 @@
   "authors": [
     {
       "name": "tdakanalis",
-      "url": "https://github.com/tdakanalis",
-      "flags": {}
+      "url": "https://tdakanalis.dev",
+      "discord": "tdakanalis",
+      "email": "tdakanalis@cytech.gr"
     }
   ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "tor2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4",
+          "verified": "5"
+        }
+      },
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4",
+          "verified": "5"
+        }
+      }
+    ]
+  },
   "esmodules": [
     "scripts/tor2e-theme.mjs"
   ],
-  "changelog": "https://raw.githubusercontent.com/tdakanalis/tor2e-theme/refs/heads/main/CHANGELOG.md",
+  "changelog": "https://github.com/tdakanalis/tor2e-theme/blob/main/CHANGELOG.md",
   "url": "https://github.com/tdakanalis/tor2e-theme",
   "manifest": "https://github.com/tdakanalis/tor2e-theme/releases/latest/download/module.json",
   "download": "https://github.com/tdakanalis/tor2e-theme/releases/download/1.8.0/tor2e-theme.zip"
