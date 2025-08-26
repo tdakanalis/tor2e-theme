@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/tdakanalis/tor2e-theme/compare/1.8.0...1.8.1) (2025-08-26)
+
+
+### Bug Fixes
+
+* **metadata:** update the module.json to include tor2e and dnd5e system requirement and compatibility information ([5abbcc2](https://github.com/tdakanalis/tor2e-theme/commit/5abbcc28cc52398bd438dee544973ee01ee57a40))
+
 # [1.8.0](https://github.com/tdakanalis/tor2e-theme/compare/1.7.2...1.8.0) (2025-07-19)
 
 
