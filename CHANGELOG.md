@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/tdakanalis/tor2e-theme/compare/1.8.1...1.8.2) (2025-09-13)
+
+
+### Bug Fixes
+
+* **tor2e:** fix singer dialogue and roll header section in roll dialogue for dark theme ([37951fa](https://github.com/tdakanalis/tor2e-theme/commit/37951fad03847095eb34292cf44fd1321d91506f))
+
 ## [1.8.1](https://github.com/tdakanalis/tor2e-theme/compare/1.8.0...1.8.1) (2025-08-26)
 
 
