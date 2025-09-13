@@ -340,6 +340,7 @@
     border: 1px solid var(--color-level-success);
 }
 
+/** DARK THEME **/
 
 body.theme-dark .chat-message,
 body.theme-dark .chat-message.whisper {
@@ -628,4 +629,43 @@ body.theme-dark.system-tor2e .popup .form-group label {
 
 body.theme-dark.system-tor2e .popup .content .hope .actor-stats span.value {
     color: var(--earth-beige);
+}
+
+body.theme-dark.system-tor2e .dialog.window-app > .window-content {
+    background: var(--color-cool-5-90);
+    background-size: unset;
+}
+
+body.theme-dark.system-tor2e .roll-header.header-self,
+body.theme-dark.system-tor2e .roll-header.header-adversary {
+    #background: var(--color-cool-5-90);
+    #border: 2px solid var(--earth-gold);
+    box-shadow: unset;
+}
+
+.system-tor2e .roll-header.header-self {
+    border: 2px solid var(--color-level-dark-magical);
+}
+.system-tor2e .roll-header.header-adversary {
+    border: 2px solid var(--earth-red);
+}
+
+body.theme-dark.system-tor2e .header-self .arrow-separator {
+    #color: var(--earth-gold);
+}
+
+body.theme-dark.system-tor2e .header-self .target-compact,
+body.theme-dark.system-tor2e .header-adversary .target-compact,
+body.theme-dark.system-tor2e .action-compact {
+    border: 1px solid var(--earth-taupe);
+    background:  var(--midnight-brown);
+}
+
+body.theme-dark.system-tor2e .target-compact .target-details .target-name,
+body.theme-dark.system-tor2e .action-compact .action-details .action-name {
+    color: var(--color-text-dark-primary);
+}
+
+body.theme-dark.system-tor2e .action-compact .action-details .action-value {
+    color: var(--earth-gold);
 }
