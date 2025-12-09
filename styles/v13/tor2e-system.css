@@ -257,6 +257,10 @@
 .tor2e.sheet .window-content h6 {
     color: var(--earth-brown);
 }
+.tor2e.sheet.undertaking {
+    min-width: 435px !important;
+}
+
 
 .system-tor2e .popup .form-group p.label,
 .system-tor2e section#difficulty-block .form-group label,
@@ -293,13 +297,6 @@
 
 .system-tor2e .popup .content .hope .actor-stats span.label {
     color: var(--color-warm-2);
-}
-
-
-.system-tor2e .popup input {
-    width: 1.4em;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
 }
 
 .system-tor2e .popup .label {
