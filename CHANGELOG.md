@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/tdakanalis/tor2e-theme/compare/1.8.2...1.8.3) (2025-12-09)
+
+
+### Bug Fixes
+
+* **tor2e:** fix undertaking dialogue ([6c9b158](https://github.com/tdakanalis/tor2e-theme/commit/6c9b1588aab36a2de6e22f362a55c75ac20b93cf))
+
 ## [1.8.2](https://github.com/tdakanalis/tor2e-theme/compare/1.8.1...1.8.2) (2025-09-13)
 
 
